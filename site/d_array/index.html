@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../img/favicon.ico">
 
-	<title>Basic Syntax - PythonTutorial</title>
+	<title>Arrays - D&A</title>
 
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
@@ -46,7 +46,7 @@
             
 
             <!-- Main title -->
-            <a class="navbar-brand" href="..">PythonTutorial</a>
+            <a class="navbar-brand" href="..">D&A</a>
         </div>
 
         <!-- Expanded navigation -->
@@ -62,136 +62,28 @@
                 
                 
                 
-                    <li >
-                        <a href="../install/">Installation</a>
-                    </li>
-                
-                
-                
-                    <li >
-                        <a href="../ide/">IDE</a>
-                    </li>
-                
-                
-                
                     <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Doc <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Data Structures <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
 <li class="active">
-    <a href="./">Basic Syntax</a>
+    <a href="./">Arrays</a>
 </li>
 
                         
-                            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Data Structure</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../data_number/">Number</a>
-</li>
-
-        
-            
-<li >
-    <a href="../data_string/">String</a>
-</li>
-
-        
-            
-<li >
-    <a href="../data_object/">Object</a>
-</li>
-
-        
-            
-<li >
-    <a href="../data_collection/">Collection</a>
-</li>
-
-        
-            
-<li >
-    <a href="../data_time/">Time</a>
-</li>
-
-        
-    </ul>
-  </li>
-
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Algorithms <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
                         
                             
 <li >
-    <a href="../oop/">OOP</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../os/">OS</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../networking/">Networking</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../io/">IO</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../event_based/">Event Based</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../logging/">Logging</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../configuration/">Configuration</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../web/">Web</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../package_manager/">Package Manager</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../environment/">Environment</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../make_a_module/">Module</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../production/">Production</a>
+    <a href="../a_graph_theory/">Graph Theory</a>
 </li>
 
                         
@@ -210,12 +102,12 @@
                 </li>
                 
                     <li >
-                        <a rel="next" href="../ide/">
+                        <a rel="next" href="..">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../data_number/">
+                        <a rel="prev" href="../a_graph_theory/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -231,83 +123,14 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#print-print">Print, print</a></li>
-        
-    
-        <li class="main "><a href="#conditional">Conditional</a></li>
-        
-    
-        <li class="main "><a href="#loop">Loop</a></li>
-        
-    
-        <li class="main "><a href="#functions">Functions</a></li>
-        
-            <li><a href="#variable-length-arguments">Variable-length arguments</a></li>
-        
-    
-        <li class="main "><a href="#coding-convention">Coding Convention</a></li>
-        
-            <li><a href="#code-layout">Code layout</a></li>
+        <li class="main active"><a href="#arrays">Arrays</a></li>
         
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="print-print">Print, print</h2>
-<pre><code class="python">print &quot;Hello World&quot;
-</code></pre>
-
-<h2 id="conditional">Conditional</h2>
-<pre><code class="python">if you_smart:
-    print &quot;learn python&quot;
-else:
-    print &quot;go away&quot;
-</code></pre>
-
-<h2 id="loop">Loop</h2>
-<pre><code class="python">for i in range(10):
-    print &quot;hello again&quot;
-</code></pre>
-
-<h2 id="functions">Functions</h2>
-<h3 id="variable-length-arguments">Variable-length arguments</h3>
-<p><sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup></p>
-<pre><code class="python">def functionname([formal_args,] *var_args_tuple ):
-   &quot;function_docstring&quot;
-   function_suite
-   return [expression]
-</code></pre>
-
-<p>Example</p>
-<pre><code class="python">#!/usr/bin/python
-
-# Function definition is here
-def printinfo( arg1, *vartuple ):
-   &quot;This prints a variable passed arguments&quot;
-   print &quot;Output is: &quot;
-   print arg1
-   for var in vartuple:
-      print var
-   return;
-
-# Now you can call printinfo function
-printinfo( 10 )
-printinfo( 70, 60, 50 )
-
-</code></pre>
-
-<h2 id="coding-convention">Coding Convention</h2>
-<h3 id="code-layout">Code layout</h3>
-<p>Indentation: 4 spaces</p>
-<div class="footnote">
-<hr />
-<ol>
-<li id="fn:1">
-<p><a href="http://www.tutorialspoint.com/python/python_functions.htm">tutorialpoints, Python Functions</a>&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-</li>
-</ol>
-</div></div>
+<h1 id="arrays">Arrays</h1></div>
             
         </div>
 
