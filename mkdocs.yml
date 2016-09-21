@@ -1,12 +1,8 @@
-site_name: D&A
+site_name: Natural Language Processing
 site_author: "Brother Rain"
 
 pages:
 - "Home": 'index.md'
-- "Data Structures":
-  - "Arrays": 'd_array.md'
-- "Algorithms":
-  - "Graph Theory": 'a_graph_theory.md'
 
 markdown_extensions:
     - footnotes

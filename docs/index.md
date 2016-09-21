@@ -1,9 +1,3 @@
-## Data Structures & Algorithms
+## Natural Language Processing
 
-> Algorithms + Data Structures = Programs
-
-In computer science, a data structure is a particular way of organizing data in a computer so that it can be used efficiently. Data structures can implement one or more particular abstract data types (ADT), which specify the operations that can be performed on a data structure and the computional complexity of those operations. In comparison, a data structure is a concrete implementation of the specification provided by an ADT.
-
-In mathematics and computer science, an algorithm is a self-contained step-by-step set of operations to be performed. Algorithms perform calculation, data processing, and/or automated reasoning tasks.
-
-**Note:** this notebook is inprogress. Feel free to [contribute](https://github.com/magizbox/danda)
+Natural language processing (NLP) is a field of computer science, artificial intelligence, and computational linguistics concerned with the interactions between computers and human (natural) languages. As such, NLP is related to the area of human–computer interaction. Many challenges in NLP involve: natural language understanding, enabling computers to derive meaning from human or natural language input; and others involve natural language generation.

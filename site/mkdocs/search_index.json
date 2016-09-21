@@ -2,48 +2,13 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Data Structures \n Algorithms\n\n\n\n\nAlgorithms + Data Structures = Programs\n\n\n\n\nIn computer science, a data structure is a particular way of organizing data in a computer so that it can be used efficiently. Data structures can implement one or more particular abstract data types (ADT), which specify the operations that can be performed on a data structure and the computional complexity of those operations. In comparison, a data structure is a concrete implementation of the specification provided by an ADT.\n\n\nIn mathematics and computer science, an algorithm is a self-contained step-by-step set of operations to be performed. Algorithms perform calculation, data processing, and/or automated reasoning tasks.\n\n\nNote:\n this notebook is inprogress. Feel free to \ncontribute", 
+            "text": "Natural Language Processing\n\n\nNatural language processing (NLP) is a field of computer science, artificial intelligence, and computational linguistics concerned with the interactions between computers and human (natural) languages. As such, NLP is related to the area of human\u2013computer interaction. Many challenges in NLP involve: natural language understanding, enabling computers to derive meaning from human or natural language input; and others involve natural language generation.", 
             "title": "Home"
         }, 
         {
-            "location": "/#data-structures-algorithms", 
-            "text": "Algorithms + Data Structures = Programs   In computer science, a data structure is a particular way of organizing data in a computer so that it can be used efficiently. Data structures can implement one or more particular abstract data types (ADT), which specify the operations that can be performed on a data structure and the computional complexity of those operations. In comparison, a data structure is a concrete implementation of the specification provided by an ADT.  In mathematics and computer science, an algorithm is a self-contained step-by-step set of operations to be performed. Algorithms perform calculation, data processing, and/or automated reasoning tasks.  Note:  this notebook is inprogress. Feel free to  contribute", 
-            "title": "Data Structures &amp; Algorithms"
-        }, 
-        {
-            "location": "/d_array/", 
-            "text": "Arrays", 
-            "title": "Arrays"
-        }, 
-        {
-            "location": "/d_array/#arrays", 
-            "text": "", 
-            "title": "Arrays"
-        }, 
-        {
-            "location": "/a_graph_theory/", 
-            "text": "Graph Theory\n\n\nShortest Path Problem\n\n\nIn graph theory, the shortest path problem is the problem of finding a path between two vertices (or nodes) in a graph such that the sum of the weights of its constituent edges is minimized.\n\n\nSingle-source shortest path problem\n\n\nDijkstra's algorithm\n\n\n\n\nDijkstra's algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks. It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later.", 
-            "title": "Graph Theory"
-        }, 
-        {
-            "location": "/a_graph_theory/#graph-theory", 
-            "text": "", 
-            "title": "Graph Theory"
-        }, 
-        {
-            "location": "/a_graph_theory/#shortest-path-problem", 
-            "text": "In graph theory, the shortest path problem is the problem of finding a path between two vertices (or nodes) in a graph such that the sum of the weights of its constituent edges is minimized.", 
-            "title": "Shortest Path Problem"
-        }, 
-        {
-            "location": "/a_graph_theory/#single-source-shortest-path-problem", 
-            "text": "", 
-            "title": "Single-source shortest path problem"
-        }, 
-        {
-            "location": "/a_graph_theory/#dijkstras-algorithm", 
-            "text": "Dijkstra's algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks. It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later.", 
-            "title": "Dijkstra's algorithm"
+            "location": "/#natural-language-processing", 
+            "text": "Natural language processing (NLP) is a field of computer science, artificial intelligence, and computational linguistics concerned with the interactions between computers and human (natural) languages. As such, NLP is related to the area of human\u2013computer interaction. Many challenges in NLP involve: natural language understanding, enabling computers to derive meaning from human or natural language input; and others involve natural language generation.", 
+            "title": "Natural Language Processing"
         }
     ]
 }
