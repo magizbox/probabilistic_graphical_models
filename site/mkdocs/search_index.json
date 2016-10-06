@@ -9,6 +9,91 @@
             "location": "/#natural-language-processing", 
             "text": "Natural language processing (NLP) is a field of computer science, artificial intelligence, and computational linguistics concerned with the interactions between computers and human (natural) languages. As such, NLP is related to the area of human\u2013computer interaction. Many challenges in NLP involve: natural language understanding, enabling computers to derive meaning from human or natural language input; and others involve natural language generation.", 
             "title": "Natural Language Processing"
+        }, 
+        {
+            "location": "/task/", 
+            "text": "NLP Tasks\n\n\nMorphological Analysis\n\n\nDiscourse Analysis\n\n\nSentiment Analysis\n\n\nMetaMind\n,\u00a0@RichardSocher\n\n\nNamed Entity Recognition\n\n\nKDD 2015 Tutorial: Automatic Entity Recognition and Typing from Massive Text Corpora - A Phrase and Network Mining Approach\n\n\nRelationship Extraction\n\n\nAlchemyAPI", 
+            "title": "Tasks"
+        }, 
+        {
+            "location": "/task/#nlp-tasks", 
+            "text": "", 
+            "title": "NLP Tasks"
+        }, 
+        {
+            "location": "/task/#morphological-analysis", 
+            "text": "", 
+            "title": "Morphological Analysis"
+        }, 
+        {
+            "location": "/task/#discourse-analysis", 
+            "text": "", 
+            "title": "Discourse Analysis"
+        }, 
+        {
+            "location": "/task/#sentiment-analysis", 
+            "text": "MetaMind ,\u00a0@RichardSocher", 
+            "title": "Sentiment Analysis"
+        }, 
+        {
+            "location": "/task/#named-entity-recognition", 
+            "text": "KDD 2015 Tutorial: Automatic Entity Recognition and Typing from Massive Text Corpora - A Phrase and Network Mining Approach", 
+            "title": "Named Entity Recognition"
+        }, 
+        {
+            "location": "/task/#relationship-extraction", 
+            "text": "AlchemyAPI", 
+            "title": "Relationship Extraction"
+        }, 
+        {
+            "location": "/ner_crf/", 
+            "text": "Conditional Random Fields in Name Entity Recognition\n\n\nIn this tutorial, I will write about how to using CRF++ to train your data for name entity recognition task.\n\n\nEnvironment:\n\n\n\n\nUbuntu 14.04\n\n\n\n\nInstall CRF++\n\n\n\n\n\n\nDownload CRF++-0.58.tar.gz\n\n\n\n\n\n\nExtact CRF++-0.58.tar.gz file\n\n\n\n\n\n\nNavigate to the location of extracted folder through\n\n\n\n\n\n\nInstall CRF++ from source\n\n\n\n\n\n\n./configure\nmake\nsudo make install\nldconfig\n\n\n\n\nCongratulations! CRF++ is install\n\n\ncrf_learn\n\n\n\n\nTraining CRF\n\n\nTo train a CRF using CRF++, you need 2 things:\n\n\n\n\nA template file: where you define features to be considered for training\n\n\nA training data file: where you have data in CoNLL format\n\n\n\n\ncrf_learn -t template_file train_data_file model\n\ncrf_learn -t template train.txt model\n\n\n\n\nA binary of model is produce.\n\n\nTo test this model, on a testing data\n\n\ncrf_test -m model testfile \n output.txt\n\ncrf_test -m model test.txt \n output.txt\n\n\n\n\nSources:\n\n\n\n\nConditional Random Fields : Installing CRF++ on Ubuntu\n\n\nConditional Random Fields Training and Testing using CRF++", 
+            "title": "NER"
+        }, 
+        {
+            "location": "/ner_crf/#conditional-random-fields-in-name-entity-recognition", 
+            "text": "In this tutorial, I will write about how to using CRF++ to train your data for name entity recognition task.  Environment:   Ubuntu 14.04", 
+            "title": "Conditional Random Fields in Name Entity Recognition"
+        }, 
+        {
+            "location": "/ner_crf/#install-crf", 
+            "text": "Download CRF++-0.58.tar.gz    Extact CRF++-0.58.tar.gz file    Navigate to the location of extracted folder through    Install CRF++ from source    ./configure\nmake\nsudo make install\nldconfig  Congratulations! CRF++ is install  crf_learn", 
+            "title": "Install CRF++"
+        }, 
+        {
+            "location": "/ner_crf/#training-crf", 
+            "text": "To train a CRF using CRF++, you need 2 things:   A template file: where you define features to be considered for training  A training data file: where you have data in CoNLL format   crf_learn -t template_file train_data_file model\n\ncrf_learn -t template train.txt model  A binary of model is produce.  To test this model, on a testing data  crf_test -m model testfile   output.txt\n\ncrf_test -m model test.txt   output.txt  Sources:   Conditional Random Fields : Installing CRF++ on Ubuntu  Conditional Random Fields Training and Testing using CRF++", 
+            "title": "Training CRF"
+        }, 
+        {
+            "location": "/application/", 
+            "text": "NLP Applications\n\n\nInformation Retrieval (IR)\n\n\nInformation retrieval (IR) is the activity of obtaining information resources relevant to an information need from a collection of information resources. Searches can be based on metadata or on full-text (or other content-based) indexing.\n\n\nInformation Extraction (IE)\n\n\nInformation extraction (IE) is the task of automatically extracting structured information from unstructured and/or semi-structured machine-readable documents. In most of the cases this activity concerns processing human language texts by means of natural language processing (NLP).\n\n\nMachine Translation\n\n\nMachine translation, sometimes referred to by the abbreviation MT (not to be confused with computer-aided translation, machine-aided human translation (MAHT) or interactive translation) is a sub-field of computational linguistics that investigates the use of software to translate text or speech from one language to another.\n\n\nQuestion Answering (QA)\n\n\nQuestion answering (QA) is a computer science discipline within the fields of information retrieval and natural language processing (NLP), which is concerned with building systems that automatically answer questions posed by humans in a natural language.", 
+            "title": "Applications"
+        }, 
+        {
+            "location": "/application/#nlp-applications", 
+            "text": "", 
+            "title": "NLP Applications"
+        }, 
+        {
+            "location": "/application/#information-retrieval-ir", 
+            "text": "Information retrieval (IR) is the activity of obtaining information resources relevant to an information need from a collection of information resources. Searches can be based on metadata or on full-text (or other content-based) indexing.", 
+            "title": "Information Retrieval (IR)"
+        }, 
+        {
+            "location": "/application/#information-extraction-ie", 
+            "text": "Information extraction (IE) is the task of automatically extracting structured information from unstructured and/or semi-structured machine-readable documents. In most of the cases this activity concerns processing human language texts by means of natural language processing (NLP).", 
+            "title": "Information Extraction (IE)"
+        }, 
+        {
+            "location": "/application/#machine-translation", 
+            "text": "Machine translation, sometimes referred to by the abbreviation MT (not to be confused with computer-aided translation, machine-aided human translation (MAHT) or interactive translation) is a sub-field of computational linguistics that investigates the use of software to translate text or speech from one language to another.", 
+            "title": "Machine Translation"
+        }, 
+        {
+            "location": "/application/#question-answering-qa", 
+            "text": "Question answering (QA) is a computer science discipline within the fields of information retrieval and natural language processing (NLP), which is concerned with building systems that automatically answer questions posed by humans in a natural language.", 
+            "title": "Question Answering (QA)"
         }
     ]
 }

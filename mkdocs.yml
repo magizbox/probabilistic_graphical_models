@@ -3,6 +3,10 @@ site_author: "Brother Rain"
 
 pages:
 - "Home": 'index.md'
+- "Docs":
+  - "Tasks": 'task.md'
+  - "NER": 'ner_crf.md'
+  - "Applications": 'application.md'
 
 markdown_extensions:
     - footnotes

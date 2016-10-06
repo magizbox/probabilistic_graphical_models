@@ -7,17 +7,17 @@
         
         <meta name="author" content="Brother Rain">
         
-        <link rel="shortcut icon" href="./img/favicon.ico">
+        <link rel="shortcut icon" href="../img/favicon.ico">
 
-	<title>Natural Language Processing</title>
+	<title>NER - Natural Language Processing</title>
 
-        <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="./css/font-awesome-4.5.0.css" rel="stylesheet">
-        <link href="./css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="./css/highlight.css">
-        <link href="./css/book.css" rel="stylesheet">
-        <link href="./css/course.css" rel="stylesheet">
-        <link href="./css/video.css" rel="stylesheet">
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <link href="../css/book.css" rel="stylesheet">
+        <link href="../css/course.css" rel="stylesheet">
+        <link href="../css/video.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -28,7 +28,7 @@
         
     </head>
 
-    <body class="homepage">
+    <body>
 
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
@@ -46,7 +46,7 @@
             
 
             <!-- Main title -->
-            <a class="navbar-brand" href=".">Natural Language Processing</a>
+            <a class="navbar-brand" href="..">Natural Language Processing</a>
         </div>
 
         <!-- Expanded navigation -->
@@ -56,31 +56,31 @@
                 <ul class="nav navbar-nav">
                 
                 
-                    <li class="active">
-                        <a href=".">Home</a>
+                    <li >
+                        <a href="..">Home</a>
                     </li>
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Docs <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
 <li >
-    <a href="task/">Tasks</a>
+    <a href="../task/">Tasks</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">NER</a>
 </li>
 
                         
                             
 <li >
-    <a href="ner_crf/">NER</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="application/">Applications</a>
+    <a href="../application/">Applications</a>
 </li>
 
                         
@@ -98,13 +98,13 @@
                     </a>
                 </li>
                 
-                    <li class="disabled">
-                        <a rel="next" >
+                    <li >
+                        <a rel="next" href="../task/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="task/">
+                        <a rel="prev" href="../application/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -120,15 +120,71 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#natural-language-processing">Natural Language Processing</a></li>
+        <li class="main active"><a href="#conditional-random-fields-in-name-entity-recognition">Conditional Random Fields in Name Entity Recognition</a></li>
+        
+            <li><a href="#install-crf">Install CRF++</a></li>
+        
+            <li><a href="#training-crf">Training CRF</a></li>
         
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="natural-language-processing">Natural Language Processing</h2>
-<p>Natural language processing (NLP) is a field of computer science, artificial intelligence, and computational linguistics concerned with the interactions between computers and human (natural) languages. As such, NLP is related to the area of human–computer interaction. Many challenges in NLP involve: natural language understanding, enabling computers to derive meaning from human or natural language input; and others involve natural language generation.</p></div>
+<h2 id="conditional-random-fields-in-name-entity-recognition">Conditional Random Fields in Name Entity Recognition</h2>
+<p>In this tutorial, I will write about how to using CRF++ to train your data for name entity recognition task.</p>
+<p>Environment:</p>
+<ul>
+<li>Ubuntu 14.04</li>
+</ul>
+<h3 id="install-crf">Install CRF++</h3>
+<ol>
+<li>
+<p>Download CRF++-0.58.tar.gz</p>
+</li>
+<li>
+<p>Extact CRF++-0.58.tar.gz file</p>
+</li>
+<li>
+<p>Navigate to the location of extracted folder through</p>
+</li>
+<li>
+<p>Install CRF++ from source</p>
+</li>
+</ol>
+<pre><code>./configure
+make
+sudo make install
+ldconfig
+</code></pre>
+
+<p>Congratulations! CRF++ is install</p>
+<pre><code>crf_learn
+</code></pre>
+
+<h3 id="training-crf">Training CRF</h3>
+<p>To train a CRF using CRF++, you need 2 things:</p>
+<ul>
+<li>A template file: where you define features to be considered for training</li>
+<li>A training data file: where you have data in CoNLL format</li>
+</ul>
+<pre><code>crf_learn -t template_file train_data_file model
+
+crf_learn -t template train.txt model
+</code></pre>
+
+<p>A binary of model is produce.</p>
+<p>To test this model, on a testing data</p>
+<pre><code>crf_test -m model testfile &gt; output.txt
+
+crf_test -m model test.txt &gt; output.txt
+</code></pre>
+
+<p>Sources:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=6b3DmE2jYzg">Conditional Random Fields : Installing CRF++ on Ubuntu</a></li>
+<li><a href="https://www.youtube.com/watch?v=LDNYT9Ai2NU">Conditional Random Fields Training and Testing using CRF++</a></li>
+</ul></div>
             
         </div>
 
@@ -138,17 +194,17 @@
             <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
 
-        <script src="./js/jquery-1.10.2.min.js"></script>
-        <script src="./js/bootstrap-3.0.3.min.js"></script>
-        <script src="./js/highlight.pack.js"></script>
-        <script>var base_url = '.';</script>
-        <script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
-        <script src="./js/base.js"></script>
-        <script src="./js/underscore.js"></script>
-        <script src="./js/gspreadsheet.js"></script>
-        <script src="./js/book.js"></script>
-        <script src="./js/course.js"></script>
-        <script src="./js/video.js"></script>
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script>
+        <script src="../js/underscore.js"></script>
+        <script src="../js/gspreadsheet.js"></script>
+        <script src="../js/book.js"></script>
+        <script src="../js/course.js"></script>
+        <script src="../js/video.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
             <div class="modal-dialog">
@@ -177,8 +233,3 @@
 
     </body>
 </html>
-
-<!--
-MkDocs version : 0.15.3
-Build Date UTC : 2016-10-06 07:04:05.667000
--->
