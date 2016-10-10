@@ -8,16 +8,17 @@ The analysis of natural language is broken into various board levels such as pho
 
 Phonology is analysis of spoken language. Therefore, it deals with speech recognition and generation. The core task of speech recognition and generation system is to take an acoustic waveform as input and produce as output, a string of words. The phonology is a part of natural language analysis, which deals with it. The area of computational linguistics that deals with speech analysis is computational phonology
 
-<audio controls>
-  <source src="sound/The US Elections 2016 on BBC World News.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
+Example: [The US Elections 2016 on BBC World News](https://www.youtube.com/watch?v=na7uU4Ba8dY)
 
 <table>
 <tr>
-<td>
+<td class="col-xs-4">
+<audio controls>
+  <source src="https://raw.githubusercontent.com/magizbox/natural_language_processing/master/docs/sound/bbc_news.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
 </td>
-<td>haha</td>
+<td class="col-xs-4">It's been the most dramatic, surprising and historic raise for the White House. And whatever happen on November 8th, the impact will beyond 50 states. Here is BBC World News, we will accessing what I mean, the people, politics and business, on a global scale. And on website and our app, you can keep the news 24/7 and follow the candidate</td>
 </tr>
 </table>
 
