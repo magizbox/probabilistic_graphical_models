@@ -11,14 +11,30 @@ Phonology is analysis of spoken language. Therefore, it deals with speech recogn
 Example: [The US Elections 2016 on BBC World News](https://www.youtube.com/watch?v=na7uU4Ba8dY)
 
 <table>
+
 <tr>
-<td class="col-xs-4">
+<td>Original Sound</td>
+<td>
 <audio controls>
-  <source src="https://raw.githubusercontent.com/magizbox/natural_language_processing/master/docs/sound/bbc_news.mp3" type="audio/mpeg">
+  <source src="https://github.com/magizbox/natural_language_processing/blob/master/docs/sound/Hans_Roslings.mp3?raw=true" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
 </td>
-<td class="col-xs-4">It's been the most dramatic, surprising and historic raise for the White House. And whatever happen on November 8th, the impact will beyond 50 states. Here is BBC World News, we will accessing what I mean, the people, politics and business, on a global scale. And on website and our app, you can keep the news 24/7 and follow the candidate</td>
+</tr>
+<tr>
+<td class="col-xs-3">Text</td>
+<td>
+X means unknown but the world is pretty known it's seven billion people have seven stones. One billion can save money to fly abroad on holiday every year. One billion can save money to keep a car or buy a car. And then three billion they save money to pay the by be a bicycle or perhaps a two-wheeler. And two billion they are busy saving money to buy shoes. In the future they will get rich and these people we move over here, these people will move over here, we will have two billion more in the world like this and the question is whether the rich people over there are prepared to be integrated in the world with 10 bilions people.
+</td>
+</tr>
+<tr>
+<td>Auto generated sound</td>
+<td>
+<audio controls>
+  <source src="https://github.com/magizbox/natural_language_processing/blob/master/docs/sound/Hans_Roslings.mp3?raw=true" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</td>
 </tr>
 </table>
 
