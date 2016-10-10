@@ -5,7 +5,8 @@ pages:
 - "Home": 'index.md'
 - "Docs":
   - "Tasks": 'task.md'
-  - "NER": 'ner_crf.md'
+  - "CRF in NER": 'ner_crf.md'
+  - "Entity Linking": 'entity_linking.md'
   - "Applications": 'application.md'
 
 markdown_extensions:

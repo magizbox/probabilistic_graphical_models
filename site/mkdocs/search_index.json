@@ -2,13 +2,23 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Natural Language Processing\n\n\nNatural language processing (NLP) is a field of computer science, artificial intelligence, and computational linguistics concerned with the interactions between computers and human (natural) languages. As such, NLP is related to the area of human\u2013computer interaction. Many challenges in NLP involve: natural language understanding, enabling computers to derive meaning from human or natural language input; and others involve natural language generation.", 
+            "text": "Natural Language Processing\n\n\nNatural language processing (NLP) is a field of computer science, artificial intelligence, and computational linguistics concerned with the interactions between computers and human (natural) languages. As such, NLP is related to the area of human\u2013computer interaction. Many challenges in NLP involve: natural language understanding, enabling computers to derive meaning from human or natural language input; and others involve natural language generation.\n\n\nBooks\n\n\n\n\n\nCourses", 
             "title": "Home"
         }, 
         {
             "location": "/#natural-language-processing", 
             "text": "Natural language processing (NLP) is a field of computer science, artificial intelligence, and computational linguistics concerned with the interactions between computers and human (natural) languages. As such, NLP is related to the area of human\u2013computer interaction. Many challenges in NLP involve: natural language understanding, enabling computers to derive meaning from human or natural language input; and others involve natural language generation.", 
             "title": "Natural Language Processing"
+        }, 
+        {
+            "location": "/#books", 
+            "text": "", 
+            "title": "Books"
+        }, 
+        {
+            "location": "/#courses", 
+            "text": "", 
+            "title": "Courses"
         }, 
         {
             "location": "/task/", 
@@ -47,8 +57,8 @@
         }, 
         {
             "location": "/ner_crf/", 
-            "text": "Conditional Random Fields in Name Entity Recognition\n\n\nIn this tutorial, I will write about how to using CRF++ to train your data for name entity recognition task.\n\n\nEnvironment:\n\n\n\n\nUbuntu 14.04\n\n\n\n\nInstall CRF++\n\n\n\n\n\n\nDownload CRF++-0.58.tar.gz\n\n\n\n\n\n\nExtact CRF++-0.58.tar.gz file\n\n\n\n\n\n\nNavigate to the location of extracted folder through\n\n\n\n\n\n\nInstall CRF++ from source\n\n\n\n\n\n\n./configure\nmake\nsudo make install\nldconfig\n\n\n\n\nCongratulations! CRF++ is install\n\n\ncrf_learn\n\n\n\n\nTraining CRF\n\n\nTo train a CRF using CRF++, you need 2 things:\n\n\n\n\nA template file: where you define features to be considered for training\n\n\nA training data file: where you have data in CoNLL format\n\n\n\n\ncrf_learn -t template_file train_data_file model\n\ncrf_learn -t template train.txt model\n\n\n\n\nA binary of model is produce.\n\n\nTo test this model, on a testing data\n\n\ncrf_test -m model testfile \n output.txt\n\ncrf_test -m model test.txt \n output.txt\n\n\n\n\nSources:\n\n\n\n\nConditional Random Fields : Installing CRF++ on Ubuntu\n\n\nConditional Random Fields Training and Testing using CRF++", 
-            "title": "NER"
+            "text": "Conditional Random Fields in Name Entity Recognition\n\n\nIn this tutorial, I will write about how to using CRF++ to train your data for name entity recognition task.\n\n\nEnvironment:\n\n\n\n\nUbuntu 14.04\n\n\n\n\nInstall CRF++\n\n\n\n\n\n\nDownload CRF++-0.58.tar.gz\n\n\n\n\n\n\nExtact CRF++-0.58.tar.gz file\n\n\n\n\n\n\nNavigate to the location of extracted folder through\n\n\n\n\n\n\nInstall CRF++ from source\n\n\n\n\n\n\n./configure\nmake\nsudo make install\nldconfig\n\n\n\n\nCongratulations! CRF++ is install\n\n\ncrf_learn\n\n\n\n\nTraining CRF\n\n\nTo train a CRF using CRF++, you need 2 things:\n\n\n\n\nA template file: where you define features to be considered for training\n\n\nA training data file: where you have data in CoNLL format\n\n\n\n\ncrf_learn -t template_file train_data_file model\n\ncrf_learn -t template train.txt model\n\n\n\n\nA binary of model is produce.\n\n\nTo test this model, on a testing data\n\n\ncrf_test -m model testfile \n output.txt\n\ncrf_test -m model test.txt \n output.txt\n\n\n\n\nReferences\n\n\n\n\nConditional Random Fields : Installing CRF++ on Ubuntu\n\n\nConditional Random Fields Training and Testing using CRF++", 
+            "title": "CRF in NER"
         }, 
         {
             "location": "/ner_crf/#conditional-random-fields-in-name-entity-recognition", 
@@ -62,8 +72,63 @@
         }, 
         {
             "location": "/ner_crf/#training-crf", 
-            "text": "To train a CRF using CRF++, you need 2 things:   A template file: where you define features to be considered for training  A training data file: where you have data in CoNLL format   crf_learn -t template_file train_data_file model\n\ncrf_learn -t template train.txt model  A binary of model is produce.  To test this model, on a testing data  crf_test -m model testfile   output.txt\n\ncrf_test -m model test.txt   output.txt  Sources:   Conditional Random Fields : Installing CRF++ on Ubuntu  Conditional Random Fields Training and Testing using CRF++", 
+            "text": "To train a CRF using CRF++, you need 2 things:   A template file: where you define features to be considered for training  A training data file: where you have data in CoNLL format   crf_learn -t template_file train_data_file model\n\ncrf_learn -t template train.txt model  A binary of model is produce.  To test this model, on a testing data  crf_test -m model testfile   output.txt\n\ncrf_test -m model test.txt   output.txt", 
             "title": "Training CRF"
+        }, 
+        {
+            "location": "/ner_crf/#references", 
+            "text": "Conditional Random Fields : Installing CRF++ on Ubuntu  Conditional Random Fields Training and Testing using CRF++", 
+            "title": "References"
+        }, 
+        {
+            "location": "/entity_linking/", 
+            "text": "Entity Linking\n\n\n\n\nIn natural language processing, \nentity linking\n, \nnamed entity linking (NEL)\n, \nnamed entity disambiguation (NED)\n, \nnamed entity recognition and disambiguation (NERD)\n or \nnamed entity normalization (NEN)\n is the task of determining the identity of entities mentioned in text. More precise, it is the task of linking entity mentions to entries in a knowledge base (e.g., DBpedia, Wikipedia)\n\n\nEntity linking requires a knowledge base containing the entities to which entity mentions can be linked. A popular choice for entity linking on open domain text are knowledge-bases based on Wikipedia, in which each page is regarded as a named entity. NED using Wikipedia entities has been also called wikification (see Wikify! an early entity linking system] ). A knowledge base may also be induced automatically from training text or manually built.\n\n\nNED is different from named entity recognition (NER) in that NER identifies the occurrence or mention of a named entity in text but it does not identify which specific entity it is\n\n\nExamples\n\n\nExample 1:\n\n\nFor example, given the sentence \"Paris is the capital of France\", the idea is to determine that \"Paris\" refers to the city of Paris and not to Paris Hilton or any other entity that could be referred as \"Paris\".\n\n\n\n\nExample 2:\n\n\nGive the sentence \"In Second Debate, Donald Trump and HIllary Clinton Spar in Bitter, Personal Terms\", the idea is to determine that \"Donald Trump\" refer to an American politician, and \"Hillary Clinton\" refer to 67th United States Secretary of State from 2009 to 2013.\n\n\n\n\nArchitecture\n\n\n\n\n\n\nMention detection\n: Identification of text snippets that can potentially be linked to entities\n\n\nCandidate selection\n: Generating a set of candidate entities for each mention\n\n\nDisambiguation\n: Selecting a single entity (or none) for each mention, based on the context\n\n\n\n\nMention detection\n\n\n\n\nGoal: Detect all \"linkable\" phrases\n\n\nChallenges:\n\n\n\n\nRecall oriented: Do not miss any entity that should be link\n\n\nFind entity name variants (e.g. \"jlo\" is name variant of [Jennifer Lopez])\n\n\nFilter out inappropriate ones (e.g. \"new york\" matches \n2k different entities)\n\n\n\n\nCommon Approach\n\n\n\n\n\n\nBuild a dictionary of entity surface forms\n\n\n\n\n\n\nentities with all names variants\n\n\n\n\n\n\nCheck all document n-grams against the dictionary\n\n\n\n\n\n\nthe value of n is set typically between 6 and 8\n\n\n\n\n\n\nFilter out undesired entities\n\n\n\n\n\n\nCan be done here or later in the pipeline\n\n\n\n\n\n\nExamples\n\n\n\n\nCandidate Selection\n\n\n\n\nGoal: Narrow down the space of disambiguation possibilities\n\n\nBalances between precision and recall (effectiveness vs. efficiency)\n\n\nOften approached as ranking problem: keeping only candidates above a score/rank threshold for downstream processing.\n\n\nCommonness\n\n\nPerform the ranking of candidate entities based on their overall popularity, i.e., \"most command sense\"\n\n\n\n\nExamples\n\n\n\n\nCommonness can be pre-computed and stored in the entity surface form dictionary. Follows a power law with a long tail of extremely unlikely senses; entities at the tail end of distribution can be safely discarded (e.g., 0.001 is sensible threshold)\n\n\n\n\nDisambiguation\n\n\n\n\nBaseline approach: most common sense\n\n\nConsider additional types of evidence: \nprior importance\n of entities and mentions, \ncontextual similarity\n between the text surrounding the mention and the candidate entity, \ncoherence\n among all entity linking decisions in the document.\n\n\nCombine these signals: using supervised learning or graph-based approaches\n\n\nOptionally perform pruning: reject low confidence or semantically meaning less annotations.\n\n\nReferences\n\n\n\n\n\"Entity Linking\". \nwikipedia\n\n\n\"Entity Linking\". \nKrisztian Balog, University of Stavanger, 10th Russian Summer School in Information Retrieval\n. 2016\n\n\n\"An End-to-End Entity Linking Approach for Tweets\". \nIkuya Yamada, Hideaki Takeda, Yoshiyasu Takefuji\n. 2015", 
+            "title": "Entity Linking"
+        }, 
+        {
+            "location": "/entity_linking/#entity-linking", 
+            "text": "In natural language processing,  entity linking ,  named entity linking (NEL) ,  named entity disambiguation (NED) ,  named entity recognition and disambiguation (NERD)  or  named entity normalization (NEN)  is the task of determining the identity of entities mentioned in text. More precise, it is the task of linking entity mentions to entries in a knowledge base (e.g., DBpedia, Wikipedia)  Entity linking requires a knowledge base containing the entities to which entity mentions can be linked. A popular choice for entity linking on open domain text are knowledge-bases based on Wikipedia, in which each page is regarded as a named entity. NED using Wikipedia entities has been also called wikification (see Wikify! an early entity linking system] ). A knowledge base may also be induced automatically from training text or manually built.  NED is different from named entity recognition (NER) in that NER identifies the occurrence or mention of a named entity in text but it does not identify which specific entity it is", 
+            "title": "Entity Linking"
+        }, 
+        {
+            "location": "/entity_linking/#examples", 
+            "text": "Example 1:  For example, given the sentence \"Paris is the capital of France\", the idea is to determine that \"Paris\" refers to the city of Paris and not to Paris Hilton or any other entity that could be referred as \"Paris\".   Example 2:  Give the sentence \"In Second Debate, Donald Trump and HIllary Clinton Spar in Bitter, Personal Terms\", the idea is to determine that \"Donald Trump\" refer to an American politician, and \"Hillary Clinton\" refer to 67th United States Secretary of State from 2009 to 2013.", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/entity_linking/#architecture", 
+            "text": "Mention detection : Identification of text snippets that can potentially be linked to entities  Candidate selection : Generating a set of candidate entities for each mention  Disambiguation : Selecting a single entity (or none) for each mention, based on the context", 
+            "title": "Architecture"
+        }, 
+        {
+            "location": "/entity_linking/#mention-detection", 
+            "text": "Goal: Detect all \"linkable\" phrases  Challenges:   Recall oriented: Do not miss any entity that should be link  Find entity name variants (e.g. \"jlo\" is name variant of [Jennifer Lopez])  Filter out inappropriate ones (e.g. \"new york\" matches  2k different entities)", 
+            "title": "Mention detection"
+        }, 
+        {
+            "location": "/entity_linking/#common-approach", 
+            "text": "Build a dictionary of entity surface forms    entities with all names variants    Check all document n-grams against the dictionary    the value of n is set typically between 6 and 8    Filter out undesired entities    Can be done here or later in the pipeline    Examples", 
+            "title": "Common Approach"
+        }, 
+        {
+            "location": "/entity_linking/#candidate-selection", 
+            "text": "Goal: Narrow down the space of disambiguation possibilities  Balances between precision and recall (effectiveness vs. efficiency)  Often approached as ranking problem: keeping only candidates above a score/rank threshold for downstream processing.", 
+            "title": "Candidate Selection"
+        }, 
+        {
+            "location": "/entity_linking/#commonness", 
+            "text": "Perform the ranking of candidate entities based on their overall popularity, i.e., \"most command sense\"   Examples   Commonness can be pre-computed and stored in the entity surface form dictionary. Follows a power law with a long tail of extremely unlikely senses; entities at the tail end of distribution can be safely discarded (e.g., 0.001 is sensible threshold)", 
+            "title": "Commonness"
+        }, 
+        {
+            "location": "/entity_linking/#disambiguation", 
+            "text": "Baseline approach: most common sense  Consider additional types of evidence:  prior importance  of entities and mentions,  contextual similarity  between the text surrounding the mention and the candidate entity,  coherence  among all entity linking decisions in the document.  Combine these signals: using supervised learning or graph-based approaches  Optionally perform pruning: reject low confidence or semantically meaning less annotations.", 
+            "title": "Disambiguation"
+        }, 
+        {
+            "location": "/entity_linking/#references", 
+            "text": "\"Entity Linking\".  wikipedia  \"Entity Linking\".  Krisztian Balog, University of Stavanger, 10th Russian Summer School in Information Retrieval . 2016  \"An End-to-End Entity Linking Approach for Tweets\".  Ikuya Yamada, Hideaki Takeda, Yoshiyasu Takefuji . 2015", 
+            "title": "References"
         }, 
         {
             "location": "/application/", 

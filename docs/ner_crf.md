@@ -52,13 +52,7 @@ crf_test -m model testfile > output.txt
 crf_test -m model test.txt > output.txt
 ```
 
-Sources:
+## References
 
 * [Conditional Random Fields : Installing CRF++ on Ubuntu](https://www.youtube.com/watch?v=6b3DmE2jYzg)
 * [Conditional Random Fields Training and Testing using CRF++](https://www.youtube.com/watch?v=LDNYT9Ai2NU)
-
-
-
-
-
-
