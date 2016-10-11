@@ -8,6 +8,8 @@ pages:
   - "CRF in NER": 'ner_crf.md'
   - "Entity Linking": 'entity_linking.md'
   - "Applications": 'application.md'
+  - "Vietnamese":
+    - "Overview": 'vietnlp.md'
 
 markdown_extensions:
     - footnotes
@@ -16,9 +18,11 @@ extra_css:
   - css/book.css
   - css/course.css
   - css/video.css
+  - components/paper/paper.css
 extra_javascript:
   - js/underscore.js
   - js/gspreadsheet.js
+  - components/paper/paper.js
   - js/book.js
   - js/course.js
   - js/video.js
