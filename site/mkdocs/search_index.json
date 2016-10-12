@@ -2,12 +2,12 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Natural Language Processing\n\n\nNatural language processing (NLP) is a field of computer science, artificial intelligence, and computational linguistics concerned with the interactions between computers and human (natural) languages. As such, NLP is related to the area of human\u2013computer interaction. Many challenges in NLP involve: natural language understanding, enabling computers to derive meaning from human or natural language input; and others involve natural language generation.\n\n\nBooks\n\n\n\n\n\nCourses", 
+            "text": "Natural Language Processing\n\n\n\n\nNatural language processing (NLP) is a field of computer science, artificial intelligence, and computational linguistics concerned with the interactions between computers and human (natural) languages.\n\n\nNLP is related to the area of human\u2013computer interaction. Many challenges in NLP involve: natural language understanding, enabling computers to derive meaning from human or natural language input; and others involve natural language generation.\n\n\nThe input and output of an NLP system can be either speech or written text.\n\n\n\n\nComponents of NLP\n\n\nThere are two components of NLP as given\n\n\n\n\nNatural Language Understanding (NLU)\n: this task mapping the given input in natural language into useful representations and analyzing different aspects of the language.\n\n\nNatural Language Generation (NLG)\n: In the process of producing meaningful phrases and sentences in the form of natural language form some internal representation. It involves \ntext planning\n retrieve the relevant content from knowledge base, \nsentence planning\n choose required words, forming meaningful phrases, setting tone of the sentence, \ntext realization\n map sentence plan into sentence structure.\n\n\n\n\nDifficulties\n\n\nNatural Language has an extremely rich form and structure. It is very ambiguous. There can be different levels of ambiguity\n\n\n\n\nLexical ambiguity\n: it is at very primitive level such as word-level. For example, treating the word \"board\" as noun or verb?\n\n\nSyntax level ambiguity\n: A sentence be parsed in different ways. For example, \"He lifted the beetle with the red cap?\" - did he use cap to lift the beetle or he lifted a beetle that had red cap?\n\n\nReferential ambiguity\n: referring to something using pronouns. For example, Rima went to Gauri. She said \"I am tired\". - Exactly who is tired?\n\n\nOne input can mean different meanings.\n\n\nMany inputs can mean the same thing.\n\n\n\n\nBooks\n\n\n\n\n\nCourses", 
             "title": "Home"
         }, 
         {
             "location": "/#natural-language-processing", 
-            "text": "Natural language processing (NLP) is a field of computer science, artificial intelligence, and computational linguistics concerned with the interactions between computers and human (natural) languages. As such, NLP is related to the area of human\u2013computer interaction. Many challenges in NLP involve: natural language understanding, enabling computers to derive meaning from human or natural language input; and others involve natural language generation.", 
+            "text": "Natural language processing (NLP) is a field of computer science, artificial intelligence, and computational linguistics concerned with the interactions between computers and human (natural) languages.  NLP is related to the area of human\u2013computer interaction. Many challenges in NLP involve: natural language understanding, enabling computers to derive meaning from human or natural language input; and others involve natural language generation.  The input and output of an NLP system can be either speech or written text.   Components of NLP  There are two components of NLP as given   Natural Language Understanding (NLU) : this task mapping the given input in natural language into useful representations and analyzing different aspects of the language.  Natural Language Generation (NLG) : In the process of producing meaningful phrases and sentences in the form of natural language form some internal representation. It involves  text planning  retrieve the relevant content from knowledge base,  sentence planning  choose required words, forming meaningful phrases, setting tone of the sentence,  text realization  map sentence plan into sentence structure.   Difficulties  Natural Language has an extremely rich form and structure. It is very ambiguous. There can be different levels of ambiguity   Lexical ambiguity : it is at very primitive level such as word-level. For example, treating the word \"board\" as noun or verb?  Syntax level ambiguity : A sentence be parsed in different ways. For example, \"He lifted the beetle with the red cap?\" - did he use cap to lift the beetle or he lifted a beetle that had red cap?  Referential ambiguity : referring to something using pronouns. For example, Rima went to Gauri. She said \"I am tired\". - Exactly who is tired?  One input can mean different meanings.  Many inputs can mean the same thing.", 
             "title": "Natural Language Processing"
         }, 
         {
@@ -22,23 +22,48 @@
         }, 
         {
             "location": "/task/", 
-            "text": "NLP Tasks\n\n\nMorphological Analysis\n\n\nDiscourse Analysis\n\n\nSentiment Analysis\n\n\nMetaMind\n,\u00a0@RichardSocher\n\n\nNamed Entity Recognition\n\n\nKDD 2015 Tutorial: Automatic Entity Recognition and Typing from Massive Text Corpora - A Phrase and Network Mining Approach\n\n\nRelationship Extraction\n\n\nAlchemyAPI", 
+            "text": "NLP Tasks\n\n\nThe analysis of natural language is broken into various board levels such as phonological, morphological, syntactic, semantic, pragmatic and discourse analysis.\n\n\n\n\nPhonological Analysis\n\n\nPhonology is analysis of spoken language. Therefore, it deals with speech recognition and generation. The core task of speech recognition and generation system is to take an acoustic waveform as input and produce as output, a string of words. The phonology is a part of natural language analysis, which deals with it. The area of computational linguistics that deals with speech analysis is computational phonology\n\n\nExample:\n \nHans Rosling's shortest TED talk\n\n\n\n\n\n\n\nOriginal Sound\n\n\n\n\n\n  \n\nYour browser does not support the audio element.\n\n\n\n\n\n\n\n\n\nText\n\n\n\nX means unknown but the world is pretty known it's seven billion people have seven stones. One billion can save money to fly abroad on holiday every year. One billion can save money to keep a car or buy a car. And then three billion they save money to pay the by be a bicycle or perhaps a two-wheeler. And two billion they are busy saving money to buy shoes. In the future they will get rich and these people we move over here, these people will move over here, we will have two billion more in the world like this and the question is whether the rich people over there are prepared to be integrated in the world with 10 bilions people.\n\n\n\n\n\n\n\nAuto generated sound\n\n\n\n\n\n  \n\nYour browser does not support the audio element.\n\n\n\n\n\n\n\n\n\n\nMorphological Analysis\n\n\nIt is the most elementary phase of NLP. It deals with the word formation. In this phase, individual words are analyzed according to their components called \n\"morphemes\"\n. In addition, non-word taken such as punctuation, etc. are separated from words. Morpheme is basic grammatical building block that makes words.\n\n\n\n\nThe study of word structure is refereed to as morphology. In natural language processing, it is done in morphological analysis. The task of breaking a word into its morphemes is called morphological parsing. A morpheme is defined as minimal meaningful unit in a language, which cannot be further broken into smaller units.\n\n\nExample: word \nfox\n consists a single morpheme, as it cannot be further resolved into smaller units. Whereas word \ncats\n consists two morphemes, the morpheme \"cat\" and morpheme \"s\" indicating plurality.\n\n\nHere we defined the term meaningful. Though cat can be broken in \"c\" and \"at\", but these do not relate with word \"cat\" in any sense. Thus word \"cat\" will be dealt with as minimum meaningful unit.\n\n\nMorphemes are traditionally divided into two types\n\n\n\n\n(i) \"free morphemes\", that are able to act as words in isolation (e.g., \"thing\", \"permanent\", \"local\")\n\n\n(ii) \"bound morphemes\", that can operate only as part of other words (e.g., \"is\" 'ing' etc) The morpheme, which forms the center part of the world, is also called \"stem\". In English, a word can be made up of one or more morphemes, e.g.,\n\n\n\n\nword - thing           -\n stem \nthink\n\nword - localize        -\n stem \nlocal\n, suffix \nize\n\nword - denationalize   -\n prefix \nde\n, stem \nnation\n, suffix \nal\n, \nize\n\n\n\n\n\nThe computational tool to perform morphological parsing is finite state transducer. A transducer performs it by mapping between the two sets of symbols, and a finite state transducer does it with finite automaton. A transducer normally consists of four parts: \nrecognizer\n, \ngenerator\n,  \ntranslator\n, and \nrelator\n. The output of the transducer becomes a set of morphemes.\n\n\nLexical Analysis\n\n\nIn this phase of natural language analysis, validity of words according to lexicon is checked. Lexicon stands for dictionary. It is a collection of all possible valid words of language along with their meaning.\n\n\nIn NLP, the first stage of processing input text is to scan each word in sentence and compute (or look-up) all the relevant linguistic information about that word. The lexicon provides the necessary rules and data for carrying out the first stage analysis.\n\n\nThe details of words, like their type (noun, verb and adverb, and other details of nouns and verb, etc.) are checked.\n\n\n\n\nLexical analysis is dividing the whole chunk of text into paragraphs, sentences, and words.\n\n\nSyntactic Analysis\n\n\nSyntax refers to the study of formal relationships between words of sentences. In this phase the validity of a sentence according to grammar rules is checked. To perform the syntactic analysis, the knowledge of grammar and parsing is required. Grammar is formal specification of rules allowable in the language, and parsing is a method of analyzing a sentence to determine its structure according to grammar. The most common grammar used for syntactic analysis for natural languages are \ncontext free grammar\n (CFG) also called \nphase structure grammar\n and \ndefinite clause grammar\n. These grammars are described in detail in a separate actions.\n\n\n\n\nSyntactic analysis is done using parsing. Two basic parsing techniques are: \ntop-down parsing\n and \nbottom-up parsing\n.\n\n\nSemantic Analysis\n\n\nIn linguistics, semantic analysis is the process of relating syntactic structures, from the levels of phrases, clauses, sentences and paragraphs to the level of the writing as a whole, to their language-independent meanings. It also involves removing features specific to particular linguistic and cultural contexts, to the extent that such a project is possible.\n\n\nThe elements of idiom and figurative speech, being cultural, are often also converted into relatively invariant meanings in semantic analysis. Semantics, although related to pragmatics, is distinct in that the former deals with word or sentence choice in any given context, while pragmatics considers the unique or particular meaning derived from context or tone. To reiterate in different terms, semantics is about universally coded meaning, and pragmatics the meaning encoded in words that is then interpreted by an audience\n\n\nDiscourse Analysis\n\n\nThe meaning of any sentence depends upon the meaning of the sentence just before it. In addition, it also brings about the meaning of immediately succeeding sentence.\n\n\nTopics of discourse analysis include:\n\n\n\n\nThe various levels or dimensions of discourse, such as sounds, gestures, syntrax, the lexicon, style, rhetoric, meanings, speech acts, moves, strategies, turns, and other aspects of interaction\n\n\nGenres of discourse (various types of discourse in politics, the media, education, science, business, etc.)\n\n\nThe relations between text (discourse) and context\n\n\nThe relations between discourse and power\n\n\nThe relations between discourse and interaction\n\n\nThe relations between discourse and cognition and memory\n\n\n\n\nPragmatic Analysis\n\n\nDuring this, what was said is re-interpreted on what it actually meant. It involves deriving those aspects of language which require real world knowledge.\n\n\nSentiment Analysis\n\n\nMetaMind\n,\u00a0@RichardSocher\n\n\nNamed Entity Recognition\n\n\nKDD 2015 Tutorial: Automatic Entity Recognition and Typing from Massive Text Corpora - A Phrase and Network Mining Approach\n\n\nRelationship Extraction\n\n\nAlchemyAPI\n\n\nReferences\n\n\n\n\nKumar, Ela. \nNatural Language Processing\n. New Delhi: I.K. International Publishing House, 2011\n\n\n\"Artificial Intelligence Natural Language Processing\".\u00a0\nwww.tutorialspoint.com\n. N.p., 2016. Web. 11 Oct. 2016.", 
             "title": "Tasks"
         }, 
         {
             "location": "/task/#nlp-tasks", 
-            "text": "", 
+            "text": "The analysis of natural language is broken into various board levels such as phonological, morphological, syntactic, semantic, pragmatic and discourse analysis.", 
             "title": "NLP Tasks"
         }, 
         {
+            "location": "/task/#phonological-analysis", 
+            "text": "Phonology is analysis of spoken language. Therefore, it deals with speech recognition and generation. The core task of speech recognition and generation system is to take an acoustic waveform as input and produce as output, a string of words. The phonology is a part of natural language analysis, which deals with it. The area of computational linguistics that deals with speech analysis is computational phonology  Example:   Hans Rosling's shortest TED talk    Original Sound   \n   \nYour browser does not support the audio element.     Text  \nX means unknown but the world is pretty known it's seven billion people have seven stones. One billion can save money to fly abroad on holiday every year. One billion can save money to keep a car or buy a car. And then three billion they save money to pay the by be a bicycle or perhaps a two-wheeler. And two billion they are busy saving money to buy shoes. In the future they will get rich and these people we move over here, these people will move over here, we will have two billion more in the world like this and the question is whether the rich people over there are prepared to be integrated in the world with 10 bilions people.    Auto generated sound   \n   \nYour browser does not support the audio element.", 
+            "title": "Phonological Analysis"
+        }, 
+        {
             "location": "/task/#morphological-analysis", 
-            "text": "", 
+            "text": "It is the most elementary phase of NLP. It deals with the word formation. In this phase, individual words are analyzed according to their components called  \"morphemes\" . In addition, non-word taken such as punctuation, etc. are separated from words. Morpheme is basic grammatical building block that makes words.   The study of word structure is refereed to as morphology. In natural language processing, it is done in morphological analysis. The task of breaking a word into its morphemes is called morphological parsing. A morpheme is defined as minimal meaningful unit in a language, which cannot be further broken into smaller units.  Example: word  fox  consists a single morpheme, as it cannot be further resolved into smaller units. Whereas word  cats  consists two morphemes, the morpheme \"cat\" and morpheme \"s\" indicating plurality.  Here we defined the term meaningful. Though cat can be broken in \"c\" and \"at\", but these do not relate with word \"cat\" in any sense. Thus word \"cat\" will be dealt with as minimum meaningful unit.  Morphemes are traditionally divided into two types   (i) \"free morphemes\", that are able to act as words in isolation (e.g., \"thing\", \"permanent\", \"local\")  (ii) \"bound morphemes\", that can operate only as part of other words (e.g., \"is\" 'ing' etc) The morpheme, which forms the center part of the world, is also called \"stem\". In English, a word can be made up of one or more morphemes, e.g.,   word - thing           -  stem  think \nword - localize        -  stem  local , suffix  ize \nword - denationalize   -  prefix  de , stem  nation , suffix  al ,  ize   The computational tool to perform morphological parsing is finite state transducer. A transducer performs it by mapping between the two sets of symbols, and a finite state transducer does it with finite automaton. A transducer normally consists of four parts:  recognizer ,  generator ,   translator , and  relator . The output of the transducer becomes a set of morphemes.", 
             "title": "Morphological Analysis"
         }, 
         {
+            "location": "/task/#lexical-analysis", 
+            "text": "In this phase of natural language analysis, validity of words according to lexicon is checked. Lexicon stands for dictionary. It is a collection of all possible valid words of language along with their meaning.  In NLP, the first stage of processing input text is to scan each word in sentence and compute (or look-up) all the relevant linguistic information about that word. The lexicon provides the necessary rules and data for carrying out the first stage analysis.  The details of words, like their type (noun, verb and adverb, and other details of nouns and verb, etc.) are checked.   Lexical analysis is dividing the whole chunk of text into paragraphs, sentences, and words.", 
+            "title": "Lexical Analysis"
+        }, 
+        {
+            "location": "/task/#syntactic-analysis", 
+            "text": "Syntax refers to the study of formal relationships between words of sentences. In this phase the validity of a sentence according to grammar rules is checked. To perform the syntactic analysis, the knowledge of grammar and parsing is required. Grammar is formal specification of rules allowable in the language, and parsing is a method of analyzing a sentence to determine its structure according to grammar. The most common grammar used for syntactic analysis for natural languages are  context free grammar  (CFG) also called  phase structure grammar  and  definite clause grammar . These grammars are described in detail in a separate actions.   Syntactic analysis is done using parsing. Two basic parsing techniques are:  top-down parsing  and  bottom-up parsing .", 
+            "title": "Syntactic Analysis"
+        }, 
+        {
+            "location": "/task/#semantic-analysis", 
+            "text": "In linguistics, semantic analysis is the process of relating syntactic structures, from the levels of phrases, clauses, sentences and paragraphs to the level of the writing as a whole, to their language-independent meanings. It also involves removing features specific to particular linguistic and cultural contexts, to the extent that such a project is possible.  The elements of idiom and figurative speech, being cultural, are often also converted into relatively invariant meanings in semantic analysis. Semantics, although related to pragmatics, is distinct in that the former deals with word or sentence choice in any given context, while pragmatics considers the unique or particular meaning derived from context or tone. To reiterate in different terms, semantics is about universally coded meaning, and pragmatics the meaning encoded in words that is then interpreted by an audience", 
+            "title": "Semantic Analysis"
+        }, 
+        {
             "location": "/task/#discourse-analysis", 
-            "text": "", 
+            "text": "The meaning of any sentence depends upon the meaning of the sentence just before it. In addition, it also brings about the meaning of immediately succeeding sentence.  Topics of discourse analysis include:   The various levels or dimensions of discourse, such as sounds, gestures, syntrax, the lexicon, style, rhetoric, meanings, speech acts, moves, strategies, turns, and other aspects of interaction  Genres of discourse (various types of discourse in politics, the media, education, science, business, etc.)  The relations between text (discourse) and context  The relations between discourse and power  The relations between discourse and interaction  The relations between discourse and cognition and memory", 
             "title": "Discourse Analysis"
+        }, 
+        {
+            "location": "/task/#pragmatic-analysis", 
+            "text": "During this, what was said is re-interpreted on what it actually meant. It involves deriving those aspects of language which require real world knowledge.", 
+            "title": "Pragmatic Analysis"
         }, 
         {
             "location": "/task/#sentiment-analysis", 
@@ -54,6 +79,11 @@
             "location": "/task/#relationship-extraction", 
             "text": "AlchemyAPI", 
             "title": "Relationship Extraction"
+        }, 
+        {
+            "location": "/task/#references", 
+            "text": "Kumar, Ela.  Natural Language Processing . New Delhi: I.K. International Publishing House, 2011  \"Artificial Intelligence Natural Language Processing\".\u00a0 www.tutorialspoint.com . N.p., 2016. Web. 11 Oct. 2016.", 
+            "title": "References"
         }, 
         {
             "location": "/ner_crf/", 
@@ -159,6 +189,131 @@
             "location": "/application/#question-answering-qa", 
             "text": "Question answering (QA) is a computer science discipline within the fields of information retrieval and natural language processing (NLP), which is concerned with building systems that automatically answer questions posed by humans in a natural language.", 
             "title": "Question Answering (QA)"
+        }, 
+        {
+            "location": "/vietnlp/", 
+            "text": "Vietnamese NLP\n\n\n\n\n\n\n\n\nCore Problems\n\n\nDictionaries\n\n\n\n\n2004, H\u1ed3 Ng\u1ecdc \u0110\u1ee9c, The Free Vietnamese Dictionary Project\n\n\n\n\nWordnet\n\n\n\n\nviet wordnet\n\n\n\n\nCorpus\n\n\nVNESEcorpus\n, 650.000 sentences, 10.000 articles from vietnamnet.vn, dantri.com.vn, nhanhdan.com.vn. Size: 64.59 Mb\n\n\nVNTQcorpus(small)\n, 300.000 sentences, 1.000 articles from vnthuquan.net\nSize: ~35 Mb\n\n\nVNTQcorpus(big)\n, 1.750.000 sentences, 13.000 articles from vnthuquan.net, Size: ~240 Mb\n\n\nWord Segmentation\n\n\nsources \n1\n\n\nBenchmark\n\n\nUnit: F1 (%)\n\n\n\n\n\n\n\n\nPOS Tagging\n\n\nsources \n1\n\n\nBenchmark\n\n\nUnit: F1 (%)\n\n\n\n\n\n\n\n\nRelated Readings\n\n\n\n\n\n\n\n\nCoreference\n\n\nsources \n1\n\n\nBenchmark\n\n\nUnit: %\n\n\n\n\n\n\n\n\nRelated Readings\n\n\n\n\n\n\n\n\nDependency Parsing\n\n\nsources \n1\n\n\nBenchmark\n\n\nUnit: %\n\n\n\n\n\n\n\n\nRelated Readings\n\n\n\n\n\n\n\n\nChunking\n\n\nsources \n1\n\n\nBenchmark\n\n\nUnit: %\n\n\n\n\n\n\n\n\nNamed Entity Recognition\n\n\nsources \n1\n\n\nBenchmark\n\n\nUnit: %\n\n\n\n\n\n\n\n\nRelated Readings\n\n\n\n\n\n\n\n\nGroups and People\n\n\nGroups\n\n\n\n\nvnlp.net, (2010-now)\n\n\nkde lab, (2014-now)\n\n\n\n\nPeople\n\n\n\n\nAssoc. Prof. Ha Quang Thuy\n\n\nProf. Tu-Bao Ho\n\n\nKhoat Than\n\n\nCam Tu Nguyen\n\n\nCAM-TU NGUYEN\n\n\nLe Hong Phuong\n\n\nPhan Xuan Hieu\n\n\nTr\u1ea7n Mai V\u0169\n\n\nNguy\u1ec5n Ki\u00eam Hi\u1ebfu\n\n\n\n\nApplications\n\n\nVAV - Tr\u1ee3 l\u00fd \u1ea3o cho ng\u01b0\u1eddi Vi\u1ec7t\n\n\nDate: Nov 2015 - now\n\n\nMDN-Team, Khoa CNTT, Tr\u01b0\u1eddng \u0110H C\u00f4ng ngh\u1ec7, \u0110HQG HN Tools\n\n\nB\u1ea1n \u0111ang ngh\u0129 \u0111\u1ebfn m\u1ed9t \u1ee9ng d\u1ee5ng th\u00f4ng minh tr\u00ean di \u0111\u1ed9ng cho ph\u00e9p b\u1ea1n t\u01b0\u01a1ng t\u00e1c b\u1eb1ng gi\u1ecdng n\u00f3i \u0111\u1ec3 h\u1eb9n chu\u00f4ng b\u00e1o th\u1ee9c, \u0111\u1eb7t l\u1ecbch cho m\u1ed9t cu\u1ed9c h\u1ecdp, b\u1eadt \u0111\u1ecbnh v\u1ecb, g\u1ecdi \u0111i\u1ec7n cho ai \u0111\u00f3, truy c\u1eadp m\u1ed9t trang web b\u1ea5t k\u1ef3, t\u00ecm \u0111\u01b0\u1eddng tr\u00ean b\u1ea3n \u0111\u1ed3, \u0111\u1ecbnh v\u1ecb c\u00e2y ATM c\u1ee7a m\u1ed9t ng\u00e2n h\u00e0ng n\u00e0o \u0111\u00f3 g\u1ea7n v\u1edbi b\u1ea1n, hay th\u01b0\u1edfng th\u1ee9c m\u1ed9t b\u1ea3n nh\u1ea1c m\u00ecnh y\u00eau th\u00edch \u2026 \u1ee8ng d\u1ee5ng Tr\u1ee3 l\u00fd \u1ea3o VAV ch\u00ednh l\u00e0 c\u00e2u tr\u1ea3 l\u1eddi cho b\u1ea1n. \u0110\u01b0\u1ee3c thi\u1ebft k\u1ebf v\u00e0 ph\u00e1t tri\u1ec3n d\u1ef1a tr\u00ean c\u00e1c k\u1ef9 thu\u1eadt tr\u00ed tu\u1ec7 nh\u00e2n t\u1ea1o (h\u1ecdc m\u00e1y, ph\u00e2n t\u00edch v\u00e0 hi\u1ec3u ng\u00f4n ng\u1eef t\u1ef1 nhi\u00ean), VAV c\u00f3 th\u1ec3 hi\u1ec3u \u0111\u01b0\u1ee3c \u00fd \u0111\u1ecbnh c\u1ee7a b\u1ea1n d\u00f9 b\u1ea1n di\u1ec5n \u0111\u1ea1t c\u00e2u l\u1ec7nh c\u1ee7a m\u00ecnh theo nhi\u1ec1u c\u00e1ch kh\u00e1c nhau m\u00e0 kh\u00f4ng c\u1ea7n tu\u00e2n theo b\u1ea5t k\u1ef3 khu\u00f4n m\u1eabu n\u00e0o cho tr\u01b0\u1edbc. Nh\u1eefng g\u00ec VAV h\u01b0\u1edbng t\u1edbi l\u00e0 tr\u1edf th\u00e0nh m\u1ed9t tr\u1ee3 l\u00fd \u1ea3o th\u00f4ng minh gi\u00fap b\u1ea1n th\u1ef1c hi\u1ec7n nh\u1eefng \u0111i\u1ec1u m\u00ecnh mu\u1ed1n v\u00e0 l\u00e0 m\u1ed9t ng\u01b0\u1eddi \u0111\u1ed3ng h\u00e0nh th\u00e2n thi\u1ec7n, d\u00ed d\u1ecfm b\u00ean b\u1ea1n.\n\n\nReferences\n\n\n\n\n\n\n\n\n\n\n2016, Big Challenges for Data Scientists at VCCORP", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/vietnlp/#vietnamese-nlp", 
+            "text": "", 
+            "title": "Vietnamese NLP"
+        }, 
+        {
+            "location": "/vietnlp/#core-problems", 
+            "text": "", 
+            "title": "Core Problems"
+        }, 
+        {
+            "location": "/vietnlp/#dictionaries", 
+            "text": "2004, H\u1ed3 Ng\u1ecdc \u0110\u1ee9c, The Free Vietnamese Dictionary Project", 
+            "title": "Dictionaries"
+        }, 
+        {
+            "location": "/vietnlp/#wordnet", 
+            "text": "viet wordnet", 
+            "title": "Wordnet"
+        }, 
+        {
+            "location": "/vietnlp/#corpus", 
+            "text": "VNESEcorpus , 650.000 sentences, 10.000 articles from vietnamnet.vn, dantri.com.vn, nhanhdan.com.vn. Size: 64.59 Mb  VNTQcorpus(small) , 300.000 sentences, 1.000 articles from vnthuquan.net\nSize: ~35 Mb  VNTQcorpus(big) , 1.750.000 sentences, 13.000 articles from vnthuquan.net, Size: ~240 Mb", 
+            "title": "Corpus"
+        }, 
+        {
+            "location": "/vietnlp/#word-segmentation", 
+            "text": "sources  1", 
+            "title": "Word Segmentation"
+        }, 
+        {
+            "location": "/vietnlp/#benchmark", 
+            "text": "Unit: F1 (%)", 
+            "title": "Benchmark"
+        }, 
+        {
+            "location": "/vietnlp/#pos-tagging", 
+            "text": "sources  1", 
+            "title": "POS Tagging"
+        }, 
+        {
+            "location": "/vietnlp/#benchmark_1", 
+            "text": "Unit: F1 (%)", 
+            "title": "Benchmark"
+        }, 
+        {
+            "location": "/vietnlp/#related-readings", 
+            "text": "", 
+            "title": "Related Readings"
+        }, 
+        {
+            "location": "/vietnlp/#coreference", 
+            "text": "sources  1", 
+            "title": "Coreference"
+        }, 
+        {
+            "location": "/vietnlp/#benchmark_2", 
+            "text": "Unit: %", 
+            "title": "Benchmark"
+        }, 
+        {
+            "location": "/vietnlp/#related-readings_1", 
+            "text": "", 
+            "title": "Related Readings"
+        }, 
+        {
+            "location": "/vietnlp/#dependency-parsing", 
+            "text": "sources  1", 
+            "title": "Dependency Parsing"
+        }, 
+        {
+            "location": "/vietnlp/#benchmark_3", 
+            "text": "Unit: %", 
+            "title": "Benchmark"
+        }, 
+        {
+            "location": "/vietnlp/#related-readings_2", 
+            "text": "", 
+            "title": "Related Readings"
+        }, 
+        {
+            "location": "/vietnlp/#chunking", 
+            "text": "sources  1", 
+            "title": "Chunking"
+        }, 
+        {
+            "location": "/vietnlp/#benchmark_4", 
+            "text": "Unit: %", 
+            "title": "Benchmark"
+        }, 
+        {
+            "location": "/vietnlp/#named-entity-recognition", 
+            "text": "sources  1", 
+            "title": "Named Entity Recognition"
+        }, 
+        {
+            "location": "/vietnlp/#benchmark_5", 
+            "text": "Unit: %", 
+            "title": "Benchmark"
+        }, 
+        {
+            "location": "/vietnlp/#related-readings_3", 
+            "text": "", 
+            "title": "Related Readings"
+        }, 
+        {
+            "location": "/vietnlp/#groups-and-people", 
+            "text": "Groups   vnlp.net, (2010-now)  kde lab, (2014-now)   People   Assoc. Prof. Ha Quang Thuy  Prof. Tu-Bao Ho  Khoat Than  Cam Tu Nguyen  CAM-TU NGUYEN  Le Hong Phuong  Phan Xuan Hieu  Tr\u1ea7n Mai V\u0169  Nguy\u1ec5n Ki\u00eam Hi\u1ebfu", 
+            "title": "Groups and People"
+        }, 
+        {
+            "location": "/vietnlp/#applications", 
+            "text": "VAV - Tr\u1ee3 l\u00fd \u1ea3o cho ng\u01b0\u1eddi Vi\u1ec7t  Date: Nov 2015 - now  MDN-Team, Khoa CNTT, Tr\u01b0\u1eddng \u0110H C\u00f4ng ngh\u1ec7, \u0110HQG HN Tools  B\u1ea1n \u0111ang ngh\u0129 \u0111\u1ebfn m\u1ed9t \u1ee9ng d\u1ee5ng th\u00f4ng minh tr\u00ean di \u0111\u1ed9ng cho ph\u00e9p b\u1ea1n t\u01b0\u01a1ng t\u00e1c b\u1eb1ng gi\u1ecdng n\u00f3i \u0111\u1ec3 h\u1eb9n chu\u00f4ng b\u00e1o th\u1ee9c, \u0111\u1eb7t l\u1ecbch cho m\u1ed9t cu\u1ed9c h\u1ecdp, b\u1eadt \u0111\u1ecbnh v\u1ecb, g\u1ecdi \u0111i\u1ec7n cho ai \u0111\u00f3, truy c\u1eadp m\u1ed9t trang web b\u1ea5t k\u1ef3, t\u00ecm \u0111\u01b0\u1eddng tr\u00ean b\u1ea3n \u0111\u1ed3, \u0111\u1ecbnh v\u1ecb c\u00e2y ATM c\u1ee7a m\u1ed9t ng\u00e2n h\u00e0ng n\u00e0o \u0111\u00f3 g\u1ea7n v\u1edbi b\u1ea1n, hay th\u01b0\u1edfng th\u1ee9c m\u1ed9t b\u1ea3n nh\u1ea1c m\u00ecnh y\u00eau th\u00edch \u2026 \u1ee8ng d\u1ee5ng Tr\u1ee3 l\u00fd \u1ea3o VAV ch\u00ednh l\u00e0 c\u00e2u tr\u1ea3 l\u1eddi cho b\u1ea1n. \u0110\u01b0\u1ee3c thi\u1ebft k\u1ebf v\u00e0 ph\u00e1t tri\u1ec3n d\u1ef1a tr\u00ean c\u00e1c k\u1ef9 thu\u1eadt tr\u00ed tu\u1ec7 nh\u00e2n t\u1ea1o (h\u1ecdc m\u00e1y, ph\u00e2n t\u00edch v\u00e0 hi\u1ec3u ng\u00f4n ng\u1eef t\u1ef1 nhi\u00ean), VAV c\u00f3 th\u1ec3 hi\u1ec3u \u0111\u01b0\u1ee3c \u00fd \u0111\u1ecbnh c\u1ee7a b\u1ea1n d\u00f9 b\u1ea1n di\u1ec5n \u0111\u1ea1t c\u00e2u l\u1ec7nh c\u1ee7a m\u00ecnh theo nhi\u1ec1u c\u00e1ch kh\u00e1c nhau m\u00e0 kh\u00f4ng c\u1ea7n tu\u00e2n theo b\u1ea5t k\u1ef3 khu\u00f4n m\u1eabu n\u00e0o cho tr\u01b0\u1edbc. Nh\u1eefng g\u00ec VAV h\u01b0\u1edbng t\u1edbi l\u00e0 tr\u1edf th\u00e0nh m\u1ed9t tr\u1ee3 l\u00fd \u1ea3o th\u00f4ng minh gi\u00fap b\u1ea1n th\u1ef1c hi\u1ec7n nh\u1eefng \u0111i\u1ec1u m\u00ecnh mu\u1ed1n v\u00e0 l\u00e0 m\u1ed9t ng\u01b0\u1eddi \u0111\u1ed3ng h\u00e0nh th\u00e2n thi\u1ec7n, d\u00ed d\u1ecfm b\u00ean b\u1ea1n.", 
+            "title": "Applications"
+        }, 
+        {
+            "location": "/vietnlp/#references", 
+            "text": "2016, Big Challenges for Data Scientists at VCCORP", 
+            "title": "References"
         }
     ]
 }

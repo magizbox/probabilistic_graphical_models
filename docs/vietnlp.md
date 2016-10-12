@@ -1,21 +1,20 @@
-## Vietnamese NLP
-
-## Publications
+# Vietnamese NLP
 
 <div class="papers" gid="147QdXmHU38Ru7tHYrANXUgvMWzek7Zxi8EkUo-m0unE"></div>
+
 <div class="clear-fix"></div>
 
-## Part I. Core Problems
+# Core Problems
 
-### 1.1 Dictionaries
+## Dictionaries
 
 * [2004, Hồ Ngọc Đức, The Free Vietnamese Dictionary Project](http://www.informatik.uni-leipzig.de/~duc/Dict/)
 
-### 1.2 Wordnet
+## Wordnet
 
 * [viet wordnet](http://viet.wordnet.vn/wnms/editor/search/by-word/y%C3%AAu/2%7Cv)
 
-### 1.3 Corpus
+## Corpus
 
 **<a href="http://viet.jnlp.org/download-du-lieu-tu-vung-corpus" target="_blank">VNESEcorpus</a>**, 650.000 sentences, 10.000 articles from vietnamnet.vn, dantri.com.vn, nhanhdan.com.vn. Size: 64.59 Mb
 
@@ -24,116 +23,104 @@ Size: ~35 Mb
 
 **<a href="http://viet.jnlp.org/download-du-lieu-tu-vung-corpus" target="_blank">VNTQcorpus(big)</a>**, 1.750.000 sentences, 13.000 articles from vnthuquan.net, Size: ~240 Mb
 
-### 1.4 [Sentence Segmentation](http://magizbox.com/index.php/machine-learning/ds-applications/natural-language-processing/sentence-segmentation/)
+## Word Segmentation
 
-Unknown
+sources [^1]
 
-### 1.5 Word Segmentation
+### Benchmark
 
-![](http://icons.iconarchive.com/icons/graphicloads/folded/24/setting-folded-icon.png) **[Vitk](https://github.com/phuonglh/vn.vitk)** `spark`
+<big><b>Unit: F1 (%)</b></big>
 
-Authors: [Le Hong Phuong](http://mim.hus.vnu.edu.vn/phuonglh)
-Date: May 08, 2016
+<div class="benchmarks" gid="1aaKrh8UL6ETdV7TXFR63oip5LVDwD08nSNwRkdNiPRg"></div>
 
-This is the first release of a Vietnamese text processing toolkit, which is called "Vitk", developed by Phuong LE-HONG at College of Natural Sciences, Vietnam National University, Hanoi.
+<div class="clearfix"></div>
 
-![](http://icons.iconarchive.com/icons/graphicloads/folded/24/setting-folded-icon.png) **[vnTokenizer](http://mim.hus.vnu.edu.vn/phuonglh/softwares/vnTokenizer)** `java`
+## POS Tagging
 
-Authors: [Le Hong Phuong](http://mim.hus.vnu.edu.vn/phuonglh)
-Date: September 28, 2009
+sources [^1]
 
-vnTokenizer is a software for tokenizing Vietnamese texts. It segments Vietnamese texts into lexical units (words, names, dates, numbers and other regular expressions) with a high accuracy, of about 98% on a test set extracted from the Vietnamese treebank.
+### Benchmark
 
-![](http://icons.iconarchive.com/icons/graphicloads/folded/24/setting-folded-icon.png)  **<a href="http://jvnsegmenter.sourceforge.net/" target="_blank">JVnSegmenter</a>** `java`
+<big><b>Unit: F1 (%)</b></big>
 
-Authors: Cam-Tu Nguyen (ncamtu@gmail.com), Xuan-Hieu Phan (pxhieu@gmail.com)
-Date: Mar 24, 2007
+<div class="benchmarks" gid="1zJkeL2LveJkSuSCh3668mLwAPUZDWRFvEmsSpYxNNM0"></div>
 
-A Java-based Vietnamese Word Segmentation Tool
+<div class="clearfix"></div>
 
-![](http://icons.iconarchive.com/icons/graphicloads/folded/24/setting-folded-icon.png) **<a href="https://github.com/rockkhuya/DongDu" target="_blank">DongDu</a>** `C++`
+### Related Readings
 
-Authors: rockkhuya(<a href="mailto:rockkhuya@gmail.com">rockkhuya@gmail.com</a>)
+<div class="papers" gid="180S0p1WgCiiMkrMOuLANQuz6j7kwR2oShRdL-xFSgUk"></div>
 
-A Vietnamese word segmentation tool.
+<div class="clear-fix"></div>
 
-![](http://icons.iconarchive.com/icons/graphicloads/folded/24/setting-folded-icon.png) **[Roy_VnTokenizer](https://github.com/roy-a/Roy_VnTokenizer)** `python`
+##  Coreference
 
-Authors: Anindya Roy
-Date: Jan 22, 2014
+sources [^1]
 
-Vietnamese tokenization
+### Benchmark
 
-![](http://icons.iconarchive.com/icons/graphicloads/folded/24/setting-folded-icon.png) **<a href="http://vlsp.vietlp.org:8080/demo/?page=seg_pos_chunk" target="_blank">Online Tool from VLSP</a>** `online`
+<big><b>Unit: %</b></big>
 
-Not Available
 
-### 1.6 Part-of-speech tagging (POS Tagging)
+<div class="benchmarks" gid="1bGlmxaKjU57UbTcKVU0N2A_8hMhS0rhC_3YldjOHEY8"></div>
 
-VCCorp 2016: 94.5% [^1]
-Vitk 2016: accurary 95% (Vietnamese Tree Bank)
+<div class="clearfix"></div>
 
-![](http://icons.iconarchive.com/icons/graphicloads/folded/24/setting-folded-icon.png) **[Vitk](https://github.com/phuonglh/vn.vitk)** `spark`
+### Related Readings
 
-Authors: [Le Hong Phuong](http://mim.hus.vnu.edu.vn/phuonglh)
-Date: May 08, 2016
+<div class="papers" gid="18JbPXphM9HO6HJeOsb52ZislZU8URYL061GyV_I03vQ"></div>
 
-The part-of-speech tagger of Vitk can tag about 1,105,000 tokens per second, on a single machine, giving an accuracy of about 95% on the Vietnamese treebank.
+<div class="clear-fix"></div>
 
-![](http://icons.iconarchive.com/icons/graphicloads/folded/24/setting-folded-icon.png) **<a href="http://mim.hus.vnu.edu.vn/phuonglh/softwares/vnTagger" target="_blank">vnTagger</a>** `java`
+## Dependency Parsing
 
-Vietnamese part-of-speech tagging
+sources [^1]
 
-Authors: [Le Hong Phuong](http://mim.hus.vnu.edu.vn/phuonglh)
-Date: Aug 05, 2010
+### Benchmark
 
-**Paper**
+<big><b>Unit: %</b></big>
 
-* ![](http://icons.iconarchive.com/icons/graphicloads/folded/24/doc-page-folded-icon.png) [Le Hong Phuong, 2010, An empirical study of maximum entropy approach for part-of-speech tagging of Vietnamese texts](http://mim.hus.vnu.edu.vn/phuonglh/node/40)
+<div class="benchmarks" gid="1IrtBQ4ncFxq1cRRyJtLYdDWNBNjxTuAZ3nA_ji2QMnY"></div>
 
-### 1.7 Coreference
+<div class="clearfix"></div>
 
-VCCorp 2016: 57% [^1]
+### Related Readings
 
-**Thesis & Papers**:
+<div class="papers" gid="1_oIYHf__jKcMvD5pkzjDtSirTr45wWVZe3vsz_K_ZKw"></div>
 
-* ![](http://icons.iconarchive.com/icons/graphicloads/folded/24/doc-page-folded-icon.png) [2011, Giải quyết bài toán đồng tham chiếu trong văn bản tiếng việt dựa vào phương pháp máy vector hỗ trợ SVM](http://www.coltech.vnu.edu.vn/~thuyhq/Student_Thesis/K52_Le_Duc_Trong_Thesis.pdf)
+<div class="clear-fix"></div>
 
-### 1.8 Dependency Grammar
+## Chunking
 
-VCCorp 2016: 73% [^1]
+sources [^1]
 
-![](http://icons.iconarchive.com/icons/graphicloads/folded/24/doc-page-folded-icon.png) [2013, Nguyễn Vi Dương, Nguyễn Thị Đảm, Bộ chuyển đổi từ văn phạm thành phần sang văn phạm phụ thuộc cho tiếng Việt](https://bitbucket.org/epilab/vnlp/downloads/DependencyGrammarForVNese.doc)
+### Benchmark
 
-### 1.9 Chunking
+<big><b>Unit: %</b></big>
 
-VCCorp 2016: 83% [^1]
+<div class="benchmarks" gid="12ugmnbKfVWVmb8gAW-B1MjMjzVb8SKiZlLObvWB3aM4"></div>
 
-### [1.10 Named Entity Recognition (NER)](http://magizbox.com/index.php/machine-learning/ds-applications/natural-language-processing/name-entity-recognization/)
+<div class="clearfix"></div>
 
-VCCorp 2016: 84.8% [^1]
+## Named Entity Recognition
 
-**Papers**:
+sources [^1]
 
-* ![](http://icons.iconarchive.com/icons/graphicloads/folded/24/doc-page-folded-icon.png) [2007, Named Entity Recognition in Vietnamese documents](https://www.nii.ac.jp/pi/n4/4_5.pdf)
-* ![](http://icons.iconarchive.com/icons/graphicloads/folded/24/doc-page-folded-icon.png) [2005, Named Entity Recognition in Vietnamese Free-Text and Web Documents Using Conditional Random Fields](http://lamda.nju.edu.cn/nguyenct/files/papers/ncamtu-09-paper_ner.pdf)
+### Benchmark
 
-### 1.11 Relations Extraction Systems
+<big><b>Unit: %</b></big>
 
-Unknown
+<div class="benchmarks" gid="1BltTKewB7COHesGcaFT1WvGUvBN8jomKFCIY7Mcd2WU"></div>
 
-### 1.12 Sentiment Analysis
+<div class="clearfix"></div>
 
-![](http://icons.iconarchive.com/icons/graphicloads/folded/24/setting-folded-icon.png) **[Sentiment Analysis](https://bitbucket.org/epilab/vnlp/downloads/sentiment-analysis.zip)** `java`
+### Related Readings
 
-Authors: [Epi Lab](https://bitbucket.org/epilab/)
-Date: Aug 01, 2013
+<div class="papers" gid="1tKFAWOqcJKeP4neCSqm8GTafMI2EczYPpS0PEAmW7Rg"></div>
 
-### 1.13 Language Identification
+<div class="clear-fix"></div>
 
-Unknown
-
-## Part 2. Vietnamse NLP Groups
+# Groups and People
 
 **Groups**
 
@@ -152,18 +139,17 @@ Unknown
 * [Trần Mai Vũ](http://fit.uet.vnu.edu.vn/gioi-thieu/giang-vien/vutm/)
 * [Nguyễn Kiêm Hiếu](http://soict.hust.edu.vn/index.php/bo-mon-trung-tam/he-thong-thong-tin/can-bo/227-ts-nguyen-kiem-hieu)
 
-## Part 3. Applications
+# Applications
 
-### [VAV - Trợ lý ảo cho người Việt](https://play.google.com/store/apps/details?id=com.mdnteam.vav)
+[VAV - Trợ lý ảo cho người Việt](https://play.google.com/store/apps/details?id=uet.mdnteam.vav)
 
 Date: Nov 2015 - now
 
-<img src="https://lh3.googleusercontent.com/TOdXdeSwJ6qQy4gYqWJbPbep8Sb82h9oZPsor3WWXyi72HafO3xttiBlD-dpnKAahyY=h900-rw" style="height:80px"/>
-
 **MDN-Team, Khoa CNTT, Trường ĐH Công nghệ, ĐHQG HN Tools**
 
-> Bạn đang nghĩ đến một ứng dụng thông minh trên di động cho phép bạn tương tác bằng giọng nói để hẹn chuông báo thức, đặt lịch cho một cuộc họp, bật định vị, gọi điện cho ai đó, truy cập một trang web bất kỳ, tìm đường trên bản đồ, định vị cây ATM của một ngân hàng nào đó gần với bạn, hay thưởng thức một bản nhạc mình yêu thích … Ứng dụng Trợ lý ảo VAV chính là câu trả lời cho bạn.
-> Được thiết kế và phát triển dựa trên các kỹ thuật trí tuệ nhân tạo (học máy, phân tích và hiểu ngôn ngữ tự nhiên), VAV có thể hiểu được ý định của bạn dù bạn diễn đạt câu lệnh của mình theo nhiều cách khác nhau mà không cần tuân theo bất kỳ khuôn mẫu nào cho trước. Những gì VAV hướng tới là trở thành một trợ lý ảo thông minh giúp bạn thực hiện những điều mình muốn và là một người đồng hành thân thiện, dí dỏm bên bạn.
+*Bạn đang nghĩ đến một ứng dụng thông minh trên di động cho phép bạn tương tác bằng giọng nói để hẹn chuông báo thức, đặt lịch cho một cuộc họp, bật định vị, gọi điện cho ai đó, truy cập một trang web bất kỳ, tìm đường trên bản đồ, định vị cây ATM của một ngân hàng nào đó gần với bạn, hay thưởng thức một bản nhạc mình yêu thích … Ứng dụng Trợ lý ảo VAV chính là câu trả lời cho bạn. Được thiết kế và phát triển dựa trên các kỹ thuật trí tuệ nhân tạo (học máy, phân tích và hiểu ngôn ngữ tự nhiên), VAV có thể hiểu được ý định của bạn dù bạn diễn đạt câu lệnh của mình theo nhiều cách khác nhau mà không cần tuân theo bất kỳ khuôn mẫu nào cho trước. Những gì VAV hướng tới là trở thành một trợ lý ảo thông minh giúp bạn thực hiện những điều mình muốn và là một người đồng hành thân thiện, dí dỏm bên bạn.*
+
+# References
 
 [^1]: [2016, Big Challenges for Data Scientists at VCCORP](https://drive.google.com/file/d/0B6LYda0EhWbSelc2VTlZVFZia1E/view?usp=sharing)
 

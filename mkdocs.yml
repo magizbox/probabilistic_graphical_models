@@ -19,10 +19,15 @@ extra_css:
   - css/course.css
   - css/video.css
   - components/paper/paper.css
+  - components/benchmark/benchmark.css
+
 extra_javascript:
   - js/underscore.js
   - js/gspreadsheet.js
   - components/paper/paper.js
+  - components/benchmark/benchmark.js
   - js/book.js
   - js/course.js
   - js/video.js
+  - components/bootstrap-2.3.2/js/bootstrap-popover.js
+  - js/bootstrap-popup.js

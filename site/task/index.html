@@ -18,6 +18,8 @@
         <link href="../css/book.css" rel="stylesheet">
         <link href="../css/course.css" rel="stylesheet">
         <link href="../css/video.css" rel="stylesheet">
+        <link href="../components/paper/paper.css" rel="stylesheet">
+        <link href="../components/benchmark/benchmark.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -90,6 +92,21 @@
 </li>
 
                         
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Vietnamese</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../vietnlp/">Overview</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
                         </ul>
                     </li>
                 
@@ -128,9 +145,26 @@
     
         <li class="main active"><a href="#nlp-tasks">NLP Tasks</a></li>
         
-            <li><a href="#morphological-analysis">Morphological Analysis</a></li>
+    
+        <li class="main "><a href="#phonological-analysis">Phonological Analysis</a></li>
         
-            <li><a href="#discourse-analysis">Discourse Analysis</a></li>
+    
+        <li class="main "><a href="#morphological-analysis">Morphological Analysis</a></li>
+        
+    
+        <li class="main "><a href="#lexical-analysis">Lexical Analysis</a></li>
+        
+    
+        <li class="main "><a href="#syntactic-analysis">Syntactic Analysis</a></li>
+        
+    
+        <li class="main "><a href="#semantic-analysis">Semantic Analysis</a></li>
+        
+    
+        <li class="main "><a href="#discourse-analysis">Discourse Analysis</a></li>
+        
+    
+        <li class="main "><a href="#pragmatic-analysis">Pragmatic Analysis</a></li>
         
             <li><a href="#sentiment-analysis">Sentiment Analysis</a></li>
         
@@ -139,19 +173,101 @@
             <li><a href="#relationship-extraction">Relationship Extraction</a></li>
         
     
+        <li class="main "><a href="#references">References</a></li>
+        
+    
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
 <h2 id="nlp-tasks">NLP Tasks</h2>
-<h3 id="morphological-analysis">Morphological Analysis</h3>
-<h3 id="discourse-analysis">Discourse Analysis</h3>
+<p>The analysis of natural language is broken into various board levels such as phonological, morphological, syntactic, semantic, pragmatic and discourse analysis.</p>
+<p><img alt="" src="../images/dialogue.png" /></p>
+<h2 id="phonological-analysis">Phonological Analysis</h2>
+<p>Phonology is analysis of spoken language. Therefore, it deals with speech recognition and generation. The core task of speech recognition and generation system is to take an acoustic waveform as input and produce as output, a string of words. The phonology is a part of natural language analysis, which deals with it. The area of computational linguistics that deals with speech analysis is computational phonology</p>
+<p><strong>Example:</strong> <a href="https://www.youtube.com/watch?v=UNs-ziziPyo">Hans Rosling's shortest TED talk</a></p>
+<table>
+
+<tr>
+<td>Original Sound</td>
+<td>
+<audio controls>
+  <source src="https://github.com/magizbox/natural_language_processing/blob/master/docs/sound/Hans_Roslings.mp3?raw=true" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</td>
+</tr>
+<tr>
+<td class="col-xs-3">Text</td>
+<td>
+X means unknown but the world is pretty known it's seven billion people have seven stones. One billion can save money to fly abroad on holiday every year. One billion can save money to keep a car or buy a car. And then three billion they save money to pay the by be a bicycle or perhaps a two-wheeler. And two billion they are busy saving money to buy shoes. In the future they will get rich and these people we move over here, these people will move over here, we will have two billion more in the world like this and the question is whether the rich people over there are prepared to be integrated in the world with 10 bilions people.
+</td>
+</tr>
+<tr>
+<td>Auto generated sound</td>
+<td>
+<audio controls>
+  <source src="https://github.com/magizbox/natural_language_processing/blob/master/docs/sound/Hans_Roslings_generated.mp3?raw=true" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</td>
+</tr>
+</table>
+
+<h2 id="morphological-analysis">Morphological Analysis</h2>
+<p>It is the most elementary phase of NLP. It deals with the word formation. In this phase, individual words are analyzed according to their components called <strong>"morphemes"</strong>. In addition, non-word taken such as punctuation, etc. are separated from words. Morpheme is basic grammatical building block that makes words.</p>
+<p><img alt="" src="http://i.imgur.com/YfthRal.png" /></p>
+<p>The study of word structure is refereed to as morphology. In natural language processing, it is done in morphological analysis. The task of breaking a word into its morphemes is called morphological parsing. A morpheme is defined as minimal meaningful unit in a language, which cannot be further broken into smaller units.</p>
+<p>Example: word <em>fox</em> consists a single morpheme, as it cannot be further resolved into smaller units. Whereas word <em>cats</em> consists two morphemes, the morpheme "cat" and morpheme "s" indicating plurality.</p>
+<p>Here we defined the term meaningful. Though cat can be broken in "c" and "at", but these do not relate with word "cat" in any sense. Thus word "cat" will be dealt with as minimum meaningful unit.</p>
+<p>Morphemes are traditionally divided into two types</p>
+<ul>
+<li>(i) "free morphemes", that are able to act as words in isolation (e.g., "thing", "permanent", "local")</li>
+<li>(ii) "bound morphemes", that can operate only as part of other words (e.g., "is" 'ing' etc) The morpheme, which forms the center part of the world, is also called "stem". In English, a word can be made up of one or more morphemes, e.g.,</li>
+</ul>
+<pre><code>word - thing           -&gt; stem &quot;think&quot;
+word - localize        -&gt; stem &quot;local&quot;, suffix &quot;ize&quot;
+word - denationalize   -&gt; prefix &quot;de&quot;, stem &quot;nation&quot;, suffix &quot;al&quot;, &quot;ize&quot;
+</code></pre>
+
+<p>The computational tool to perform morphological parsing is finite state transducer. A transducer performs it by mapping between the two sets of symbols, and a finite state transducer does it with finite automaton. A transducer normally consists of four parts: <strong>recognizer</strong>, <strong>generator</strong>,  <strong>translator</strong>, and <strong>relator</strong>. The output of the transducer becomes a set of morphemes.</p>
+<h2 id="lexical-analysis">Lexical Analysis</h2>
+<p>In this phase of natural language analysis, validity of words according to lexicon is checked. Lexicon stands for dictionary. It is a collection of all possible valid words of language along with their meaning.</p>
+<p>In NLP, the first stage of processing input text is to scan each word in sentence and compute (or look-up) all the relevant linguistic information about that word. The lexicon provides the necessary rules and data for carrying out the first stage analysis.</p>
+<p>The details of words, like their type (noun, verb and adverb, and other details of nouns and verb, etc.) are checked.</p>
+<p><img alt="" src="../images/Zv3TBU5.png" /></p>
+<p>Lexical analysis is dividing the whole chunk of text into paragraphs, sentences, and words.</p>
+<h2 id="syntactic-analysis">Syntactic Analysis</h2>
+<p>Syntax refers to the study of formal relationships between words of sentences. In this phase the validity of a sentence according to grammar rules is checked. To perform the syntactic analysis, the knowledge of grammar and parsing is required. Grammar is formal specification of rules allowable in the language, and parsing is a method of analyzing a sentence to determine its structure according to grammar. The most common grammar used for syntactic analysis for natural languages are <em>context free grammar</em> (CFG) also called <em>phase structure grammar</em> and <em>definite clause grammar</em>. These grammars are described in detail in a separate actions.</p>
+<p><img alt="" src="../images/WpWlYpX.png" /></p>
+<p>Syntactic analysis is done using parsing. Two basic parsing techniques are: <em>top-down parsing</em> and <em>bottom-up parsing</em>.</p>
+<h2 id="semantic-analysis">Semantic Analysis</h2>
+<p>In linguistics, semantic analysis is the process of relating syntactic structures, from the levels of phrases, clauses, sentences and paragraphs to the level of the writing as a whole, to their language-independent meanings. It also involves removing features specific to particular linguistic and cultural contexts, to the extent that such a project is possible.</p>
+<p>The elements of idiom and figurative speech, being cultural, are often also converted into relatively invariant meanings in semantic analysis. Semantics, although related to pragmatics, is distinct in that the former deals with word or sentence choice in any given context, while pragmatics considers the unique or particular meaning derived from context or tone. To reiterate in different terms, semantics is about universally coded meaning, and pragmatics the meaning encoded in words that is then interpreted by an audience</p>
+<h2 id="discourse-analysis">Discourse Analysis</h2>
+<p>The meaning of any sentence depends upon the meaning of the sentence just before it. In addition, it also brings about the meaning of immediately succeeding sentence.</p>
+<p>Topics of discourse analysis include:</p>
+<ul>
+<li>The various levels or dimensions of discourse, such as sounds, gestures, syntrax, the lexicon, style, rhetoric, meanings, speech acts, moves, strategies, turns, and other aspects of interaction</li>
+<li>Genres of discourse (various types of discourse in politics, the media, education, science, business, etc.)</li>
+<li>The relations between text (discourse) and context</li>
+<li>The relations between discourse and power</li>
+<li>The relations between discourse and interaction</li>
+<li>The relations between discourse and cognition and memory</li>
+</ul>
+<h2 id="pragmatic-analysis">Pragmatic Analysis</h2>
+<p>During this, what was said is re-interpreted on what it actually meant. It involves deriving those aspects of language which require real world knowledge.</p>
 <h3 id="sentiment-analysis">Sentiment Analysis</h3>
 <p><a href="https://www.metamind.io/about" target="_blank">MetaMind</a>, @RichardSocher</p>
 <h3 id="named-entity-recognition">Named Entity Recognition</h3>
 <p><a href="http://research.microsoft.com/en-us/people/chiw/kdd15tutorial.aspx" target="_blank">KDD 2015 Tutorial: Automatic Entity Recognition and Typing from Massive Text Corpora - A Phrase and Network Mining Approach</a></p>
 <h3 id="relationship-extraction">Relationship Extraction</h3>
-<p><a href="http://www.alchemyapi.com/api/relation-extraction" target="_blank">AlchemyAPI</a></p></div>
+<p><a href="http://www.alchemyapi.com/api/relation-extraction" target="_blank">AlchemyAPI</a></p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://www.amazon.com/Natural-Language-Processing-Ela-Kumar/dp/9380578776/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1476086806&amp;sr=1-1&amp;keywords=9789380578774">Kumar, Ela. <em>Natural Language Processing</em>. New Delhi: I.K. International Publishing House, 2011</a></li>
+<li><a href="https://www.tutorialspoint.com/artificial_intelligence/artificial_intelligence_natural_language_processing.htm">"Artificial Intelligence Natural Language Processing". <em>www.tutorialspoint.com</em>. N.p., 2016. Web. 11 Oct. 2016.</a></li>
+</ul></div>
             
         </div>
 
@@ -169,9 +285,13 @@
         <script src="../js/base.js"></script>
         <script src="../js/underscore.js"></script>
         <script src="../js/gspreadsheet.js"></script>
+        <script src="../components/paper/paper.js"></script>
+        <script src="../components/benchmark/benchmark.js"></script>
         <script src="../js/book.js"></script>
         <script src="../js/course.js"></script>
         <script src="../js/video.js"></script>
+        <script src="../components/bootstrap-2.3.2/js/bootstrap-popover.js"></script>
+        <script src="../js/bootstrap-popup.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
             <div class="modal-dialog">
