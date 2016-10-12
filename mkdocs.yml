@@ -15,19 +15,18 @@ markdown_extensions:
     - footnotes
 
 extra_css:
-  - css/book.css
-  - css/course.css
-  - css/video.css
-  - components/paper/paper.css
-  - components/benchmark/benchmark.css
+  - components/magiz-c-book/src/book.css
+  - components/magiz-c-course/src/course.css
+  - components/magiz-c-video/src/video.css
+  - components/magiz-c-benchmark/src/benchmark.css
+  - components/magiz-c-paper/src/paper.css
 
 extra_javascript:
   - js/underscore.js
   - js/gspreadsheet.js
-  - components/paper/paper.js
-  - components/benchmark/benchmark.js
-  - js/book.js
-  - js/course.js
-  - js/video.js
-  - components/bootstrap-2.3.2/js/bootstrap-popover.js
-  - js/bootstrap-popup.js
+  - components/magiz-c-paper/src/paper.js
+  - components/magiz-c-course/src/course.js
+  - components/magiz-c-benchmark/src/benchmark.js
+  - components/magiz-c-benchmark/src/bootstrap-popup.js
+  - components/magiz-c-book/src/book.js
+  - components/magiz-c-video/src/video.js
