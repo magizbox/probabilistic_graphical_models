@@ -27,7 +27,7 @@ Natural Language has an extremely rich form and structure. It is very ambiguous.
 ## Books
 
 <div class="books" gid="1PBoxR8q_1ENjQWMaxaQZh1I_Q1W-we6s9cfCfqhm3_0"></div>
-
+<div class="clearfix"></div>
 ## Courses
 
 <div class="courses" gid="1k1ylxS36NsXDlaMam6LVYp-JxsDN2GSCB5ypprQjRs4"></div>

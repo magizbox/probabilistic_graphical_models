@@ -2,7 +2,7 @@
 
 ## Corpus
 
-[Birkbeck spelling error corpus]()
+[Birkbeck spelling error corpus](http://ota.ox.ac.uk/headers/0643.xml)
 
 ## References
 
