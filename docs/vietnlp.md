@@ -102,6 +102,15 @@ sources [^1]
 
 <div class="clearfix"></div>
 
+## Spelling Correction
+
+### Benchmark
+
+<div class="benchmarks" gid="1a9sT18lHRYehSmggpCz2w-TjMvXpWYdcWnLXKwxhTTQ"></div>
+
+
+<div class="clearfix"></div>
+
 ## Named Entity Recognition
 
 sources [^1]
