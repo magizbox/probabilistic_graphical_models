@@ -13,8 +13,6 @@ pages:
   - "Vietnamese":
     - "Overview": 'vietnlp.md'
 
-markdown_extensions:
-    - footnotes
 
 extra_css:
   - components/magiz-c-book/src/book.css
@@ -32,3 +30,8 @@ extra_javascript:
   - components/magiz-c-benchmark/src/bootstrap-popup.js
   - components/magiz-c-book/src/book.js
   - components/magiz-c-video/src/video.js
+  - http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+markdown_extensions:
+    - footnotes
+    - mdx_math
