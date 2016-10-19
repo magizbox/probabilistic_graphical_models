@@ -162,7 +162,7 @@
         <li class="main active"><a href="#vietnamese-nlp">Vietnamese NLP</a></li>
         
     
-        <li class="main "><a href="#core-problems">Core Problems</a></li>
+        <li class="main "><a href="#tasks">Tasks</a></li>
         
             <li><a href="#dictionaries">Dictionaries</a></li>
         
@@ -174,15 +174,21 @@
         
             <li><a href="#pos-tagging">POS Tagging</a></li>
         
-            <li><a href="#coreference">Coreference</a></li>
-        
             <li><a href="#dependency-parsing">Dependency Parsing</a></li>
         
             <li><a href="#chunking">Chunking</a></li>
         
+            <li><a href="#named-entity-recognition">Named Entity Recognition</a></li>
+        
+            <li><a href="#coreference-resolution">Coreference Resolution</a></li>
+        
             <li><a href="#spelling-correction">Spelling Correction</a></li>
         
-            <li><a href="#named-entity-recognition">Named Entity Recognition</a></li>
+            <li><a href="#sentiment-analysis">Sentiment Analysis</a></li>
+        
+            <li><a href="#automatic-summarization">Automatic Summarization</a></li>
+        
+            <li><a href="#optical-character-recognition">Optical Character Recognition</a></li>
         
     
         <li class="main "><a href="#groups-and-people">Groups and People</a></li>
@@ -203,57 +209,59 @@
 
 <div class="clear-fix"></div>
 
-<h1 id="core-problems">Core Problems</h1>
+<h1 id="tasks">Tasks</h1>
 <h2 id="dictionaries">Dictionaries</h2>
 <ul>
-<li><a href="http://www.informatik.uni-leipzig.de/~duc/Dict/">2004, Hồ Ngọc Đức, The Free Vietnamese Dictionary Project</a></li>
+<li><a href="http://www.informatik.uni-leipzig.de/~duc/Dict/">The Free Vietnamese Dictionary Project. Hồ Ngọc Đức. 2004</a>, 30000 words</li>
 </ul>
 <h2 id="wordnet">Wordnet</h2>
 <ul>
-<li><a href="http://viet.wordnet.vn/wnms/editor/search/by-word/y%C3%AAu/2%7Cv">viet wordnet</a></li>
+<li><a href="http://viet.wordnet.vn/wnms/editor/search/by-word/y%C3%AAu/2%7Cv">viet wordnet. 2015</a>, 67344 words</li>
 </ul>
 <h2 id="corpus">Corpus</h2>
-<p><strong><a href="http://viet.jnlp.org/download-du-lieu-tu-vung-corpus" target="_blank">VNESEcorpus</a></strong>, 650.000 sentences, 10.000 articles from vietnamnet.vn, dantri.com.vn, nhanhdan.com.vn. Size: 64.59 Mb</p>
-<p><strong><a href="http://viet.jnlp.org/download-du-lieu-tu-vung-corpus" target="_blank">VNTQcorpus(small)</a></strong>, 300.000 sentences, 1.000 articles from vnthuquan.net
+<p><strong><a href="https://dumps.wikimedia.org/viwiki/">viwikipedia dump. 2016</a></strong>, ~500 MB</p>
+<p><strong><a href="http://viet.jnlp.org/download-du-lieu-tu-vung-corpus" target="_blank">VNESEcorpus. 2012</a></strong>, 650.000 sentences, 10.000 articles from vietnamnet.vn, dantri.com.vn, nhanhdan.com.vn. Size: 64.59 Mb</p>
+<p><strong><a href="http://viet.jnlp.org/download-du-lieu-tu-vung-corpus" target="_blank">VNTQcorpus(small). 2012</a></strong>, 300.000 sentences, 1.000 articles from vnthuquan.net
 Size: ~35 Mb</p>
-<p><strong><a href="http://viet.jnlp.org/download-du-lieu-tu-vung-corpus" target="_blank">VNTQcorpus(big)</a></strong>, 1.750.000 sentences, 13.000 articles from vnthuquan.net, Size: ~240 Mb</p>
+<p><strong><a href="http://viet.jnlp.org/download-du-lieu-tu-vung-corpus" target="_blank">VNTQcorpus(big). 2012</a></strong>, 1.750.000 sentences, 13.000 articles from vnthuquan.net, Size: ~240 Mb</p>
 <h2 id="word-segmentation">Word Segmentation</h2>
 <p>sources <sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup></p>
+<h3 id="data">Data</h3>
+<ul>
+<li>VLSP 2013: Word Segmentation Task, 77000 sentences</li>
+<li><a href="http://www.jaist.ac.jp/~hieuxuan/vnwordseg/data/">Data from JVnSegmenter</a>, 7800 sentences</li>
+</ul>
 <h3 id="benchmark">Benchmark</h3>
 <p><big><b>Unit: F1 (%)</b></big></p>
 <div class="benchmarks" gid="1aaKrh8UL6ETdV7TXFR63oip5LVDwD08nSNwRkdNiPRg"></div>
 
 <div class="clearfix"></div>
 
+<h3 id="related-readings">Related Readings</h3>
+<div class="papers" gid="1OAfZGyYyolDdONqnrxq_QMD-KYDZWfejGBjWJXtj0mk"></div>
+
+<div class="clear-fix"></div>
+
 <h2 id="pos-tagging">POS Tagging</h2>
 <p>sources <sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup></p>
+<h3 id="data_1">Data</h3>
+<ul>
+<li>[N09] VLSP 2013: POS Tagging Task, 270000 sentences</li>
+</ul>
 <h3 id="benchmark_1">Benchmark</h3>
 <p><big><b>Unit: F1 (%)</b></big></p>
 <div class="benchmarks" gid="1zJkeL2LveJkSuSCh3668mLwAPUZDWRFvEmsSpYxNNM0"></div>
 
 <div class="clearfix"></div>
 
-<h3 id="related-readings">Related Readings</h3>
-<div class="papers" gid="180S0p1WgCiiMkrMOuLANQuz6j7kwR2oShRdL-xFSgUk"></div>
-
-<div class="clear-fix"></div>
-
-<h2 id="coreference">Coreference</h2>
-<p>sources <sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup></p>
-<h3 id="benchmark_2">Benchmark</h3>
-<p><big><b>Unit: %</b></big></p>
-<div class="benchmarks" gid="1bGlmxaKjU57UbTcKVU0N2A_8hMhS0rhC_3YldjOHEY8"></div>
-
-<div class="clearfix"></div>
-
 <h3 id="related-readings_1">Related Readings</h3>
-<div class="papers" gid="18JbPXphM9HO6HJeOsb52ZislZU8URYL061GyV_I03vQ"></div>
+<div class="papers" gid="180S0p1WgCiiMkrMOuLANQuz6j7kwR2oShRdL-xFSgUk"></div>
 
 <div class="clear-fix"></div>
 
 <h2 id="dependency-parsing">Dependency Parsing</h2>
 <p>sources <sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup></p>
-<h3 id="benchmark_3">Benchmark</h3>
+<h3 id="benchmark_2">Benchmark</h3>
 <p><big><b>Unit: %</b></big></p>
 <div class="benchmarks" gid="1IrtBQ4ncFxq1cRRyJtLYdDWNBNjxTuAZ3nA_ji2QMnY"></div>
 
@@ -266,21 +274,23 @@ Size: ~35 Mb</p>
 
 <h2 id="chunking">Chunking</h2>
 <p>sources <sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup></p>
-<h3 id="benchmark_4">Benchmark</h3>
+<h3 id="data_2">Data</h3>
+<ul>
+<li><a href="https://github.com/lupanh/vTools/blob/master/data/Chunk/vi-chunk.train">Training data from vTools</a></li>
+</ul>
+<h3 id="benchmark_3">Benchmark</h3>
 <p><big><b>Unit: %</b></big></p>
 <div class="benchmarks" gid="12ugmnbKfVWVmb8gAW-B1MjMjzVb8SKiZlLObvWB3aM4"></div>
 
 <div class="clearfix"></div>
 
-<h2 id="spelling-correction">Spelling Correction</h2>
-<h3 id="benchmark_5">Benchmark</h3>
-<div class="benchmarks" gid="1a9sT18lHRYehSmggpCz2w-TjMvXpWYdcWnLXKwxhTTQ"></div>
-
-<div class="clearfix"></div>
-
 <h2 id="named-entity-recognition">Named Entity Recognition</h2>
 <p>sources <sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup></p>
-<h3 id="benchmark_6">Benchmark</h3>
+<h3 id="data_3">Data</h3>
+<ul>
+<li>VLSP 2016: NER Task, 313 documents, 19160 sentences</li>
+</ul>
+<h3 id="benchmark_4">Benchmark</h3>
 <p><big><b>Unit: %</b></big></p>
 <div class="benchmarks" gid="1BltTKewB7COHesGcaFT1WvGUvBN8jomKFCIY7Mcd2WU"></div>
 
@@ -291,11 +301,56 @@ Size: ~35 Mb</p>
 
 <div class="clear-fix"></div>
 
+<h2 id="coreference-resolution">Coreference Resolution</h2>
+<p>sources <sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup></p>
+<h3 id="benchmark_5">Benchmark</h3>
+<p><big><b>Unit: %</b></big></p>
+<div class="benchmarks" gid="1bGlmxaKjU57UbTcKVU0N2A_8hMhS0rhC_3YldjOHEY8"></div>
+
+<div class="clearfix"></div>
+
+<h3 id="related-readings_4">Related Readings</h3>
+<div class="papers" gid="18JbPXphM9HO6HJeOsb52ZislZU8URYL061GyV_I03vQ"></div>
+
+<div class="clear-fix"></div>
+
+<h2 id="spelling-correction">Spelling Correction</h2>
+<h3 id="benchmark_6">Benchmark</h3>
+<div class="benchmarks" gid="1a9sT18lHRYehSmggpCz2w-TjMvXpWYdcWnLXKwxhTTQ"></div>
+
+<div class="clearfix"></div>
+
+<h2 id="sentiment-analysis">Sentiment Analysis</h2>
+<h3 id="data_4">Data</h3>
+<ul>
+<li><a href="https://sourceforge.net/projects/vietsentiwordne/">VietSentiWordNet</a>, 1000 synsets</li>
+<li>VLSP 2016: OM Task, 3600 sentences</li>
+</ul>
+<h3 id="benchmark_7">Benchmark</h3>
+<div class="benchmarks" gid="1gGINig0rVWNm9tAq8NPm-P4rlnJrPyUC1nYI9FruabM"></div>
+
+<div class="clearfix"></div>
+
+<h3 id="related-readings_5">Related Readings</h3>
+<div class="papers" gid="1xwkesIyYKDXfcXcLBA7BlQ-AObvrcxp0mBeHyJftxO4"></div>
+
+<div class="clear-fix"></div>
+
+<h2 id="automatic-summarization">Automatic Summarization</h2>
+<h3 id="data_5">Data</h3>
+<ul>
+<li><a href="https://github.com/lupanh/VietnameseMDS">200 Cụm văn bản tiếng Việt dùng cho tóm tắt đa văn bản. 2012</a></li>
+</ul>
+<h2 id="optical-character-recognition">Optical Character Recognition</h2>
+<h3 id="data_6">Data</h3>
+<ul>
+<li><a href="https://code.google.com/archive/p/sapphire-ocr/downloads">Dữ liệu cho bài toán nhận dạng chữ viết tay tiếng Việt. 2011</a></li>
+</ul>
 <h1 id="groups-and-people">Groups and People</h1>
 <p><strong>Groups</strong></p>
 <ul>
-<li><a href="http://vnlp.net/">vnlp.net, (2010-now)</a></li>
-<li><a href="http://kde.soict.hust.edu.vn/">kde lab, (2014-now)</a></li>
+<li><a href="http://vnlp.net/">KTLab: vnlp.net, (2010-now)</a></li>
+<li><a href="http://kde.soict.hust.edu.vn/">KDE lab, (2014-now)</a></li>
 </ul>
 <p><strong>People</strong></p>
 <ul>

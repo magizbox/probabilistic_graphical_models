@@ -4,28 +4,35 @@
 
 <div class="clear-fix"></div>
 
-# Core Problems
+# Tasks
 
 ## Dictionaries
 
-* [2004, Hồ Ngọc Đức, The Free Vietnamese Dictionary Project](http://www.informatik.uni-leipzig.de/~duc/Dict/)
+* [The Free Vietnamese Dictionary Project. Hồ Ngọc Đức. 2004](http://www.informatik.uni-leipzig.de/~duc/Dict/), 30000 words
 
 ## Wordnet
 
-* [viet wordnet](http://viet.wordnet.vn/wnms/editor/search/by-word/y%C3%AAu/2%7Cv)
+* [viet wordnet. 2015](http://viet.wordnet.vn/wnms/editor/search/by-word/y%C3%AAu/2%7Cv), 67344 words
 
 ## Corpus
 
-**<a href="http://viet.jnlp.org/download-du-lieu-tu-vung-corpus" target="_blank">VNESEcorpus</a>**, 650.000 sentences, 10.000 articles from vietnamnet.vn, dantri.com.vn, nhanhdan.com.vn. Size: 64.59 Mb
+**[viwikipedia dump. 2016](https://dumps.wikimedia.org/viwiki/)**, ~500 MB
 
-**<a href="http://viet.jnlp.org/download-du-lieu-tu-vung-corpus" target="_blank">VNTQcorpus(small)</a>**, 300.000 sentences, 1.000 articles from vnthuquan.net
+**<a href="http://viet.jnlp.org/download-du-lieu-tu-vung-corpus" target="_blank">VNESEcorpus. 2012</a>**, 650.000 sentences, 10.000 articles from vietnamnet.vn, dantri.com.vn, nhanhdan.com.vn. Size: 64.59 Mb
+
+**<a href="http://viet.jnlp.org/download-du-lieu-tu-vung-corpus" target="_blank">VNTQcorpus(small). 2012</a>**, 300.000 sentences, 1.000 articles from vnthuquan.net
 Size: ~35 Mb
 
-**<a href="http://viet.jnlp.org/download-du-lieu-tu-vung-corpus" target="_blank">VNTQcorpus(big)</a>**, 1.750.000 sentences, 13.000 articles from vnthuquan.net, Size: ~240 Mb
+**<a href="http://viet.jnlp.org/download-du-lieu-tu-vung-corpus" target="_blank">VNTQcorpus(big). 2012</a>**, 1.750.000 sentences, 13.000 articles from vnthuquan.net, Size: ~240 Mb
 
 ## Word Segmentation
 
 sources [^1]
+
+### Data
+
+* VLSP 2013: Word Segmentation Task, 77000 sentences
+* [Data from JVnSegmenter](http://www.jaist.ac.jp/~hieuxuan/vnwordseg/data/), 7800 sentences
 
 ### Benchmark
 
@@ -35,9 +42,19 @@ sources [^1]
 
 <div class="clearfix"></div>
 
+### Related Readings
+
+<div class="papers" gid="1OAfZGyYyolDdONqnrxq_QMD-KYDZWfejGBjWJXtj0mk"></div>
+
+<div class="clear-fix"></div>
+
 ## POS Tagging
 
 sources [^1]
+
+### Data
+
+* [N09] VLSP 2013: POS Tagging Task, 270000 sentences
 
 ### Benchmark
 
@@ -50,25 +67,6 @@ sources [^1]
 ### Related Readings
 
 <div class="papers" gid="180S0p1WgCiiMkrMOuLANQuz6j7kwR2oShRdL-xFSgUk"></div>
-
-<div class="clear-fix"></div>
-
-##  Coreference
-
-sources [^1]
-
-### Benchmark
-
-<big><b>Unit: %</b></big>
-
-
-<div class="benchmarks" gid="1bGlmxaKjU57UbTcKVU0N2A_8hMhS0rhC_3YldjOHEY8"></div>
-
-<div class="clearfix"></div>
-
-### Related Readings
-
-<div class="papers" gid="18JbPXphM9HO6HJeOsb52ZislZU8URYL061GyV_I03vQ"></div>
 
 <div class="clear-fix"></div>
 
@@ -94,6 +92,10 @@ sources [^1]
 
 sources [^1]
 
+### Data
+
+* [Training data from vTools](https://github.com/lupanh/vTools/blob/master/data/Chunk/vi-chunk.train)
+
 ### Benchmark
 
 <big><b>Unit: %</b></big>
@@ -102,18 +104,13 @@ sources [^1]
 
 <div class="clearfix"></div>
 
-## Spelling Correction
-
-### Benchmark
-
-<div class="benchmarks" gid="1a9sT18lHRYehSmggpCz2w-TjMvXpWYdcWnLXKwxhTTQ"></div>
-
-
-<div class="clearfix"></div>
-
 ## Named Entity Recognition
 
 sources [^1]
+
+### Data
+
+* VLSP 2016: NER Task, 313 documents, 19160 sentences
 
 ### Benchmark
 
@@ -126,15 +123,69 @@ sources [^1]
 ### Related Readings
 
 <div class="papers" gid="1tKFAWOqcJKeP4neCSqm8GTafMI2EczYPpS0PEAmW7Rg"></div>
+<div class="clear-fix"></div>
+
+##  Coreference Resolution
+
+sources [^1]
+
+### Benchmark
+
+<big><b>Unit: %</b></big>
+
+<div class="benchmarks" gid="1bGlmxaKjU57UbTcKVU0N2A_8hMhS0rhC_3YldjOHEY8"></div>
+
+<div class="clearfix"></div>
+
+### Related Readings
+
+<div class="papers" gid="18JbPXphM9HO6HJeOsb52ZislZU8URYL061GyV_I03vQ"></div>
 
 <div class="clear-fix"></div>
+
+## Spelling Correction
+
+### Benchmark
+
+<div class="benchmarks" gid="1a9sT18lHRYehSmggpCz2w-TjMvXpWYdcWnLXKwxhTTQ"></div>
+
+<div class="clearfix"></div>
+
+## Sentiment Analysis
+
+### Data
+
+* [VietSentiWordNet](https://sourceforge.net/projects/vietsentiwordne/), 1000 synsets
+* VLSP 2016: OM Task, 3600 sentences
+
+### Benchmark
+
+<div class="benchmarks" gid="1gGINig0rVWNm9tAq8NPm-P4rlnJrPyUC1nYI9FruabM"></div>
+<div class="clearfix"></div>
+
+### Related Readings
+
+<div class="papers" gid="1xwkesIyYKDXfcXcLBA7BlQ-AObvrcxp0mBeHyJftxO4"></div>
+<div class="clear-fix"></div>
+
+## Automatic Summarization
+
+### Data
+
+* [200 Cụm văn bản tiếng Việt dùng cho tóm tắt đa văn bản. 2012](https://github.com/lupanh/VietnameseMDS)
+
+## Optical Character Recognition
+
+### Data
+
+* [Dữ liệu cho bài toán nhận dạng chữ viết tay tiếng Việt. 2011](https://code.google.com/archive/p/sapphire-ocr/downloads)
 
 # Groups and People
 
 **Groups**
 
-* [vnlp.net, (2010-now)](http://vnlp.net/)
-* [kde lab, (2014-now)](http://kde.soict.hust.edu.vn/)
+* [KTLab: vnlp.net, (2010-now)](http://vnlp.net/)
+* [KDE lab, (2014-now)](http://kde.soict.hust.edu.vn/)
 
 **People**
 
