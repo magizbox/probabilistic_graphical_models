@@ -10,9 +10,9 @@ pages:
   - "CRF in NER": 'ner_crf.md'
   - "Entity Linking": 'entity_linking.md'
   - "Applications": 'application.md'
-  - "Vietnamese":
-    - "Overview": 'vietnlp.md'
-
+  - "Languages":
+    - "Vietnamese": 'vietnlp.md'
+    - "English": 'englishnlp.md'
 
 extra_css:
   - components/magiz-c-book/src/book.css
