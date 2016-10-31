@@ -1,18 +1,9 @@
-site_name: Natural Language Processing
+site_name: Probabilistic Graphical Models
 site_author: "Vu Anh"
 google_analytics: ['UA-68978617-1', 'magizbox.com']
 
 pages:
 - "Home": 'index.md'
-- "Docs":
-  - "Tasks": 'task.md'
-  - "Spelling Correction": 'spelling_correction.md'
-  - "CRF in NER": 'ner_crf.md'
-  - "Entity Linking": 'entity_linking.md'
-  - "Applications": 'application.md'
-  - "Languages":
-    - "Vietnamese": 'vietnlp.md'
-    - "English": 'englishnlp.md'
 
 extra_css:
   - components/magiz-c-book/src/book.css
