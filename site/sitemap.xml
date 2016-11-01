@@ -4,9 +4,37 @@
     
     <url>
      <loc>None/</loc>
-     <lastmod>2016-10-31</lastmod>
+     <lastmod>2016-11-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
+    
+
+    
+        
+    <url>
+     <loc>None/foundation_probability/</loc>
+     <lastmod>2016-11-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/foundation_graph/</loc>
+     <lastmod>2016-11-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/bayes_network/</loc>
+     <lastmod>2016-11-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/unbbayes/</loc>
+     <lastmod>2016-11-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
 </urlset>

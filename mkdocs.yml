@@ -1,9 +1,14 @@
 site_name: Probabilistic Graphical Models
 site_author: "Vu Anh"
-google_analytics: ['UA-68978617-1', 'magizbox.com']
+google_analytics: ["UA-68978617-1", "magizbox.com"]
 
 pages:
-- "Home": 'index.md'
+- "Home": "index.md"
+- "Docs":
+  - "Foundation: Probability": "foundation_probability.md"
+  - "Foundation: Graph": "foundation_graph.md"
+  - "Bayesian Network": "bayes_network.md"
+  - "An Introduction to UnBBayes": "unbbayes.md"
 
 extra_css:
   - components/magiz-c-book/src/book.css

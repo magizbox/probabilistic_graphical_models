@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Vu Anh">
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+
+	<title>An Introduction to UnBBayes - Probabilistic Graphical Models</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <link href="../components/magiz-c-book/src/book.css" rel="stylesheet">
+        <link href="../components/magiz-c-course/src/course.css" rel="stylesheet">
+        <link href="../components/magiz-c-video/src/video.css" rel="stylesheet">
+        <link href="../components/magiz-c-benchmark/src/benchmark.css" rel="stylesheet">
+        <link href="../components/magiz-c-paper/src/paper.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-68978617-1', 'magizbox.com');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="..">Probabilistic Graphical Models</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Docs <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../foundation_probability/">Foundation: Probability</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../foundation_graph/">Foundation: Graph</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../bayes_network/">Bayesian Network</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">An Introduction to UnBBayes</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                    <li >
+                        <a rel="next" href="../bayes_network/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li class="disabled">
+                        <a rel="prev" >
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#an-introduction-to-unbbayes">An Introduction to UnBBayes</a></li>
+        
+    
+        <li class="main "><a href="#features">Features</a></li>
+        
+    
+        <li class="main "><a href="#installation">Installation</a></li>
+        
+    
+        <li class="main "><a href="#official-videos">Official Videos</a></li>
+        
+            <li><a href="#overview">Overview</a></li>
+        
+            <li><a href="#bayesian-network">Bayesian Network</a></li>
+        
+            <li><a href="#unbbayes-performance-evaluation-for-multi-sensor-classification-systems">UnBBayes Performance Evaluation for Multi-Sensor Classification Systems</a></li>
+        
+            <li><a href="#probabilistic-ontology-modeling-using-unbbayes">Probabilistic Ontology Modeling Using UnBBayes</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="an-introduction-to-unbbayes">An Introduction to UnBBayes</h2>
+<p>UnBBayes is a probabilistic network framework written in Java. It has both a GUI and an API with inference, sampling, learning and evaluation. It supports Bayesian networks, influence diagrams, MSBN, OOBN, HBN, MEBN/PR-OWL, PRM, structure, parameter and incremental learning.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li>Probabilistic Networks:<ul>
+<li>Bayesian Network (BN)<ul>
+<li>Junction Tree</li>
+<li>Likelihood Weighting</li>
+<li>Gibbs</li>
+</ul>
+</li>
+<li>Influence Diagram (ID)</li>
+<li>Multiply Sectioned Bayesian Network (MSBN)</li>
+<li>Hybrid Bayesian Network (HBN)<ul>
+<li>Gaussian Mixture - Propagation under development</li>
+</ul>
+</li>
+<li>Object-Oriented Bayesian Network (OOBN)</li>
+</ul>
+</li>
+<li>FOL Probabilistic Network:<ul>
+<li>Multi-Entity Bayesian Network (MEBN)</li>
+<li>Probabilistic Ontology Language (PR-OWL)</li>
+</ul>
+</li>
+<li>Learning Bayesian Network:<ul>
+<li>K2</li>
+<li>B</li>
+<li>CBL-A</li>
+<li>CBL-B</li>
+<li>Incremental Learning</li>
+</ul>
+</li>
+<li>Sampling<ul>
+<li>Logic</li>
+<li>Likelihood Weighting</li>
+<li>Gibbs</li>
+</ul>
+</li>
+<li>Classification Performance Evaluation<ul>
+<li>Evaluation using Logic Sampling</li>
+<li>Evaluation using Likelihood Weighting Sampling</li>
+</ul>
+</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<ol>
+<li>Go to <a href="https://sourceforge.net/projects/unbbayes/files/latest/download?source=typ_redirect">https://sourceforge.net/projects/unbbayes/files/latest/download?source=typ_redirect</a> to download zip file</li>
+<li>Extract file <em>unbbayes-4.21.18.zip</em>  to <em>unbbayes-4.21.18</em> folder</li>
+<li>Open <em>unbbayes-4.21.18</em> folder, double click to <em>unbbayes.bat</em></li>
+</ol>
+<p><em>unbbayes-4.21.18</em> open
+<img alt="" src="../images/2016-11-0109_17_25-UnBBayes.png" /></p>
+<h2 id="official-videos">Official Videos</h2>
+<p>In this section, I add some official videos from unbbayes team. There are overview</p>
+<h3 id="overview">Overview</h3>
+<p>In this video we are going to show the basic function we have in UnBBayes. This is the first of many tutorials we have been creating to support the demand for documentation on how to use UnBBayes. We hope this will help UnBBayes' user community to grow even more.</p>
+<p><center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FZa1Obn9qI0" frameborder="0" allowfullscreen></iframe>
+</center></p>
+<h3 id="bayesian-network">Bayesian Network</h3>
+<p>In this video we are going to show how to create and compile a Bayesian Network (BN) in UnBBayes. This is our second of many video tutorials we have been creating to support the demand for documentation on how to use UnBBayes. We hope this will help UnBBayes' user community to grow even more.</p>
+<p><center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ExlfjBQfvMk" frameborder="0" allowfullscreen></iframe>
+</center></p>
+<h3 id="unbbayes-performance-evaluation-for-multi-sensor-classification-systems">UnBBayes Performance Evaluation for Multi-Sensor Classification Systems</h3>
+<p>In this video we are going to show how to do a performance evaluation for multi-sensor classification systems in UnBBayes. It has been a while we do not post new videos, but hopefully this third one is just one more of many tutorials we will have available to support the demand for documentation on how to use UnBBayes. We hope this will help UnBBayes' user community to grow even more.</p>
+<p><center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ExlfjBQfvMk" frameborder="0" allowfullscreen></iframe>
+</center></p>
+<h3 id="probabilistic-ontology-modeling-using-unbbayes">Probabilistic Ontology Modeling Using UnBBayes</h3>
+<p>In this video we discuss how to model probabilistic ontologies using PR-OWL/MEBN in UnBBayes. This session was a video conference between PhD students from the Institute of Business Administration (http://www.iba.edu.pk) and Rommel Carvalho from George Mason University (http://www.gmu.edu).</p>
+<p><center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/e8NabmtbFNc" frameborder="0" allowfullscreen></iframe>
+</center></p></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script>
+        <script src="../components/magiz-c-book/src/gspreadsheet.js"></script>
+        <script src="../components/underscore/underscore.js"></script>
+        <script src="../components/magiz-c-paper/src/paper.js"></script>
+        <script src="../components/magiz-c-course/src/course.js"></script>
+        <script src="../components/magiz-c-benchmark/src/benchmark.js"></script>
+        <script src="../components/magiz-c-benchmark/src/bootstrap-popup.js"></script>
+        <script src="../components/magiz-c-book/src/book.js"></script>
+        <script src="../components/magiz-c-video/src/video.js"></script>
+        <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
