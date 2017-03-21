@@ -327,24 +327,22 @@ P (Y ) . (2.6)
 
 ## 4.1 Independence
 
-As we mentioned, we usually expect P(α | β) to be dierent from P(α). That is, learning that
-β is true changes our probability over α. However, in some situations equality can occur, so
-that P(α | β) = P(α). That is, learning that β occurs did not change our probability of α.
-Definition 2.2 We say that an event α is independent of event β in P , denoted P |= (α ⊥ β), if P(α | β) =
-independent
-events
-P(α) or if P(β) = 0.
+As we mentioned, we usually expect \( P(α | β) \) to be different from \( P(α) \). That is, learning that \( β \) is true changes our probability over \( α \). However, in some situations equality can occur, so that \( P(α | β) = P(α) \). That is, learning that \( β \) occurs did not change our probability of \( α \).
+
+**Definition** *independent events*
+
+*We say that an event \( α \) is* independent *of event \( β \) in \( P \)*, *denoted* \( P \models (α ⊥ β) \), if \( P(α | β) = P(α) \) *or if* \( P(β) = 0 \).
+
 We can also provide an alternative definition for the concept of independence:
-Proposition 2.1 A distribution P satisfies (α ⊥ β) if and only if P(α ∩ β) = P(α)P(β).
-Proof Consider first the case where P(β) = 0; here, we also have P(α ∩ β) = 0, and so
-the equivalence immediately holds. When P(β) 6= 0, we can use the chain rule; we write
-P(α∩β) = P(α | β)P(β). Since α is independent of β, we have that P(α | β) = P(α). Thus,
-P(α ∩ β) = P(α)P(β). Conversely, suppose that P(α ∩ β) = P(α)P(β). Then, by definition,
-we have that
-P(α | β) = P(α ∩ β)
-P(β) =
-P(α)P(β)
-P(β) = P(α).
+
+**Proposition 2.1**
+
+*A distribution \( P \) satisfies \( (α ⊥ β) \) if and only if \( P(α ∩ β) = P(α)P(β) \)*.
+
+PROOF Consider first the case where \( P(β) = 0 \); here, we also have \( P(α ∩ β) = 0 \), and so the equivalence immediately holds. When \( P(β) \neq 0 \), we can use the chain rule; we write \( P(α∩β) = P(α | β)P(β) \). Since \( α \) is independent of \( β \), we have that \( P(α | β) = P(α) \). Thus, \( P(α ∩ β) = P(α)P(β) \). Conversely, suppose that \( P(α ∩ β) = P(α)P(β) \). Then, by definition, we have that
+
+$$ P(α | β) = \frac{P(α ∩ β)}{P(β)} = \frac{P(α)P(β)}{P(β)} = P(α). $$
+
 As an immediate consequence of this alternative definition, we see that independence is a
 symmetric notion. That is, (α ⊥ β) implies (β ⊥ α).
 Example 2.3 For example, suppose that we toss two coins, and let α be the event “the first toss results in a head”

@@ -8,7 +8,11 @@ pages:
   - "Foundation: Probability": "foundation_probability.md"
   - "Foundation: Graph": "foundation_graph.md"
   - "Bayesian Network": "bayes_network.md"
+  - "Tempalte Models for Bayesian Networks": "template_models.md"
   - "An Introduction to UnBBayes": "unbbayes.md"
+- "Datasets":
+  - "Medical Domain Data": "data_medical_domain.md"
+  - "Optical Word Recognition Dataset": "data_owc.md"
 
 extra_css:
   - components/magiz-c-book/src/book.css
