@@ -147,7 +147,7 @@
 <li>(10) <strong>Vomits</strong> <em>true</em> if the patient has vomited.</li>
 <li>(11) <strong>HasFever</strong> <em>true</em> if the patient has a high fever.</li>
 </ul>
-<p>You can download all the data <a href="../medical_domain_dataset.gz">here</a>. The archive contains two files:</p>
+<p>You can download all the data <a href="https://github.com/magizbox/probabilistic_graphical_models/blob/master/docs/labs/datasets/medical_domain_dataset.gz">here</a>. The archive contains two files:</p>
 <ul>
 <li><strong>joint.dat</strong>: The true joint probability distribution over the twelve binary variables. Since each variable is binary, we can represent a * full variable assignment as a bitstring. This file lists all 2^12 assignments (one in each line) as pairs "Integer Probability" where "Integer" is an integer encoding of the bitstring. Specifically, assuming false=0 and true=1, an assignment to all variables results in a 12-bit binary number (with the index of the variables shown in parantheses above) which is converted to a decimal number. For example, assignment 0 represents all variables are false, 1 represents only IsSummer is true, 2 represents only HasFlu is true, and so on.</li>
 <li><strong>dataset.dat</strong>: The dataset consists of samples from the above probability distribution. Each line of the file contains a complete assignment to all the variables, encoded as an integer (as described above).</li>
