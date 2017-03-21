@@ -8,7 +8,7 @@
         <meta name="author" content="Vu Anh">
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>An Introduction to UnBBayes - Probabilistic Graphical Models</title>
+        <title>Optical Word Recognition Dataset - Probabilistic Graphical Models</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -62,7 +62,7 @@
                     <li >
                         <a href="..">Home</a>
                     </li>
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Docs <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
@@ -82,12 +82,12 @@
     <a href="../template_models/">Tempalte Models for Bayesian Networks</a>
 </li>
                             
-<li class="active">
-    <a href="./">An Introduction to UnBBayes</a>
+<li >
+    <a href="../unbbayes/">An Introduction to UnBBayes</a>
 </li>
                         </ul>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Datasets <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
@@ -95,8 +95,8 @@
     <a href="../data_medical_domain/">Medical Domain Data</a>
 </li>
                             
-<li >
-    <a href="../data_owc/">Optical Word Recognition Dataset</a>
+<li class="active">
+    <a href="./">Optical Word Recognition Dataset</a>
 </li>
                         </ul>
                     </li>
@@ -109,12 +109,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../template_models/">
+                        <a rel="next" href="../data_medical_domain/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
-                    <li >
-                        <a rel="prev" href="../data_medical_domain/">
+                    <li class="disabled">
+                        <a rel="prev" >
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -126,93 +126,17 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#an-introduction-to-unbbayes">An Introduction to UnBBayes</a></li>
-        <li class="main "><a href="#features">Features</a></li>
-        <li class="main "><a href="#installation">Installation</a></li>
-        <li class="main "><a href="#official-videos">Official Videos</a></li>
-            <li><a href="#overview">Overview</a></li>
-            <li><a href="#bayesian-network">Bayesian Network</a></li>
-            <li><a href="#unbbayes-performance-evaluation-for-multi-sensor-classification-systems">UnBBayes Performance Evaluation for Multi-Sensor Classification Systems</a></li>
-            <li><a href="#probabilistic-ontology-modeling-using-unbbayes">Probabilistic Ontology Modeling Using UnBBayes</a></li>
+        <li class="main active"><a href="#optical-word-recognition">Optical Word Recognition</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="an-introduction-to-unbbayes">An Introduction to UnBBayes</h2>
-<p>UnBBayes is a probabilistic network framework written in Java. It has both a GUI and an API with inference, sampling, learning and evaluation. It supports Bayesian networks, influence diagrams, MSBN, OOBN, HBN, MEBN/PR-OWL, PRM, structure, parameter and incremental learning.</p>
-<h2 id="features">Features</h2>
-<ul>
-<li>Probabilistic Networks:<ul>
-<li>Bayesian Network (BN)<ul>
-<li>Junction Tree</li>
-<li>Likelihood Weighting</li>
-<li>Gibbs</li>
-</ul>
-</li>
-<li>Influence Diagram (ID)</li>
-<li>Multiply Sectioned Bayesian Network (MSBN)</li>
-<li>Hybrid Bayesian Network (HBN)<ul>
-<li>Gaussian Mixture - Propagation under development</li>
-</ul>
-</li>
-<li>Object-Oriented Bayesian Network (OOBN)</li>
-</ul>
-</li>
-<li>FOL Probabilistic Network:<ul>
-<li>Multi-Entity Bayesian Network (MEBN)</li>
-<li>Probabilistic Ontology Language (PR-OWL)</li>
-</ul>
-</li>
-<li>Learning Bayesian Network:<ul>
-<li>K2</li>
-<li>B</li>
-<li>CBL-A</li>
-<li>CBL-B</li>
-<li>Incremental Learning</li>
-</ul>
-</li>
-<li>Sampling<ul>
-<li>Logic</li>
-<li>Likelihood Weighting</li>
-<li>Gibbs</li>
-</ul>
-</li>
-<li>Classification Performance Evaluation<ul>
-<li>Evaluation using Logic Sampling</li>
-<li>Evaluation using Likelihood Weighting Sampling</li>
-</ul>
-</li>
-</ul>
-<h2 id="installation">Installation</h2>
-<ol>
-<li>Go to <a href="https://sourceforge.net/projects/unbbayes/files/latest/download?source=typ_redirect">https://sourceforge.net/projects/unbbayes/files/latest/download?source=typ_redirect</a> to download zip file</li>
-<li>Extract file <em>unbbayes-4.21.18.zip</em>  to <em>unbbayes-4.21.18</em> folder</li>
-<li>Open <em>unbbayes-4.21.18</em> folder, double click to <em>unbbayes.bat</em></li>
-</ol>
-<p><em>unbbayes-4.21.18</em> open
-<img alt="" src="../images/2016-11-0109_17_25-UnBBayes.png" /></p>
-<h2 id="official-videos">Official Videos</h2>
-<p>In this section, I add some official videos from unbbayes team. There are overview</p>
-<h3 id="overview">Overview</h3>
-<p>In this video we are going to show the basic function we have in UnBBayes. This is the first of many tutorials we have been creating to support the demand for documentation on how to use UnBBayes. We hope this will help UnBBayes' user community to grow even more.</p>
-<p><center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FZa1Obn9qI0" frameborder="0" allowfullscreen></iframe>
-</center></p>
-<h3 id="bayesian-network">Bayesian Network</h3>
-<p>In this video we are going to show how to create and compile a Bayesian Network (BN) in UnBBayes. This is our second of many video tutorials we have been creating to support the demand for documentation on how to use UnBBayes. We hope this will help UnBBayes' user community to grow even more.</p>
-<p><center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ExlfjBQfvMk" frameborder="0" allowfullscreen></iframe>
-</center></p>
-<h3 id="unbbayes-performance-evaluation-for-multi-sensor-classification-systems">UnBBayes Performance Evaluation for Multi-Sensor Classification Systems</h3>
-<p>In this video we are going to show how to do a performance evaluation for multi-sensor classification systems in UnBBayes. It has been a while we do not post new videos, but hopefully this third one is just one more of many tutorials we will have available to support the demand for documentation on how to use UnBBayes. We hope this will help UnBBayes' user community to grow even more.</p>
-<p><center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ExlfjBQfvMk" frameborder="0" allowfullscreen></iframe>
-</center></p>
-<h3 id="probabilistic-ontology-modeling-using-unbbayes">Probabilistic Ontology Modeling Using UnBBayes</h3>
-<p>In this video we discuss how to model probabilistic ontologies using PR-OWL/MEBN in UnBBayes. This session was a video conference between PhD students from the Institute of Business Administration (http://www.iba.edu.pk) and Rommel Carvalho from George Mason University (http://www.gmu.edu).</p>
-<p><center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/e8NabmtbFNc" frameborder="0" allowfullscreen></iframe>
-</center></p></div>
+<h1 id="optical-word-recognition">Optical Word Recognition</h1>
+<p>We will be studying the computer vision task of recognizing words from images. The task of recognizing words is usually decomposed to recognition of individual characters from their respective images (optical character recognition, OCR), and hence inferring the word. However character recognition is often a very difficult task, and since each character is predicted independent of its neighbors, its results can often contain combinations of characters that may not be possible in English. In this homework we will augment a simple OCR model with additional factors that capture some intuitions based on character co-occurences and image similarities.</p>
+<p><img alt="" src="../images/hw2-model.jpg" /></p>
+<p>The undirected graphical model for recognition of a given word is given in the figure above. It consists of two types of variables:</p>
+<p>Image Variables: These are observed images that we need to predict the corresponsing character of, and the number of these image variables for a word is the number of characters in the word. The value of these image variables is an observed image, represented by an integer id (less than 1000). For the description of the model, assume the id of the image at position i is represented by img(i).
+Character Variables: These are unobserved variables that represent the character prediction for each of the images, and there is one of these for each of the image variables. For our dataset, the domain of these variables is restricted to the ten most frequent characters in the English language ({e,t,a,o,i,n,s,h,r,d} <a href="https://en.wikipedia.org/wiki/Letter_frequency#Relative_frequencies_of_letters_in_the_English_language">[1]</a>), instead of the complete alphabet. For the discussion below, assume the predicted character at position i is represented by char(i).</p></div>
         </div>
 
         <footer class="col-md-12">

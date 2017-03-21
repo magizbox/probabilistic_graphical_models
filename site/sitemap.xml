@@ -3,8 +3,8 @@
 
     
     <url>
-     <loc>None/</loc>
-     <lastmod>2016-11-01</lastmod>
+     <loc>/</loc>
+     <lastmod>2017-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,26 +12,48 @@
     
         
     <url>
-     <loc>None/foundation_probability/</loc>
-     <lastmod>2016-11-01</lastmod>
+     <loc>/foundation_probability/</loc>
+     <lastmod>2017-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/foundation_graph/</loc>
-     <lastmod>2016-11-01</lastmod>
+     <loc>/foundation_graph/</loc>
+     <lastmod>2017-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/bayes_network/</loc>
-     <lastmod>2016-11-01</lastmod>
+     <loc>/bayes_network/</loc>
+     <lastmod>2017-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/unbbayes/</loc>
-     <lastmod>2016-11-01</lastmod>
+     <loc>/template_models/</loc>
+     <lastmod>2017-03-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/unbbayes/</loc>
+     <lastmod>2017-03-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/data_medical_domain/</loc>
+     <lastmod>2017-03-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/data_owc/</loc>
+     <lastmod>2017-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

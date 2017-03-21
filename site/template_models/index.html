@@ -8,7 +8,7 @@
         <meta name="author" content="Vu Anh">
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>An Introduction to UnBBayes - Probabilistic Graphical Models</title>
+        <title>Tempalte Models for Bayesian Networks - Probabilistic Graphical Models</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -78,12 +78,12 @@
     <a href="../bayes_network/">Bayesian Network</a>
 </li>
                             
-<li >
-    <a href="../template_models/">Tempalte Models for Bayesian Networks</a>
+<li class="active">
+    <a href="./">Tempalte Models for Bayesian Networks</a>
 </li>
                             
-<li class="active">
-    <a href="./">An Introduction to UnBBayes</a>
+<li >
+    <a href="../unbbayes/">An Introduction to UnBBayes</a>
 </li>
                         </ul>
                     </li>
@@ -109,12 +109,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../template_models/">
+                        <a rel="next" href="../bayes_network/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../data_medical_domain/">
+                        <a rel="prev" href="../unbbayes/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -126,92 +126,32 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#an-introduction-to-unbbayes">An Introduction to UnBBayes</a></li>
-        <li class="main "><a href="#features">Features</a></li>
-        <li class="main "><a href="#installation">Installation</a></li>
-        <li class="main "><a href="#official-videos">Official Videos</a></li>
-            <li><a href="#overview">Overview</a></li>
-            <li><a href="#bayesian-network">Bayesian Network</a></li>
-            <li><a href="#unbbayes-performance-evaluation-for-multi-sensor-classification-systems">UnBBayes Performance Evaluation for Multi-Sensor Classification Systems</a></li>
-            <li><a href="#probabilistic-ontology-modeling-using-unbbayes">Probabilistic Ontology Modeling Using UnBBayes</a></li>
+        <li class="main active"><a href="#template-models-for-bayesian-networks">Template Models for Bayesian Networks</a></li>
+            <li><a href="#temporal-models">Temporal Models</a></li>
+            <li><a href="#dynamic-bayesian-networks">Dynamic Bayesian Networks</a></li>
+            <li><a href="#directed-probabilistic-models-for-object-relational-domains">Directed Probabilistic Models for Object-Relational Domains</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="an-introduction-to-unbbayes">An Introduction to UnBBayes</h2>
-<p>UnBBayes is a probabilistic network framework written in Java. It has both a GUI and an API with inference, sampling, learning and evaluation. It supports Bayesian networks, influence diagrams, MSBN, OOBN, HBN, MEBN/PR-OWL, PRM, structure, parameter and incremental learning.</p>
-<h2 id="features">Features</h2>
-<ul>
-<li>Probabilistic Networks:<ul>
-<li>Bayesian Network (BN)<ul>
-<li>Junction Tree</li>
-<li>Likelihood Weighting</li>
-<li>Gibbs</li>
-</ul>
-</li>
-<li>Influence Diagram (ID)</li>
-<li>Multiply Sectioned Bayesian Network (MSBN)</li>
-<li>Hybrid Bayesian Network (HBN)<ul>
-<li>Gaussian Mixture - Propagation under development</li>
-</ul>
-</li>
-<li>Object-Oriented Bayesian Network (OOBN)</li>
-</ul>
-</li>
-<li>FOL Probabilistic Network:<ul>
-<li>Multi-Entity Bayesian Network (MEBN)</li>
-<li>Probabilistic Ontology Language (PR-OWL)</li>
-</ul>
-</li>
-<li>Learning Bayesian Network:<ul>
-<li>K2</li>
-<li>B</li>
-<li>CBL-A</li>
-<li>CBL-B</li>
-<li>Incremental Learning</li>
-</ul>
-</li>
-<li>Sampling<ul>
-<li>Logic</li>
-<li>Likelihood Weighting</li>
-<li>Gibbs</li>
-</ul>
-</li>
-<li>Classification Performance Evaluation<ul>
-<li>Evaluation using Logic Sampling</li>
-<li>Evaluation using Likelihood Weighting Sampling</li>
-</ul>
-</li>
-</ul>
-<h2 id="installation">Installation</h2>
-<ol>
-<li>Go to <a href="https://sourceforge.net/projects/unbbayes/files/latest/download?source=typ_redirect">https://sourceforge.net/projects/unbbayes/files/latest/download?source=typ_redirect</a> to download zip file</li>
-<li>Extract file <em>unbbayes-4.21.18.zip</em>  to <em>unbbayes-4.21.18</em> folder</li>
-<li>Open <em>unbbayes-4.21.18</em> folder, double click to <em>unbbayes.bat</em></li>
-</ol>
-<p><em>unbbayes-4.21.18</em> open
-<img alt="" src="../images/2016-11-0109_17_25-UnBBayes.png" /></p>
-<h2 id="official-videos">Official Videos</h2>
-<p>In this section, I add some official videos from unbbayes team. There are overview</p>
-<h3 id="overview">Overview</h3>
-<p>In this video we are going to show the basic function we have in UnBBayes. This is the first of many tutorials we have been creating to support the demand for documentation on how to use UnBBayes. We hope this will help UnBBayes' user community to grow even more.</p>
+<h1 id="template-models-for-bayesian-networks">Template Models for Bayesian Networks</h1>
+<p>In many cases, we need to model distributions that have a recurring structure. In this module, we describe representations for two such situations. One is temporal scenarios, where we want to model a probabilistic structure that holds constant over time; here, we use Hidden Markov Models, or, more generally, Dynamic Bayesian Networks. The other is aimed at scenarios that involve multiple similar entities, each of whose properties is governed by a similar model; here, we use Plate Models.</p>
+<h2 id="temporal-models">Temporal Models</h2>
+<p>Our focus in this section is on modeling dynamic settings, where we are interested in reasoning about the state of the world as it evolves over time. We can model such settings in terms of a system state system state, whose value at time t is a snapshot of the relevant attributes (hidden or observed) of the system at time t. We assume that the system state is represented, as usual, as an assignment of values to some set of random variables X . We use X (t) i to represent the instantiation of the variable Xi at time t. Note that Xi itself is no longer a variable that takes a value; rather, it is a template variable template variable. This template is instantiated at dierent points in time t, and each Xi (t) is a variable that takes a value in Val(Xi). For a set of variables X ⊆ X , we use X (t1:t2) (t1 &lt; t2) to denote the set of variables {X (t) : t ∈ [t1,t2]}. As usual, we use the notation x(t:t0) for an
+assignment of values to this set of variables.</p>
+<p>Each “possible world” in our probability space is now a trajectory: an assignment of values to each variable X (t) i for each relevant time t. Our goal therefore is to represent a joint distribution over such trajectories. Clearly, the space of possible trajectories is a very complex probability space, so representing such a distribution can be very dicult. We therefore make a series of simplifying assumptions that help make this representational problem more tractable.</p>
+<h2 id="dynamic-bayesian-networks">Dynamic Bayesian Networks</h2>
+<p><img alt="" src="../images/6.1.png" /></p>
+<p><img alt="" src="../images/6.2.png" /></p>
+<h2 id="directed-probabilistic-models-for-object-relational-domains">Directed Probabilistic Models for Object-Relational Domains</h2>
+<p>Based on the framework described in the previous section, we now describe template-based representation languages that can encode directed probabilistic models.</p>
+<h3 id="plate-models">Plate Models</h3>
+<p>We begin our discussion by presenting the <em>plate model</em>, the simplest and best-established of the object-relational frameworks. Although restricted in several important ways, the plate modeling framework is perhaps the approach that has been most commonly used in practice, notably for encoding the assumptions made in various learning tasks. This framework also provides an excellent starting point for describing the key ideas of template-based languages and for motivating some of the extensions that have been pursued in richer languages.</p>
+<p>In the plate formalism, object types are called <em>plates</em>. The fact that multiple objects in the class share the same set of attributes and same probabilistic model is the basis for the use of the term “plate,” which suggests a stack of identical objects. We begin with some motivating examples and then describe the formal framework.</p>
+<h4 id="examples">Examples</h4>
+<p><strong>Example 1</strong> <em>The simplest example of a plate model, shown in figure 6.6, describes multiple random variables generated from the same distribution. In this case, we have a set of random variables <script type="math/tex"> X(d)\ (d ∈ D) </script> that all have the same domain Val(X) and are sampled from the same distribution. In a plate representation, we encode the fact that these variables are all generated from the same template by drawing only a single node X(d) and enclosing it in a box denoting that d ranges over D, so that we know that the box represents an entire “stack” of these identically distributed variables. This box plate is called a plate, with the analogy that it represents a stack of identical plates.</em></p>
 <p><center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FZa1Obn9qI0" frameborder="0" allowfullscreen></iframe>
-</center></p>
-<h3 id="bayesian-network">Bayesian Network</h3>
-<p>In this video we are going to show how to create and compile a Bayesian Network (BN) in UnBBayes. This is our second of many video tutorials we have been creating to support the demand for documentation on how to use UnBBayes. We hope this will help UnBBayes' user community to grow even more.</p>
-<p><center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ExlfjBQfvMk" frameborder="0" allowfullscreen></iframe>
-</center></p>
-<h3 id="unbbayes-performance-evaluation-for-multi-sensor-classification-systems">UnBBayes Performance Evaluation for Multi-Sensor Classification Systems</h3>
-<p>In this video we are going to show how to do a performance evaluation for multi-sensor classification systems in UnBBayes. It has been a while we do not post new videos, but hopefully this third one is just one more of many tutorials we will have available to support the demand for documentation on how to use UnBBayes. We hope this will help UnBBayes' user community to grow even more.</p>
-<p><center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ExlfjBQfvMk" frameborder="0" allowfullscreen></iframe>
-</center></p>
-<h3 id="probabilistic-ontology-modeling-using-unbbayes">Probabilistic Ontology Modeling Using UnBBayes</h3>
-<p>In this video we discuss how to model probabilistic ontologies using PR-OWL/MEBN in UnBBayes. This session was a video conference between PhD students from the Institute of Business Administration (http://www.iba.edu.pk) and Rommel Carvalho from George Mason University (http://www.gmu.edu).</p>
-<p><center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/e8NabmtbFNc" frameborder="0" allowfullscreen></iframe>
+<img alt="" src="../images/6.6.png" />
 </center></p></div>
         </div>
 

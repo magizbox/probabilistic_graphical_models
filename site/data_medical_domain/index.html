@@ -8,7 +8,7 @@
         <meta name="author" content="Vu Anh">
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>An Introduction to UnBBayes - Probabilistic Graphical Models</title>
+        <title>Medical Domain Data - Probabilistic Graphical Models</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -62,7 +62,7 @@
                     <li >
                         <a href="..">Home</a>
                     </li>
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Docs <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
@@ -82,17 +82,17 @@
     <a href="../template_models/">Tempalte Models for Bayesian Networks</a>
 </li>
                             
-<li class="active">
-    <a href="./">An Introduction to UnBBayes</a>
+<li >
+    <a href="../unbbayes/">An Introduction to UnBBayes</a>
 </li>
                         </ul>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Datasets <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
-<li >
-    <a href="../data_medical_domain/">Medical Domain Data</a>
+<li class="active">
+    <a href="./">Medical Domain Data</a>
 </li>
                             
 <li >
@@ -109,12 +109,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../template_models/">
+                        <a rel="next" href="../unbbayes/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../data_medical_domain/">
+                        <a rel="prev" href="../data_owc/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -126,93 +126,32 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#an-introduction-to-unbbayes">An Introduction to UnBBayes</a></li>
-        <li class="main "><a href="#features">Features</a></li>
-        <li class="main "><a href="#installation">Installation</a></li>
-        <li class="main "><a href="#official-videos">Official Videos</a></li>
-            <li><a href="#overview">Overview</a></li>
-            <li><a href="#bayesian-network">Bayesian Network</a></li>
-            <li><a href="#unbbayes-performance-evaluation-for-multi-sensor-classification-systems">UnBBayes Performance Evaluation for Multi-Sensor Classification Systems</a></li>
-            <li><a href="#probabilistic-ontology-modeling-using-unbbayes">Probabilistic Ontology Modeling Using UnBBayes</a></li>
+        <li class="main active"><a href="#medical-domain-data">Medical Domain Data</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="an-introduction-to-unbbayes">An Introduction to UnBBayes</h2>
-<p>UnBBayes is a probabilistic network framework written in Java. It has both a GUI and an API with inference, sampling, learning and evaluation. It supports Bayesian networks, influence diagrams, MSBN, OOBN, HBN, MEBN/PR-OWL, PRM, structure, parameter and incremental learning.</p>
-<h2 id="features">Features</h2>
+<h1 id="medical-domain-data">Medical Domain Data</h1>
+<p>We have provided you with a joint probability distribution of symptons, conditions and diseases based on the "flu" example in class. Certain diseases are more likely than others given certain symptons, and a model such as this can be used to help doctors make a diagnosis.  (Don't actually use this for diagnosis, though!). The ground-truth joint probability distribution consists of twelve binary random variables and contains <script type="math/tex"> 2^{12} </script> possible configurations (numbered 0 to 4095), which is small enough that you can enumerate them exhaustively. The variables are as follows:</p>
 <ul>
-<li>Probabilistic Networks:<ul>
-<li>Bayesian Network (BN)<ul>
-<li>Junction Tree</li>
-<li>Likelihood Weighting</li>
-<li>Gibbs</li>
+<li>(0) <strong>IsSummer</strong> <em>true</em> if it is the summer season, false otherwise.</li>
+<li>(1) <strong>HasFlu</strong> <em>true</em> if the patient has the flu.</li>
+<li>(2) <strong>HasFoodPoisoning</strong> <em>true</em> if the patient has food poisoning.</li>
+<li>(3) <strong>HasHayFever</strong> <em>true</em> if patient has hay fever.</li>
+<li>(4) <strong>HasPneumonia</strong> <em>true</em> if the patient has pneumonia.</li>
+<li>(5) <strong>HasRespiratoryProblems</strong> <em>true</em> if the patient has problems in the respiratory system.</li>
+<li>(6) <strong>HasGastricProblems</strong> <em>true</em> if the patient has problems in the gastro-intestinal system.</li>
+<li>(7) <strong>HasRash</strong> <em>true</em> if the patient has a skin rash.</li>
+<li>(8) <strong>Coughs</strong> <em>true</em> if the patient has a cough.</li>
+<li>(9) <strong>IsFatigued</strong> <em>true</em> if the patient is tired and fatigued.</li>
+<li>(10) <strong>Vomits</strong> <em>true</em> if the patient has vomited.</li>
+<li>(11) <strong>HasFever</strong> <em>true</em> if the patient has a high fever.</li>
 </ul>
-</li>
-<li>Influence Diagram (ID)</li>
-<li>Multiply Sectioned Bayesian Network (MSBN)</li>
-<li>Hybrid Bayesian Network (HBN)<ul>
-<li>Gaussian Mixture - Propagation under development</li>
-</ul>
-</li>
-<li>Object-Oriented Bayesian Network (OOBN)</li>
-</ul>
-</li>
-<li>FOL Probabilistic Network:<ul>
-<li>Multi-Entity Bayesian Network (MEBN)</li>
-<li>Probabilistic Ontology Language (PR-OWL)</li>
-</ul>
-</li>
-<li>Learning Bayesian Network:<ul>
-<li>K2</li>
-<li>B</li>
-<li>CBL-A</li>
-<li>CBL-B</li>
-<li>Incremental Learning</li>
-</ul>
-</li>
-<li>Sampling<ul>
-<li>Logic</li>
-<li>Likelihood Weighting</li>
-<li>Gibbs</li>
-</ul>
-</li>
-<li>Classification Performance Evaluation<ul>
-<li>Evaluation using Logic Sampling</li>
-<li>Evaluation using Likelihood Weighting Sampling</li>
-</ul>
-</li>
-</ul>
-<h2 id="installation">Installation</h2>
-<ol>
-<li>Go to <a href="https://sourceforge.net/projects/unbbayes/files/latest/download?source=typ_redirect">https://sourceforge.net/projects/unbbayes/files/latest/download?source=typ_redirect</a> to download zip file</li>
-<li>Extract file <em>unbbayes-4.21.18.zip</em>  to <em>unbbayes-4.21.18</em> folder</li>
-<li>Open <em>unbbayes-4.21.18</em> folder, double click to <em>unbbayes.bat</em></li>
-</ol>
-<p><em>unbbayes-4.21.18</em> open
-<img alt="" src="../images/2016-11-0109_17_25-UnBBayes.png" /></p>
-<h2 id="official-videos">Official Videos</h2>
-<p>In this section, I add some official videos from unbbayes team. There are overview</p>
-<h3 id="overview">Overview</h3>
-<p>In this video we are going to show the basic function we have in UnBBayes. This is the first of many tutorials we have been creating to support the demand for documentation on how to use UnBBayes. We hope this will help UnBBayes' user community to grow even more.</p>
-<p><center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FZa1Obn9qI0" frameborder="0" allowfullscreen></iframe>
-</center></p>
-<h3 id="bayesian-network">Bayesian Network</h3>
-<p>In this video we are going to show how to create and compile a Bayesian Network (BN) in UnBBayes. This is our second of many video tutorials we have been creating to support the demand for documentation on how to use UnBBayes. We hope this will help UnBBayes' user community to grow even more.</p>
-<p><center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ExlfjBQfvMk" frameborder="0" allowfullscreen></iframe>
-</center></p>
-<h3 id="unbbayes-performance-evaluation-for-multi-sensor-classification-systems">UnBBayes Performance Evaluation for Multi-Sensor Classification Systems</h3>
-<p>In this video we are going to show how to do a performance evaluation for multi-sensor classification systems in UnBBayes. It has been a while we do not post new videos, but hopefully this third one is just one more of many tutorials we will have available to support the demand for documentation on how to use UnBBayes. We hope this will help UnBBayes' user community to grow even more.</p>
-<p><center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ExlfjBQfvMk" frameborder="0" allowfullscreen></iframe>
-</center></p>
-<h3 id="probabilistic-ontology-modeling-using-unbbayes">Probabilistic Ontology Modeling Using UnBBayes</h3>
-<p>In this video we discuss how to model probabilistic ontologies using PR-OWL/MEBN in UnBBayes. This session was a video conference between PhD students from the Institute of Business Administration (http://www.iba.edu.pk) and Rommel Carvalho from George Mason University (http://www.gmu.edu).</p>
-<p><center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/e8NabmtbFNc" frameborder="0" allowfullscreen></iframe>
-</center></p></div>
+<p>You can download all the data <a href="../medical_domain_dataset.gz">here</a>. The archive contains two files:</p>
+<ul>
+<li><strong>joint.dat</strong>: The true joint probability distribution over the twelve binary variables. Since each variable is binary, we can represent a * full variable assignment as a bitstring. This file lists all 2^12 assignments (one in each line) as pairs "Integer Probability" where "Integer" is an integer encoding of the bitstring. Specifically, assuming false=0 and true=1, an assignment to all variables results in a 12-bit binary number (with the index of the variables shown in parantheses above) which is converted to a decimal number. For example, assignment 0 represents all variables are false, 1 represents only IsSummer is true, 2 represents only HasFlu is true, and so on.</li>
+<li><strong>dataset.dat</strong>: The dataset consists of samples from the above probability distribution. Each line of the file contains a complete assignment to all the variables, encoded as an integer (as described above).</li>
+</ul></div>
         </div>
 
         <footer class="col-md-12">
