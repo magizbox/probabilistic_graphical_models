@@ -10,6 +10,7 @@ pages:
   - "Bayesian Network": "bayes_network.md"
   - "Tempalte Models for Bayesian Networks": "template_models.md"
   - "An Introduction to UnBBayes": "unbbayes.md"
+  - "Factor Graph": "factor_graph.md"
 - "Datasets":
   - "Medical Domain Data": "data_medical_domain.md"
   - "Optical Word Recognition Dataset": "data_owc.md"
