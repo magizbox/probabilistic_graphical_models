@@ -1,0 +1,73 @@
+<!doctype html>
+<meta charset="utf-8">
+<script src="http://distill.pub/template.v1.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+
+<script type="text/front-matter">
+  title: Tabular CPDs
+  description: Demonstration for Tabular CPDs
+  published: Jan 10, 2017
+  authors:
+  - Vu Anh: http://magizbox.com
+  affiliations:
+  - magizbox: http://magizbox.com
+
+</script>
+
+<dt-article>
+  <h1>Tabular CPDs</h1>
+  <h2>Demonstration for Tabular CPDs</h2>
+  <dt-byline></dt-byline>
+  <p>
+    Represent every possible discrete CPDs as a table.
+
+    <img src="images/tabular_representation.svg" width="300px" ; height="300px" alt="tabular network">
+
+    <br/>
+    So we have
+    <div class="tex" data-expr="\sum\limits_{x \in Val(x)} P(x|Pa_{X})) = 1."></div>
+  </p>
+
+  <h2>Advantages</h2>
+  <ul>
+    <li>Easy make inference (natural)</li>
+  </ul>
+
+  <h2>Disadvantages</h2>
+  <ul>
+    <li>Doesn't work with continuous variables</li>
+    <li>The number of parameters needed to describe a table-CPD is the number of join assignments to <span class="tex" data-expr="X"></span> and <span class="tex" data-expr="Pa_{X}"></span>
+    </li>
+  </ul>
+
+  <h2>Example</h2>
+  <p>
+    Structure of the sprinkler network
+
+    <img src="images/tabular_cpd.svg" width="600px" ; height="600px" alt="tabular network">
+  </p>
+</dt-article>
+
+<dt-appendix>
+</dt-appendix>
+
+<script type="text/bibliography">
+  @article{gregor2015draw,
+    title={DRAW: A recurrent neural network for image generation},
+    author={Gregor, Karol and Danihelka, Ivo and Graves, Alex and Rezende, Danilo Jimenez and Wierstra, Daan},
+    journal={arXivreprint arXiv:1502.04623},
+    year={2015},
+    url={https://arxiv.org/pdf/1502.04623.pdf}
+  }
+
+</script>
+
+<script>
+  window.onload = function() {
+      var tex = document.getElementsByClassName("tex");
+      Array.prototype.forEach.call(tex, function(el) {
+          katex.render(el.getAttribute("data-expr"), el);
+      });
+  };
+</script>
