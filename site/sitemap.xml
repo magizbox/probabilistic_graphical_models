@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2017-03-21</lastmod>
+     <lastmod>2017-07-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,31 +13,37 @@
         
     <url>
      <loc>/foundation_probability/</loc>
-     <lastmod>2017-03-21</lastmod>
+     <lastmod>2017-07-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/foundation_graph/</loc>
-     <lastmod>2017-03-21</lastmod>
+     <lastmod>2017-07-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/bayes_network/</loc>
-     <lastmod>2017-03-21</lastmod>
+     <lastmod>2017-07-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/template_models/</loc>
-     <lastmod>2017-03-21</lastmod>
+     <lastmod>2017-07-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/unbbayes/</loc>
-     <lastmod>2017-03-21</lastmod>
+     <lastmod>2017-07-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/factor_graph/</loc>
+     <lastmod>2017-07-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -47,13 +53,13 @@
         
     <url>
      <loc>/data_medical_domain/</loc>
-     <lastmod>2017-03-21</lastmod>
+     <lastmod>2017-07-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/data_owc/</loc>
-     <lastmod>2017-03-21</lastmod>
+     <lastmod>2017-07-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
