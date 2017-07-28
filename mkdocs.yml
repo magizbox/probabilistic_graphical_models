@@ -9,7 +9,7 @@ pages:
   - "Foundation: Probability": "foundation_probability.md"
   - "Foundation: Graph": "foundation_graph.md"
   - "Bayesian Network": "representation_bayesian_network.md"
-  - "Tempalte Models for Bayesian Networks": "representation_template_models.md"
+  - "Template Models for Bayesian Networks": "representation_template_models.md"
   - "Factor Graph": "factor_graph.md"
 - "Inference": "inference.md"
 - "Learning": "learning.md"
