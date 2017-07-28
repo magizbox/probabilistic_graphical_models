@@ -62,3 +62,12 @@ footer {
     padding-bottom: 10px;
     font-size: 14px;
 }
+
+/** mathjax css */
+.mi {
+    font-size: 90%;
+}
+
+.mn {
+    font-size: 65%;
+}

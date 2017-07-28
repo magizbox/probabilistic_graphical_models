@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Probabilistic Graphical Models\n\n\n\n\nProbabilistic graphical models (PGMs) are a rich framework for encoding probability distributions over complex domains: joint (multivariate) distributions over large numbers of random variables that interact with each other. These representations sit at the intersection of statistics and computer science, relying on concepts from probability theory, graph algorithms, machine learning, and more. They are the basis for the state-of-the-art methods in a wide variety of applications, such as medical diagnosis, image understanding, speech recognition, natural language processing, and many, many more. They are also a foundational tool in formulating many machine learning problems.\n\n\n\n\nTable of Contents\n\n\nThis site is intended to host a variety of resources and pointers to information about Probabilistic Graphical Models. \n\n\nRepresentation\n\n\n\n\nIntroduction\n\n\nBayesian Network (Directed Models)\n\n\nTemplate Models for Bayesian Networks\n\n\nStructured CPDs for Bayesian Networks\n\n\nMarkov Networks (Undirected Models)\n\n\nDecision Making\n\n\nReal world examples\n\n\n\n\nInference\n\n\n\n\nInference Overview\n\n\nBelief Propagation Algorithms\n\n\nMAP Algorithms\n\n\nSampling Methods\n\n\nInference in Temporal Models\n\n\n\n\nLearning\n\n\n\n\nLearning Overview\n\n\nParameter Estimation in Bayesian Networks\n\n\nLearning Undirected Models\n\n\nLearning BN Structure\n\n\nLearning BNs with Incomplete Data\n\n\nLearning Summary\n\n\n\n\nMiscellaneous\n\n\n\n\nBest books about Probabilistic Graphical Models\n\n\nBest courses about Probablistic Graphical Models\n\n\n\n\nBooks\n\n\n\n\n\n\n\n\nCourses", 
+            "text": "Probabilistic Graphical Models\n\n\n\n\nProbabilistic graphical models (PGMs) are a rich framework for encoding probability distributions over complex domains: joint (multivariate) distributions over large numbers of random variables that interact with each other. These representations sit at the intersection of statistics and computer science, relying on concepts from probability theory, graph algorithms, machine learning, and more. They are the basis for the state-of-the-art methods in a wide variety of applications, such as medical diagnosis, image understanding, speech recognition, natural language processing, and many, many more. They are also a foundational tool in formulating many machine learning problems.\n\n\n\n\nTable of Contents\n\n\nThis site is intended to host a variety of resources and pointers to information about Probabilistic Graphical Models. \n\n\nRepresentation\n\n\n\n\nIntroduction\n\n\nBayesian Network (Directed Models)\n\n\nTemplate Models for Bayesian Networks\n\n\nStructured CPDs for Bayesian Networks\n\n\nMarkov Networks (Undirected Models)\n\n\nDecision Making\n\n\nReal world examples\n\n\n\n\nInference\n\n\n\n\nInference Overview\n\n\nBelief Propagation Algorithms\n\n\nMAP Algorithms\n\n\nSampling Methods\n\n\nInference in Temporal Models\n\n\n\n\nLearning\n\n\n\n\nLearning Overview\n\n\nParameter Estimation in Bayesian Networks\n\n\nLearning Undirected Models\n\n\nLearning BN Structure\n\n\nLearning BNs with Incomplete Data\n\n\nLearning Summary\n\n\n\n\nMiscellaneous\n\n\n\n\nBooks\n\n\nCourses\n\n\nSoftwares\n\n\nDatasets\n\n\n\n\nSoftwares\n\n\n\n\nAn introduction to UnBBayes\n\n\n\n\nDatasets\n\n\n\n\nMedical Domain Data\n\n\nOptical Word Recognition\n\n\n\n\nBooks\n\n\n\n\n\n\n\n\nCourses", 
             "title": "Home"
         }, 
         {
@@ -32,8 +32,18 @@
         }, 
         {
             "location": "/#miscellaneous", 
-            "text": "Best books about Probabilistic Graphical Models  Best courses about Probablistic Graphical Models", 
+            "text": "Books  Courses  Softwares  Datasets", 
             "title": "Miscellaneous"
+        }, 
+        {
+            "location": "/#softwares", 
+            "text": "An introduction to UnBBayes", 
+            "title": "Softwares"
+        }, 
+        {
+            "location": "/#datasets", 
+            "text": "Medical Domain Data  Optical Word Recognition", 
+            "title": "Datasets"
         }, 
         {
             "location": "/#books", 
@@ -44,6 +54,16 @@
             "location": "/#courses", 
             "text": "", 
             "title": "Courses"
+        }, 
+        {
+            "location": "/representation/", 
+            "text": "Representation\n\n\nProbabilistic graphical models (PGMs) are a rich framework for encoding probability distributions over complex domains: joint (multivariate) distributions over large numbers of random variables that interact with each other.\n\n\nThese representations sit at the intersection of statistics and computer science, relying on concepts from probability theory, graph algorithms, machine learning, and more. They are the basis for the state-of-the-art methods in a wide variety of applications, such as medical diagnosis, image understanding, speech recognition, natural language processing, and many, many more. They are also a foundational tool in formulating many machine learning problems.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/representation/#representation", 
+            "text": "Probabilistic graphical models (PGMs) are a rich framework for encoding probability distributions over complex domains: joint (multivariate) distributions over large numbers of random variables that interact with each other.  These representations sit at the intersection of statistics and computer science, relying on concepts from probability theory, graph algorithms, machine learning, and more. They are the basis for the state-of-the-art methods in a wide variety of applications, such as medical diagnosis, image understanding, speech recognition, natural language processing, and many, many more. They are also a foundational tool in formulating many machine learning problems.", 
+            "title": "Representation"
         }, 
         {
             "location": "/foundation_probability/", 
@@ -221,94 +241,64 @@
             "title": "4 Cycles and Loops"
         }, 
         {
-            "location": "/bayes_network/", 
-            "text": "Bayesian Network", 
+            "location": "/representation_bayesian_network/", 
+            "text": "Bayesian Network\n\n\nA Bayesian network is a graphical model that encodes probabilistic relationships among variables of interest. When used in conjunction with statistical techniques, the graphical model has several advantages for data analysis. One, because the model encodes dependencies among all variables, it readily handles situations where some data entries are missing. Two, a Bayesian network can be used to learn causal relationships, and hence can be used to gain understanding about a problem domain and to predict the consequences of intervention. Three, because the model has both a causal and probabilistic semantics, it is an ideal representation for combining prior knowledge (which often comes in causal form) and data. Four, Bayesian statistical methods in conjunction with bayesian networks offer an efficient and principled approach for avoiding the overfitting of data. In this paper, we discuss methods for constructing Bayesian networks from prior knowledge and summarize Bayesian statistical methods for using data to improve these models. With regard to the latter task, we describe methods for learning both the parameters and structure of a Bayesian network, including techniques for learning with incomplete data. In addition, we relate Bayesian-network methods for learning to techniques for supervised and unsupervised learning. We illustrate the graphical-modeling approach using a real-world case study.\n\n\nA Non-Causal Bayesian Network Example\n\n\nFigure 1 shows a simple Bayesian network, which consists of only two nodes and one link. It represents the JPD of the variables Eye Color and Hair Color in a population of students (Snee, 1974). In this case, the conditional probabilities of Hair Color given the values of its parent node, Eye Color, are provided in a CPT. It is important to point out that this Bayesian network does not contain any causal assumptions, i.e. we have no knowledge of the causal order between the variables. Thus, the interpretation of this network should be merely statistical (informational).\n\n\n\n\nA Causal Network Example\n\n\nFigure 2 illustrates another simple yet typical Bayesian network. In contrast to the statistical relationships in Figure 1, the diagram in Figure 2 describes the causal relationships among the seasons of the year (\nX_1\n), whether it is raining (\nX_2\n), whether the sprinkler is on (\nX_3\n), whether the pavement is wet (\nX_4\n), and whether the pavement is slippery (\nX_5\n). Here, the absence of a direct link between \nX_1\n and \nX_5\n, for example, captures our understanding that there is no direct influence of season on slipperiness. The influence is mediated by the wetness of the pavement (if freezing were a possibility, a direct link could be added). \n\n\n\n\nA Dynamic Bayesian Network Example\n\n\nEntities that live in a changing environment must keep track of variables whose values change over time. Dynamic Bayesian networks capture this process by representing multiple copies of the state variables, one for each time step. A set of variables \nX_{t-1}\n and \nX_t\n denotes the world state at times t-1 and t respectively. A set of evidence variables Et denotes the observations available at time t. The sensor model \nP(E_t|X_t)\n is encoded in the conditional probability distributions for the observable variables, given the state variables. The transition model \nP(X_t|X_{t-1})\n relates the state at time t-1 to the state at time t. Keeping track of the world means computing the current probability distribution over world states given all past observations, i.e. \nP(X_t|E_1,\u2026,E_t)\n.\n\n\nDynamic Bayesian networks (DBN) are a generalization of Hidden Markov Models (HMM) and Kalman Filters (KF). Every HMM and KF can be represented with a DBN. Furthermore, the DBN representation of an HMM is much more compact and, thus, much better understandable. The nodes in the HMM represent the states of the system, whereas the nodes in the DBN represent the dimensions of the system. For example, the HMM representation of the valve system in Figure 2.3 is made of 26 nodes and 36 arcs, versus 9 nodes and 11 arcs in the DBN (Weber and Jouffe, 2003).", 
             "title": "Bayesian Network"
         }, 
         {
-            "location": "/bayes_network/#bayesian-network", 
-            "text": "", 
+            "location": "/representation_bayesian_network/#bayesian-network", 
+            "text": "A Bayesian network is a graphical model that encodes probabilistic relationships among variables of interest. When used in conjunction with statistical techniques, the graphical model has several advantages for data analysis. One, because the model encodes dependencies among all variables, it readily handles situations where some data entries are missing. Two, a Bayesian network can be used to learn causal relationships, and hence can be used to gain understanding about a problem domain and to predict the consequences of intervention. Three, because the model has both a causal and probabilistic semantics, it is an ideal representation for combining prior knowledge (which often comes in causal form) and data. Four, Bayesian statistical methods in conjunction with bayesian networks offer an efficient and principled approach for avoiding the overfitting of data. In this paper, we discuss methods for constructing Bayesian networks from prior knowledge and summarize Bayesian statistical methods for using data to improve these models. With regard to the latter task, we describe methods for learning both the parameters and structure of a Bayesian network, including techniques for learning with incomplete data. In addition, we relate Bayesian-network methods for learning to techniques for supervised and unsupervised learning. We illustrate the graphical-modeling approach using a real-world case study.", 
             "title": "Bayesian Network"
         }, 
         {
-            "location": "/template_models/", 
+            "location": "/representation_bayesian_network/#a-non-causal-bayesian-network-example", 
+            "text": "Figure 1 shows a simple Bayesian network, which consists of only two nodes and one link. It represents the JPD of the variables Eye Color and Hair Color in a population of students (Snee, 1974). In this case, the conditional probabilities of Hair Color given the values of its parent node, Eye Color, are provided in a CPT. It is important to point out that this Bayesian network does not contain any causal assumptions, i.e. we have no knowledge of the causal order between the variables. Thus, the interpretation of this network should be merely statistical (informational).", 
+            "title": "A Non-Causal Bayesian Network Example"
+        }, 
+        {
+            "location": "/representation_bayesian_network/#a-causal-network-example", 
+            "text": "Figure 2 illustrates another simple yet typical Bayesian network. In contrast to the statistical relationships in Figure 1, the diagram in Figure 2 describes the causal relationships among the seasons of the year ( X_1 ), whether it is raining ( X_2 ), whether the sprinkler is on ( X_3 ), whether the pavement is wet ( X_4 ), and whether the pavement is slippery ( X_5 ). Here, the absence of a direct link between  X_1  and  X_5 , for example, captures our understanding that there is no direct influence of season on slipperiness. The influence is mediated by the wetness of the pavement (if freezing were a possibility, a direct link could be added).", 
+            "title": "A Causal Network Example"
+        }, 
+        {
+            "location": "/representation_bayesian_network/#a-dynamic-bayesian-network-example", 
+            "text": "Entities that live in a changing environment must keep track of variables whose values change over time. Dynamic Bayesian networks capture this process by representing multiple copies of the state variables, one for each time step. A set of variables  X_{t-1}  and  X_t  denotes the world state at times t-1 and t respectively. A set of evidence variables Et denotes the observations available at time t. The sensor model  P(E_t|X_t)  is encoded in the conditional probability distributions for the observable variables, given the state variables. The transition model  P(X_t|X_{t-1})  relates the state at time t-1 to the state at time t. Keeping track of the world means computing the current probability distribution over world states given all past observations, i.e.  P(X_t|E_1,\u2026,E_t) .  Dynamic Bayesian networks (DBN) are a generalization of Hidden Markov Models (HMM) and Kalman Filters (KF). Every HMM and KF can be represented with a DBN. Furthermore, the DBN representation of an HMM is much more compact and, thus, much better understandable. The nodes in the HMM represent the states of the system, whereas the nodes in the DBN represent the dimensions of the system. For example, the HMM representation of the valve system in Figure 2.3 is made of 26 nodes and 36 arcs, versus 9 nodes and 11 arcs in the DBN (Weber and Jouffe, 2003).", 
+            "title": "A Dynamic Bayesian Network Example"
+        }, 
+        {
+            "location": "/representation_template_models/", 
             "text": "Template Models for Bayesian Networks\n\n\nIn many cases, we need to model distributions that have a recurring structure. In this module, we describe representations for two such situations. One is temporal scenarios, where we want to model a probabilistic structure that holds constant over time; here, we use Hidden Markov Models, or, more generally, Dynamic Bayesian Networks. The other is aimed at scenarios that involve multiple similar entities, each of whose properties is governed by a similar model; here, we use Plate Models.\n\n\nTemporal Models\n\n\nOur focus in this section is on modeling dynamic settings, where we are interested in reasoning about the state of the world as it evolves over time. We can model such settings in terms of a system state system state, whose value at time t is a snapshot of the relevant attributes (hidden or observed) of the system at time t. We assume that the system state is represented, as usual, as an assignment of values to some set of random variables X . We use X (t) i to represent the instantiation of the variable Xi at time t. Note that Xi itself is no longer a variable that takes a value; rather, it is a template variable template variable. This template is instantiated at di\u001berent points in time t, and each Xi (t) is a variable that takes a value in Val(Xi). For a set of variables X \u2286 X , we use X (t1:t2) (t1 \n t2) to denote the set of variables {X (t) : t \u2208 [t1,t2]}. As usual, we use the notation x(t:t0) for an\nassignment of values to this set of variables.\n\n\nEach \u201cpossible world\u201d in our probability space is now a trajectory: an assignment of values to each variable X (t) i for each relevant time t. Our goal therefore is to represent a joint distribution over such trajectories. Clearly, the space of possible trajectories is a very complex probability space, so representing such a distribution can be very di\u001ecult. We therefore make a series of simplifying assumptions that help make this representational problem more tractable.\n\n\nDynamic Bayesian Networks\n\n\n\n\n\n\nDirected Probabilistic Models for Object-Relational Domains\n\n\nBased on the framework described in the previous section, we now describe template-based representation languages that can encode directed probabilistic models.\n\n\nPlate Models\n\n\nWe begin our discussion by presenting the \nplate model\n, the simplest and best-established of the object-relational frameworks. Although restricted in several important ways, the plate modeling framework is perhaps the approach that has been most commonly used in practice, notably for encoding the assumptions made in various learning tasks. This framework also provides an excellent starting point for describing the key ideas of template-based languages and for motivating some of the extensions that have been pursued in richer languages.\n\n\nIn the plate formalism, object types are called \nplates\n. The fact that multiple objects in the class share the same set of attributes and same probabilistic model is the basis for the use of the term \u201cplate,\u201d which suggests a stack of identical objects. We begin with some motivating examples and then describe the formal framework.\n\n\nExamples\n\n\nExample 1\n \nThe simplest example of a plate model, shown in figure 6.6, describes multiple random variables generated from the same distribution. In this case, we have a set of random variables \n X(d)\\ (d \u2208 D) \n that all have the same domain Val(X) and are sampled from the same distribution. In a plate representation, we encode the fact that these variables are all generated from the same template by drawing only a single node X(d) and enclosing it in a box denoting that d ranges over D, so that we know that the box represents an entire \u201cstack\u201d of these identically distributed variables. This box plate is called a plate, with the analogy that it represents a stack of identical plates.", 
             "title": "Tempalte Models for Bayesian Networks"
         }, 
         {
-            "location": "/template_models/#template-models-for-bayesian-networks", 
+            "location": "/representation_template_models/#template-models-for-bayesian-networks", 
             "text": "In many cases, we need to model distributions that have a recurring structure. In this module, we describe representations for two such situations. One is temporal scenarios, where we want to model a probabilistic structure that holds constant over time; here, we use Hidden Markov Models, or, more generally, Dynamic Bayesian Networks. The other is aimed at scenarios that involve multiple similar entities, each of whose properties is governed by a similar model; here, we use Plate Models.", 
             "title": "Template Models for Bayesian Networks"
         }, 
         {
-            "location": "/template_models/#temporal-models", 
+            "location": "/representation_template_models/#temporal-models", 
             "text": "Our focus in this section is on modeling dynamic settings, where we are interested in reasoning about the state of the world as it evolves over time. We can model such settings in terms of a system state system state, whose value at time t is a snapshot of the relevant attributes (hidden or observed) of the system at time t. We assume that the system state is represented, as usual, as an assignment of values to some set of random variables X . We use X (t) i to represent the instantiation of the variable Xi at time t. Note that Xi itself is no longer a variable that takes a value; rather, it is a template variable template variable. This template is instantiated at di\u001berent points in time t, and each Xi (t) is a variable that takes a value in Val(Xi). For a set of variables X \u2286 X , we use X (t1:t2) (t1   t2) to denote the set of variables {X (t) : t \u2208 [t1,t2]}. As usual, we use the notation x(t:t0) for an\nassignment of values to this set of variables.  Each \u201cpossible world\u201d in our probability space is now a trajectory: an assignment of values to each variable X (t) i for each relevant time t. Our goal therefore is to represent a joint distribution over such trajectories. Clearly, the space of possible trajectories is a very complex probability space, so representing such a distribution can be very di\u001ecult. We therefore make a series of simplifying assumptions that help make this representational problem more tractable.", 
             "title": "Temporal Models"
         }, 
         {
-            "location": "/template_models/#dynamic-bayesian-networks", 
+            "location": "/representation_template_models/#dynamic-bayesian-networks", 
             "text": "", 
             "title": "Dynamic Bayesian Networks"
         }, 
         {
-            "location": "/template_models/#directed-probabilistic-models-for-object-relational-domains", 
+            "location": "/representation_template_models/#directed-probabilistic-models-for-object-relational-domains", 
             "text": "Based on the framework described in the previous section, we now describe template-based representation languages that can encode directed probabilistic models.", 
             "title": "Directed Probabilistic Models for Object-Relational Domains"
         }, 
         {
-            "location": "/template_models/#plate-models", 
+            "location": "/representation_template_models/#plate-models", 
             "text": "We begin our discussion by presenting the  plate model , the simplest and best-established of the object-relational frameworks. Although restricted in several important ways, the plate modeling framework is perhaps the approach that has been most commonly used in practice, notably for encoding the assumptions made in various learning tasks. This framework also provides an excellent starting point for describing the key ideas of template-based languages and for motivating some of the extensions that have been pursued in richer languages.  In the plate formalism, object types are called  plates . The fact that multiple objects in the class share the same set of attributes and same probabilistic model is the basis for the use of the term \u201cplate,\u201d which suggests a stack of identical objects. We begin with some motivating examples and then describe the formal framework.", 
             "title": "Plate Models"
         }, 
         {
-            "location": "/template_models/#examples", 
+            "location": "/representation_template_models/#examples", 
             "text": "Example 1   The simplest example of a plate model, shown in figure 6.6, describes multiple random variables generated from the same distribution. In this case, we have a set of random variables   X(d)\\ (d \u2208 D)   that all have the same domain Val(X) and are sampled from the same distribution. In a plate representation, we encode the fact that these variables are all generated from the same template by drawing only a single node X(d) and enclosing it in a box denoting that d ranges over D, so that we know that the box represents an entire \u201cstack\u201d of these identically distributed variables. This box plate is called a plate, with the analogy that it represents a stack of identical plates.", 
             "title": "Examples"
-        }, 
-        {
-            "location": "/unbbayes/", 
-            "text": "An Introduction to UnBBayes\n\n\nUnBBayes is a probabilistic network framework written in Java. It has both a GUI and an API with inference, sampling, learning and evaluation. It supports Bayesian networks, influence diagrams, MSBN, OOBN, HBN, MEBN/PR-OWL, PRM, structure, parameter and incremental learning.\n\n\nFeatures\n\n\n\n\nProbabilistic Networks:\n\n\nBayesian Network (BN)\n\n\nJunction Tree\n\n\nLikelihood Weighting\n\n\nGibbs\n\n\n\n\n\n\nInfluence Diagram (ID)\n\n\nMultiply Sectioned Bayesian Network (MSBN)\n\n\nHybrid Bayesian Network (HBN)\n\n\nGaussian Mixture - Propagation under development\n\n\n\n\n\n\nObject-Oriented Bayesian Network (OOBN)\n\n\n\n\n\n\nFOL Probabilistic Network:\n\n\nMulti-Entity Bayesian Network (MEBN)\n\n\nProbabilistic Ontology Language (PR-OWL)\n\n\n\n\n\n\nLearning Bayesian Network:\n\n\nK2\n\n\nB\n\n\nCBL-A\n\n\nCBL-B\n\n\nIncremental Learning\n\n\n\n\n\n\nSampling\n\n\nLogic\n\n\nLikelihood Weighting\n\n\nGibbs\n\n\n\n\n\n\nClassification Performance Evaluation\n\n\nEvaluation using Logic Sampling\n\n\nEvaluation using Likelihood Weighting Sampling\n\n\n\n\n\n\n\n\nInstallation\n\n\n\n\nGo to \nhttps://sourceforge.net/projects/unbbayes/files/latest/download?source=typ_redirect\n to download zip file\n\n\nExtract file \nunbbayes-4.21.18.zip\n  to \nunbbayes-4.21.18\n folder\n\n\nOpen \nunbbayes-4.21.18\n folder, double click to \nunbbayes.bat\n\n\n\n\nunbbayes-4.21.18\n open\n\n\n\nOfficial Videos\n\n\nIn this section, I add some official videos from unbbayes team. There are overview\n\n\nOverview\n\n\nIn this video we are going to show the basic function we have in UnBBayes. This is the first of many tutorials we have been creating to support the demand for documentation on how to use UnBBayes. We hope this will help UnBBayes' user community to grow even more.\n\n\n\n\n\n\n\n\nBayesian Network\n\n\nIn this video we are going to show how to create and compile a Bayesian Network (BN) in UnBBayes. This is our second of many video tutorials we have been creating to support the demand for documentation on how to use UnBBayes. We hope this will help UnBBayes' user community to grow even more.\n\n\n\n\n\n\n\n\nUnBBayes Performance Evaluation for Multi-Sensor Classification Systems\n\n\nIn this video we are going to show how to do a performance evaluation for multi-sensor classification systems in UnBBayes. It has been a while we do not post new videos, but hopefully this third one is just one more of many tutorials we will have available to support the demand for documentation on how to use UnBBayes. We hope this will help UnBBayes' user community to grow even more.\n\n\n\n\n\n\n\n\nProbabilistic Ontology Modeling Using UnBBayes\n\n\nIn this video we discuss how to model probabilistic ontologies using PR-OWL/MEBN in UnBBayes. This session was a video conference between PhD students from the Institute of Business Administration (http://www.iba.edu.pk) and Rommel Carvalho from George Mason University (http://www.gmu.edu).", 
-            "title": "An Introduction to UnBBayes"
-        }, 
-        {
-            "location": "/unbbayes/#an-introduction-to-unbbayes", 
-            "text": "UnBBayes is a probabilistic network framework written in Java. It has both a GUI and an API with inference, sampling, learning and evaluation. It supports Bayesian networks, influence diagrams, MSBN, OOBN, HBN, MEBN/PR-OWL, PRM, structure, parameter and incremental learning.", 
-            "title": "An Introduction to UnBBayes"
-        }, 
-        {
-            "location": "/unbbayes/#features", 
-            "text": "Probabilistic Networks:  Bayesian Network (BN)  Junction Tree  Likelihood Weighting  Gibbs    Influence Diagram (ID)  Multiply Sectioned Bayesian Network (MSBN)  Hybrid Bayesian Network (HBN)  Gaussian Mixture - Propagation under development    Object-Oriented Bayesian Network (OOBN)    FOL Probabilistic Network:  Multi-Entity Bayesian Network (MEBN)  Probabilistic Ontology Language (PR-OWL)    Learning Bayesian Network:  K2  B  CBL-A  CBL-B  Incremental Learning    Sampling  Logic  Likelihood Weighting  Gibbs    Classification Performance Evaluation  Evaluation using Logic Sampling  Evaluation using Likelihood Weighting Sampling", 
-            "title": "Features"
-        }, 
-        {
-            "location": "/unbbayes/#installation", 
-            "text": "Go to  https://sourceforge.net/projects/unbbayes/files/latest/download?source=typ_redirect  to download zip file  Extract file  unbbayes-4.21.18.zip   to  unbbayes-4.21.18  folder  Open  unbbayes-4.21.18  folder, double click to  unbbayes.bat   unbbayes-4.21.18  open", 
-            "title": "Installation"
-        }, 
-        {
-            "location": "/unbbayes/#official-videos", 
-            "text": "In this section, I add some official videos from unbbayes team. There are overview", 
-            "title": "Official Videos"
-        }, 
-        {
-            "location": "/unbbayes/#overview", 
-            "text": "In this video we are going to show the basic function we have in UnBBayes. This is the first of many tutorials we have been creating to support the demand for documentation on how to use UnBBayes. We hope this will help UnBBayes' user community to grow even more.", 
-            "title": "Overview"
-        }, 
-        {
-            "location": "/unbbayes/#bayesian-network", 
-            "text": "In this video we are going to show how to create and compile a Bayesian Network (BN) in UnBBayes. This is our second of many video tutorials we have been creating to support the demand for documentation on how to use UnBBayes. We hope this will help UnBBayes' user community to grow even more.", 
-            "title": "Bayesian Network"
-        }, 
-        {
-            "location": "/unbbayes/#unbbayes-performance-evaluation-for-multi-sensor-classification-systems", 
-            "text": "In this video we are going to show how to do a performance evaluation for multi-sensor classification systems in UnBBayes. It has been a while we do not post new videos, but hopefully this third one is just one more of many tutorials we will have available to support the demand for documentation on how to use UnBBayes. We hope this will help UnBBayes' user community to grow even more.", 
-            "title": "UnBBayes Performance Evaluation for Multi-Sensor Classification Systems"
-        }, 
-        {
-            "location": "/unbbayes/#probabilistic-ontology-modeling-using-unbbayes", 
-            "text": "In this video we discuss how to model probabilistic ontologies using PR-OWL/MEBN in UnBBayes. This session was a video conference between PhD students from the Institute of Business Administration (http://www.iba.edu.pk) and Rommel Carvalho from George Mason University (http://www.gmu.edu).", 
-            "title": "Probabilistic Ontology Modeling Using UnBBayes"
         }, 
         {
             "location": "/factor_graph/", 
@@ -329,6 +319,71 @@
             "location": "/factor_graph/#related-readings", 
             "text": "[1]: Factor Graph,  wikipedia.org", 
             "title": "Related Readings"
+        }, 
+        {
+            "location": "/inference/", 
+            "text": "Inference\n\n\n\n\nThis addresses the question of probabilistic inference: how a PGM can be used to answer questions.\n\n\n\n\nEven though a PGM generally describes a very high dimensional distribution, its structure is designed so as to allow questions to be answered efficiently. The course presents both exact and approximate algorithms for different types of inference tasks, and discusses where each could best be applied. The (highly recommended) honors track contains two hands-on programming assignments, in which key routines of the most commonly used exact and approximate algorithms are implemented and applied to a real-world problem.", 
+            "title": "Inference"
+        }, 
+        {
+            "location": "/inference/#inference", 
+            "text": "This addresses the question of probabilistic inference: how a PGM can be used to answer questions.   Even though a PGM generally describes a very high dimensional distribution, its structure is designed so as to allow questions to be answered efficiently. The course presents both exact and approximate algorithms for different types of inference tasks, and discusses where each could best be applied. The (highly recommended) honors track contains two hands-on programming assignments, in which key routines of the most commonly used exact and approximate algorithms are implemented and applied to a real-world problem.", 
+            "title": "Inference"
+        }, 
+        {
+            "location": "/learning/", 
+            "text": "Learning\n\n\n\n\nThis course addresses the question of learning: how a PGM can be learned from a data set of examples.\n\n\n\n\nThe course discusses the key problems of parameter estimation in both directed and undirected models, as well as the structure learning task for directed models. The (highly recommended) honors track contains two hands-on programming assignments, in which key routines of two commonly used learning algorithms are implemented and applied to a real-world problem.", 
+            "title": "Learning"
+        }, 
+        {
+            "location": "/learning/#learning", 
+            "text": "This course addresses the question of learning: how a PGM can be learned from a data set of examples.   The course discusses the key problems of parameter estimation in both directed and undirected models, as well as the structure learning task for directed models. The (highly recommended) honors track contains two hands-on programming assignments, in which key routines of two commonly used learning algorithms are implemented and applied to a real-world problem.", 
+            "title": "Learning"
+        }, 
+        {
+            "location": "/software_unbbayes/", 
+            "text": "An Introduction to UnBBayes\n\n\nUnBBayes is a probabilistic network framework written in Java. It has both a GUI and an API with inference, sampling, learning and evaluation. It supports Bayesian networks, influence diagrams, MSBN, OOBN, HBN, MEBN/PR-OWL, PRM, structure, parameter and incremental learning.\n\n\nFeatures\n\n\n\n\nProbabilistic Networks:\n\n\nBayesian Network (BN)\n\n\nJunction Tree\n\n\nLikelihood Weighting\n\n\nGibbs\n\n\n\n\n\n\nInfluence Diagram (ID)\n\n\nMultiply Sectioned Bayesian Network (MSBN)\n\n\nHybrid Bayesian Network (HBN)\n\n\nGaussian Mixture - Propagation under development\n\n\n\n\n\n\nObject-Oriented Bayesian Network (OOBN)\n\n\n\n\n\n\nFOL Probabilistic Network:\n\n\nMulti-Entity Bayesian Network (MEBN)\n\n\nProbabilistic Ontology Language (PR-OWL)\n\n\n\n\n\n\nLearning Bayesian Network:\n\n\nK2\n\n\nB\n\n\nCBL-A\n\n\nCBL-B\n\n\nIncremental Learning\n\n\n\n\n\n\nSampling\n\n\nLogic\n\n\nLikelihood Weighting\n\n\nGibbs\n\n\n\n\n\n\nClassification Performance Evaluation\n\n\nEvaluation using Logic Sampling\n\n\nEvaluation using Likelihood Weighting Sampling\n\n\n\n\n\n\n\n\nInstallation\n\n\n\n\nGo to \nhttps://sourceforge.net/projects/unbbayes/files/latest/download?source=typ_redirect\n to download zip file\n\n\nExtract file \nunbbayes-4.21.18.zip\n  to \nunbbayes-4.21.18\n folder\n\n\nOpen \nunbbayes-4.21.18\n folder, double click to \nunbbayes.bat\n\n\n\n\nunbbayes-4.21.18\n open\n\n\n\nOfficial Videos\n\n\nIn this section, I add some official videos from unbbayes team. There are overview\n\n\nOverview\n\n\nIn this video we are going to show the basic function we have in UnBBayes. This is the first of many tutorials we have been creating to support the demand for documentation on how to use UnBBayes. We hope this will help UnBBayes' user community to grow even more.\n\n\n\n\n\n\n\n\nBayesian Network\n\n\nIn this video we are going to show how to create and compile a Bayesian Network (BN) in UnBBayes. This is our second of many video tutorials we have been creating to support the demand for documentation on how to use UnBBayes. We hope this will help UnBBayes' user community to grow even more.\n\n\n\n\n\n\n\n\nUnBBayes Performance Evaluation for Multi-Sensor Classification Systems\n\n\nIn this video we are going to show how to do a performance evaluation for multi-sensor classification systems in UnBBayes. It has been a while we do not post new videos, but hopefully this third one is just one more of many tutorials we will have available to support the demand for documentation on how to use UnBBayes. We hope this will help UnBBayes' user community to grow even more.\n\n\n\n\n\n\n\n\nProbabilistic Ontology Modeling Using UnBBayes\n\n\nIn this video we discuss how to model probabilistic ontologies using PR-OWL/MEBN in UnBBayes. This session was a video conference between PhD students from the Institute of Business Administration (http://www.iba.edu.pk) and Rommel Carvalho from George Mason University (http://www.gmu.edu).", 
+            "title": "An Introduction to UnBBayes"
+        }, 
+        {
+            "location": "/software_unbbayes/#an-introduction-to-unbbayes", 
+            "text": "UnBBayes is a probabilistic network framework written in Java. It has both a GUI and an API with inference, sampling, learning and evaluation. It supports Bayesian networks, influence diagrams, MSBN, OOBN, HBN, MEBN/PR-OWL, PRM, structure, parameter and incremental learning.", 
+            "title": "An Introduction to UnBBayes"
+        }, 
+        {
+            "location": "/software_unbbayes/#features", 
+            "text": "Probabilistic Networks:  Bayesian Network (BN)  Junction Tree  Likelihood Weighting  Gibbs    Influence Diagram (ID)  Multiply Sectioned Bayesian Network (MSBN)  Hybrid Bayesian Network (HBN)  Gaussian Mixture - Propagation under development    Object-Oriented Bayesian Network (OOBN)    FOL Probabilistic Network:  Multi-Entity Bayesian Network (MEBN)  Probabilistic Ontology Language (PR-OWL)    Learning Bayesian Network:  K2  B  CBL-A  CBL-B  Incremental Learning    Sampling  Logic  Likelihood Weighting  Gibbs    Classification Performance Evaluation  Evaluation using Logic Sampling  Evaluation using Likelihood Weighting Sampling", 
+            "title": "Features"
+        }, 
+        {
+            "location": "/software_unbbayes/#installation", 
+            "text": "Go to  https://sourceforge.net/projects/unbbayes/files/latest/download?source=typ_redirect  to download zip file  Extract file  unbbayes-4.21.18.zip   to  unbbayes-4.21.18  folder  Open  unbbayes-4.21.18  folder, double click to  unbbayes.bat   unbbayes-4.21.18  open", 
+            "title": "Installation"
+        }, 
+        {
+            "location": "/software_unbbayes/#official-videos", 
+            "text": "In this section, I add some official videos from unbbayes team. There are overview", 
+            "title": "Official Videos"
+        }, 
+        {
+            "location": "/software_unbbayes/#overview", 
+            "text": "In this video we are going to show the basic function we have in UnBBayes. This is the first of many tutorials we have been creating to support the demand for documentation on how to use UnBBayes. We hope this will help UnBBayes' user community to grow even more.", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/software_unbbayes/#bayesian-network", 
+            "text": "In this video we are going to show how to create and compile a Bayesian Network (BN) in UnBBayes. This is our second of many video tutorials we have been creating to support the demand for documentation on how to use UnBBayes. We hope this will help UnBBayes' user community to grow even more.", 
+            "title": "Bayesian Network"
+        }, 
+        {
+            "location": "/software_unbbayes/#unbbayes-performance-evaluation-for-multi-sensor-classification-systems", 
+            "text": "In this video we are going to show how to do a performance evaluation for multi-sensor classification systems in UnBBayes. It has been a while we do not post new videos, but hopefully this third one is just one more of many tutorials we will have available to support the demand for documentation on how to use UnBBayes. We hope this will help UnBBayes' user community to grow even more.", 
+            "title": "UnBBayes Performance Evaluation for Multi-Sensor Classification Systems"
+        }, 
+        {
+            "location": "/software_unbbayes/#probabilistic-ontology-modeling-using-unbbayes", 
+            "text": "In this video we discuss how to model probabilistic ontologies using PR-OWL/MEBN in UnBBayes. This session was a video conference between PhD students from the Institute of Business Administration (http://www.iba.edu.pk) and Rommel Carvalho from George Mason University (http://www.gmu.edu).", 
+            "title": "Probabilistic Ontology Modeling Using UnBBayes"
         }, 
         {
             "location": "/data_medical_domain/", 

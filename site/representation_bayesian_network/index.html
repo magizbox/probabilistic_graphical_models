@@ -8,7 +8,7 @@
         <meta name="author" content="Vu Anh">
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Tempalte Models for Bayesian Networks - PGM</title>
+        <title>Bayesian Network - PGM</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -65,8 +65,12 @@
                         <a href="..">Home</a>
                     </li>
                     <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Docs <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Representation <b class="caret"></b></a>
                         <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../representation/">Introduction</a>
+</li>
                             
 <li >
     <a href="../foundation_probability/">Foundation: Probability</a>
@@ -76,16 +80,12 @@
     <a href="../foundation_graph/">Foundation: Graph</a>
 </li>
                             
-<li >
-    <a href="../bayes_network/">Bayesian Network</a>
-</li>
-                            
 <li class="active">
-    <a href="./">Tempalte Models for Bayesian Networks</a>
+    <a href="./">Bayesian Network</a>
 </li>
                             
 <li >
-    <a href="../unbbayes/">An Introduction to UnBBayes</a>
+    <a href="../representation_template_models/">Tempalte Models for Bayesian Networks</a>
 </li>
                             
 <li >
@@ -93,17 +93,39 @@
 </li>
                         </ul>
                     </li>
+                    <li >
+                        <a href="../inference/">Inference</a>
+                    </li>
+                    <li >
+                        <a href="../learning/">Learning</a>
+                    </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Datasets <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Miscellaneous <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
+  <li class="dropdown-submenu">
+    <a href="#">Softwares</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../software_unbbayes/">An Introduction to UnBBayes</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Datasets</a>
+    <ul class="dropdown-menu">
+            
 <li >
     <a href="../data_medical_domain/">Medical Domain Data</a>
 </li>
-                            
+            
 <li >
     <a href="../data_owc/">Optical Word Recognition Dataset</a>
 </li>
+    </ul>
+  </li>
                         </ul>
                     </li>
                 </ul>
@@ -115,12 +137,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../bayes_network/">
+                        <a rel="next" href="../foundation_graph/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../unbbayes/">
+                        <a rel="prev" href="../representation_template_models/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -132,33 +154,26 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#template-models-for-bayesian-networks">Template Models for Bayesian Networks</a></li>
-            <li><a href="#temporal-models">Temporal Models</a></li>
-            <li><a href="#dynamic-bayesian-networks">Dynamic Bayesian Networks</a></li>
-            <li><a href="#directed-probabilistic-models-for-object-relational-domains">Directed Probabilistic Models for Object-Relational Domains</a></li>
+        <li class="main active"><a href="#bayesian-network">Bayesian Network</a></li>
+        <li class="main "><a href="#a-non-causal-bayesian-network-example">A Non-Causal Bayesian Network Example</a></li>
+        <li class="main "><a href="#a-causal-network-example">A Causal Network Example</a></li>
+        <li class="main "><a href="#a-dynamic-bayesian-network-example">A Dynamic Bayesian Network Example</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="template-models-for-bayesian-networks">Template Models for Bayesian Networks</h1>
-<p>In many cases, we need to model distributions that have a recurring structure. In this module, we describe representations for two such situations. One is temporal scenarios, where we want to model a probabilistic structure that holds constant over time; here, we use Hidden Markov Models, or, more generally, Dynamic Bayesian Networks. The other is aimed at scenarios that involve multiple similar entities, each of whose properties is governed by a similar model; here, we use Plate Models.</p>
-<h2 id="temporal-models">Temporal Models</h2>
-<p>Our focus in this section is on modeling dynamic settings, where we are interested in reasoning about the state of the world as it evolves over time. We can model such settings in terms of a system state system state, whose value at time t is a snapshot of the relevant attributes (hidden or observed) of the system at time t. We assume that the system state is represented, as usual, as an assignment of values to some set of random variables X . We use X (t) i to represent the instantiation of the variable Xi at time t. Note that Xi itself is no longer a variable that takes a value; rather, it is a template variable template variable. This template is instantiated at dierent points in time t, and each Xi (t) is a variable that takes a value in Val(Xi). For a set of variables X ⊆ X , we use X (t1:t2) (t1 &lt; t2) to denote the set of variables {X (t) : t ∈ [t1,t2]}. As usual, we use the notation x(t:t0) for an
-assignment of values to this set of variables.</p>
-<p>Each “possible world” in our probability space is now a trajectory: an assignment of values to each variable X (t) i for each relevant time t. Our goal therefore is to represent a joint distribution over such trajectories. Clearly, the space of possible trajectories is a very complex probability space, so representing such a distribution can be very dicult. We therefore make a series of simplifying assumptions that help make this representational problem more tractable.</p>
-<h2 id="dynamic-bayesian-networks">Dynamic Bayesian Networks</h2>
-<p><img alt="" src="../images/6.1.png" /></p>
-<p><img alt="" src="../images/6.2.png" /></p>
-<h2 id="directed-probabilistic-models-for-object-relational-domains">Directed Probabilistic Models for Object-Relational Domains</h2>
-<p>Based on the framework described in the previous section, we now describe template-based representation languages that can encode directed probabilistic models.</p>
-<h3 id="plate-models">Plate Models</h3>
-<p>We begin our discussion by presenting the <em>plate model</em>, the simplest and best-established of the object-relational frameworks. Although restricted in several important ways, the plate modeling framework is perhaps the approach that has been most commonly used in practice, notably for encoding the assumptions made in various learning tasks. This framework also provides an excellent starting point for describing the key ideas of template-based languages and for motivating some of the extensions that have been pursued in richer languages.</p>
-<p>In the plate formalism, object types are called <em>plates</em>. The fact that multiple objects in the class share the same set of attributes and same probabilistic model is the basis for the use of the term “plate,” which suggests a stack of identical objects. We begin with some motivating examples and then describe the formal framework.</p>
-<h4 id="examples">Examples</h4>
-<p><strong>Example 1</strong> <em>The simplest example of a plate model, shown in figure 6.6, describes multiple random variables generated from the same distribution. In this case, we have a set of random variables <script type="math/tex"> X(d)\ (d ∈ D) </script> that all have the same domain Val(X) and are sampled from the same distribution. In a plate representation, we encode the fact that these variables are all generated from the same template by drawing only a single node X(d) and enclosing it in a box denoting that d ranges over D, so that we know that the box represents an entire “stack” of these identically distributed variables. This box plate is called a plate, with the analogy that it represents a stack of identical plates.</em></p>
-<p><center>
-<img alt="" src="../images/6.6.png" />
-</center></p></div>
+<h1 id="bayesian-network">Bayesian Network</h1>
+<p>A Bayesian network is a graphical model that encodes probabilistic relationships among variables of interest. When used in conjunction with statistical techniques, the graphical model has several advantages for data analysis. One, because the model encodes dependencies among all variables, it readily handles situations where some data entries are missing. Two, a Bayesian network can be used to learn causal relationships, and hence can be used to gain understanding about a problem domain and to predict the consequences of intervention. Three, because the model has both a causal and probabilistic semantics, it is an ideal representation for combining prior knowledge (which often comes in causal form) and data. Four, Bayesian statistical methods in conjunction with bayesian networks offer an efficient and principled approach for avoiding the overfitting of data. In this paper, we discuss methods for constructing Bayesian networks from prior knowledge and summarize Bayesian statistical methods for using data to improve these models. With regard to the latter task, we describe methods for learning both the parameters and structure of a Bayesian network, including techniques for learning with incomplete data. In addition, we relate Bayesian-network methods for learning to techniques for supervised and unsupervised learning. We illustrate the graphical-modeling approach using a real-world case study.</p>
+<h1 id="a-non-causal-bayesian-network-example">A Non-Causal Bayesian Network Example</h1>
+<p>Figure 1 shows a simple Bayesian network, which consists of only two nodes and one link. It represents the JPD of the variables Eye Color and Hair Color in a population of students (Snee, 1974). In this case, the conditional probabilities of Hair Color given the values of its parent node, Eye Color, are provided in a CPT. It is important to point out that this Bayesian network does not contain any causal assumptions, i.e. we have no knowledge of the causal order between the variables. Thus, the interpretation of this network should be merely statistical (informational).</p>
+<p><img alt="" src="http://www.bayesia.com/hs-fs/hubfs/Bayesian_Networks/Fig_2_1.png?t=1501100948045&amp;width=400&amp;height=360&amp;name=Fig_2_1.png" /></p>
+<h1 id="a-causal-network-example">A Causal Network Example</h1>
+<p>Figure 2 illustrates another simple yet typical Bayesian network. In contrast to the statistical relationships in Figure 1, the diagram in Figure 2 describes the causal relationships among the seasons of the year (<script type="math/tex">X_1</script>), whether it is raining (<script type="math/tex">X_2</script>), whether the sprinkler is on (<script type="math/tex">X_3</script>), whether the pavement is wet (<script type="math/tex">X_4</script>), and whether the pavement is slippery (<script type="math/tex">X_5</script>). Here, the absence of a direct link between <script type="math/tex">X_1</script> and <script type="math/tex">X_5</script>, for example, captures our understanding that there is no direct influence of season on slipperiness. The influence is mediated by the wetness of the pavement (if freezing were a possibility, a direct link could be added). </p>
+<p><img alt="" src="http://www.bayesia.com/hs-fs/hubfs/Bayesian_Networks/Fig_2_2_Sprinkler.png?t=1501100948045&amp;width=300&amp;height=417&amp;name=Fig_2_2_Sprinkler.png" /></p>
+<h1 id="a-dynamic-bayesian-network-example">A Dynamic Bayesian Network Example</h1>
+<p>Entities that live in a changing environment must keep track of variables whose values change over time. Dynamic Bayesian networks capture this process by representing multiple copies of the state variables, one for each time step. A set of variables <script type="math/tex">X_{t-1}</script> and <script type="math/tex">X_t</script> denotes the world state at times t-1 and t respectively. A set of evidence variables Et denotes the observations available at time t. The sensor model <script type="math/tex">P(E_t|X_t)</script> is encoded in the conditional probability distributions for the observable variables, given the state variables. The transition model <script type="math/tex">P(X_t|X_{t-1})</script> relates the state at time t-1 to the state at time t. Keeping track of the world means computing the current probability distribution over world states given all past observations, i.e. <script type="math/tex">P(X_t|E_1,…,E_t)</script>.</p>
+<p>Dynamic Bayesian networks (DBN) are a generalization of Hidden Markov Models (HMM) and Kalman Filters (KF). Every HMM and KF can be represented with a DBN. Furthermore, the DBN representation of an HMM is much more compact and, thus, much better understandable. The nodes in the HMM represent the states of the system, whereas the nodes in the DBN represent the dimensions of the system. For example, the HMM representation of the valve system in Figure 2.3 is made of 26 nodes and 36 arcs, versus 9 nodes and 11 arcs in the DBN (Weber and Jouffe, 2003).</p>
+<p><img alt="" src="http://www.bayesia.com/hubfs/Bayesian_Networks/Fig_2_3_Valve.svg?t=1501100948045" /></p></div>
         </div>
 
         <footer class="col-md-12">

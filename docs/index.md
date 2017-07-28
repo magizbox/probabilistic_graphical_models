@@ -8,9 +8,9 @@ This site is intended to host a variety of resources and pointers to information
 
 ## Representation 
 
-* Introduction
-* Bayesian Network (Directed Models)
-* Template Models for Bayesian Networks
+* [Introduction](representation.md)
+* [Bayesian Network (Directed Models)](representation_bayesian_network.md)
+* [Template Models for Bayesian Networks](representation_template_models.md)
 * Structured CPDs for Bayesian Networks
 * Markov Networks (Undirected Models)
 * Decision Making
@@ -18,7 +18,7 @@ This site is intended to host a variety of resources and pointers to information
 
 ## Inference
 
-* Inference Overview
+* [Inference Overview](inference.md)
 * Belief Propagation Algorithms
 * MAP Algorithms
 * Sampling Methods
@@ -26,7 +26,7 @@ This site is intended to host a variety of resources and pointers to information
 
 ## Learning
 
-* Learning Overview
+* [Learning Overview](learning.md)
 * Parameter Estimation in Bayesian Networks
 * Learning Undirected Models
 * Learning BN Structure
@@ -35,8 +35,19 @@ This site is intended to host a variety of resources and pointers to information
 
 ## Miscellaneous 
 
-* [Best books about Probabilistic Graphical Models](#books)
-* [Best courses about Probablistic Graphical Models](#courses)
+* [Books](#books)
+* [Courses](#courses)
+* [Softwares](#softwares)
+* [Datasets](#datasets)
+
+### Softwares
+
+* [An introduction to UnBBayes](software_unbbayes.md)
+
+### Datasets
+
+* [Medical Domain Data](data_medical_domain.md)
+* [Optical Word Recognition](data_owc.md)
 
 ### Books
 
@@ -46,3 +57,4 @@ This site is intended to host a variety of resources and pointers to information
 ### Courses
 
 <div class="courses" gid="1luI7koJBSKX_eyf9PHyhDQ2d4UM4yGjvJGSlgYAZqOg"></div>
+

@@ -12,6 +12,12 @@
     
         
     <url>
+     <loc>/representation/</loc>
+     <lastmod>2017-07-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>/foundation_probability/</loc>
      <lastmod>2017-07-28</lastmod>
      <changefreq>daily</changefreq>
@@ -24,19 +30,13 @@
     </url>
         
     <url>
-     <loc>/bayes_network/</loc>
+     <loc>/representation_bayesian_network/</loc>
      <lastmod>2017-07-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/template_models/</loc>
-     <lastmod>2017-07-28</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/unbbayes/</loc>
+     <loc>/representation_template_models/</loc>
      <lastmod>2017-07-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -50,16 +50,32 @@
     
 
     
+    <url>
+     <loc>/inference/</loc>
+     <lastmod>2017-07-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/learning/</loc>
+     <lastmod>2017-07-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
         
     <url>
-     <loc>/data_medical_domain/</loc>
-     <lastmod>2017-07-28</lastmod>
+     <loc></loc>
+     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/data_owc/</loc>
-     <lastmod>2017-07-28</lastmod>
+     <loc></loc>
+     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
         

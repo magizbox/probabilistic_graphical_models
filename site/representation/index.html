@@ -8,7 +8,7 @@
         <meta name="author" content="Vu Anh">
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>An Introduction to UnBBayes - PGM</title>
+        <title>Introduction - PGM</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -65,8 +65,12 @@
                         <a href="..">Home</a>
                     </li>
                     <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Docs <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Representation <b class="caret"></b></a>
                         <ul class="dropdown-menu">
+                            
+<li class="active">
+    <a href="./">Introduction</a>
+</li>
                             
 <li >
     <a href="../foundation_probability/">Foundation: Probability</a>
@@ -77,15 +81,11 @@
 </li>
                             
 <li >
-    <a href="../bayes_network/">Bayesian Network</a>
+    <a href="../representation_bayesian_network/">Bayesian Network</a>
 </li>
                             
 <li >
-    <a href="../template_models/">Tempalte Models for Bayesian Networks</a>
-</li>
-                            
-<li class="active">
-    <a href="./">An Introduction to UnBBayes</a>
+    <a href="../representation_template_models/">Tempalte Models for Bayesian Networks</a>
 </li>
                             
 <li >
@@ -93,17 +93,39 @@
 </li>
                         </ul>
                     </li>
+                    <li >
+                        <a href="../inference/">Inference</a>
+                    </li>
+                    <li >
+                        <a href="../learning/">Learning</a>
+                    </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Datasets <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Miscellaneous <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
+  <li class="dropdown-submenu">
+    <a href="#">Softwares</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../software_unbbayes/">An Introduction to UnBBayes</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Datasets</a>
+    <ul class="dropdown-menu">
+            
 <li >
     <a href="../data_medical_domain/">Medical Domain Data</a>
 </li>
-                            
+            
 <li >
     <a href="../data_owc/">Optical Word Recognition Dataset</a>
 </li>
+    </ul>
+  </li>
                         </ul>
                     </li>
                 </ul>
@@ -115,12 +137,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../template_models/">
+                        <a rel="next" href="..">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../factor_graph/">
+                        <a rel="prev" href="../foundation_probability/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -132,93 +154,14 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#an-introduction-to-unbbayes">An Introduction to UnBBayes</a></li>
-        <li class="main "><a href="#features">Features</a></li>
-        <li class="main "><a href="#installation">Installation</a></li>
-        <li class="main "><a href="#official-videos">Official Videos</a></li>
-            <li><a href="#overview">Overview</a></li>
-            <li><a href="#bayesian-network">Bayesian Network</a></li>
-            <li><a href="#unbbayes-performance-evaluation-for-multi-sensor-classification-systems">UnBBayes Performance Evaluation for Multi-Sensor Classification Systems</a></li>
-            <li><a href="#probabilistic-ontology-modeling-using-unbbayes">Probabilistic Ontology Modeling Using UnBBayes</a></li>
+        <li class="main active"><a href="#representation">Representation</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="an-introduction-to-unbbayes">An Introduction to UnBBayes</h2>
-<p>UnBBayes is a probabilistic network framework written in Java. It has both a GUI and an API with inference, sampling, learning and evaluation. It supports Bayesian networks, influence diagrams, MSBN, OOBN, HBN, MEBN/PR-OWL, PRM, structure, parameter and incremental learning.</p>
-<h2 id="features">Features</h2>
-<ul>
-<li>Probabilistic Networks:<ul>
-<li>Bayesian Network (BN)<ul>
-<li>Junction Tree</li>
-<li>Likelihood Weighting</li>
-<li>Gibbs</li>
-</ul>
-</li>
-<li>Influence Diagram (ID)</li>
-<li>Multiply Sectioned Bayesian Network (MSBN)</li>
-<li>Hybrid Bayesian Network (HBN)<ul>
-<li>Gaussian Mixture - Propagation under development</li>
-</ul>
-</li>
-<li>Object-Oriented Bayesian Network (OOBN)</li>
-</ul>
-</li>
-<li>FOL Probabilistic Network:<ul>
-<li>Multi-Entity Bayesian Network (MEBN)</li>
-<li>Probabilistic Ontology Language (PR-OWL)</li>
-</ul>
-</li>
-<li>Learning Bayesian Network:<ul>
-<li>K2</li>
-<li>B</li>
-<li>CBL-A</li>
-<li>CBL-B</li>
-<li>Incremental Learning</li>
-</ul>
-</li>
-<li>Sampling<ul>
-<li>Logic</li>
-<li>Likelihood Weighting</li>
-<li>Gibbs</li>
-</ul>
-</li>
-<li>Classification Performance Evaluation<ul>
-<li>Evaluation using Logic Sampling</li>
-<li>Evaluation using Likelihood Weighting Sampling</li>
-</ul>
-</li>
-</ul>
-<h2 id="installation">Installation</h2>
-<ol>
-<li>Go to <a href="https://sourceforge.net/projects/unbbayes/files/latest/download?source=typ_redirect">https://sourceforge.net/projects/unbbayes/files/latest/download?source=typ_redirect</a> to download zip file</li>
-<li>Extract file <em>unbbayes-4.21.18.zip</em>  to <em>unbbayes-4.21.18</em> folder</li>
-<li>Open <em>unbbayes-4.21.18</em> folder, double click to <em>unbbayes.bat</em></li>
-</ol>
-<p><em>unbbayes-4.21.18</em> open
-<img alt="" src="../images/2016-11-0109_17_25-UnBBayes.png" /></p>
-<h2 id="official-videos">Official Videos</h2>
-<p>In this section, I add some official videos from unbbayes team. There are overview</p>
-<h3 id="overview">Overview</h3>
-<p>In this video we are going to show the basic function we have in UnBBayes. This is the first of many tutorials we have been creating to support the demand for documentation on how to use UnBBayes. We hope this will help UnBBayes' user community to grow even more.</p>
-<p><center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FZa1Obn9qI0" frameborder="0" allowfullscreen></iframe>
-</center></p>
-<h3 id="bayesian-network">Bayesian Network</h3>
-<p>In this video we are going to show how to create and compile a Bayesian Network (BN) in UnBBayes. This is our second of many video tutorials we have been creating to support the demand for documentation on how to use UnBBayes. We hope this will help UnBBayes' user community to grow even more.</p>
-<p><center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ExlfjBQfvMk" frameborder="0" allowfullscreen></iframe>
-</center></p>
-<h3 id="unbbayes-performance-evaluation-for-multi-sensor-classification-systems">UnBBayes Performance Evaluation for Multi-Sensor Classification Systems</h3>
-<p>In this video we are going to show how to do a performance evaluation for multi-sensor classification systems in UnBBayes. It has been a while we do not post new videos, but hopefully this third one is just one more of many tutorials we will have available to support the demand for documentation on how to use UnBBayes. We hope this will help UnBBayes' user community to grow even more.</p>
-<p><center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ExlfjBQfvMk" frameborder="0" allowfullscreen></iframe>
-</center></p>
-<h3 id="probabilistic-ontology-modeling-using-unbbayes">Probabilistic Ontology Modeling Using UnBBayes</h3>
-<p>In this video we discuss how to model probabilistic ontologies using PR-OWL/MEBN in UnBBayes. This session was a video conference between PhD students from the Institute of Business Administration (http://www.iba.edu.pk) and Rommel Carvalho from George Mason University (http://www.gmu.edu).</p>
-<p><center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/e8NabmtbFNc" frameborder="0" allowfullscreen></iframe>
-</center></p></div>
+<h1 id="representation">Representation</h1>
+<p>Probabilistic graphical models (PGMs) are a rich framework for encoding probability distributions over complex domains: joint (multivariate) distributions over large numbers of random variables that interact with each other.</p>
+<p>These representations sit at the intersection of statistics and computer science, relying on concepts from probability theory, graph algorithms, machine learning, and more. They are the basis for the state-of-the-art methods in a wide variety of applications, such as medical diagnosis, image understanding, speech recognition, natural language processing, and many, many more. They are also a foundational tool in formulating many machine learning problems. </p></div>
         </div>
 
         <footer class="col-md-12">

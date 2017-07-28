@@ -8,7 +8,7 @@
         <meta name="author" content="Vu Anh">
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Medical Domain Data - PGM</title>
+        <title>Tempalte Models for Bayesian Networks - PGM</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -64,7 +64,7 @@
                     <li >
                         <a href="..">Home</a>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Representation <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
@@ -84,8 +84,8 @@
     <a href="../representation_bayesian_network/">Bayesian Network</a>
 </li>
                             
-<li >
-    <a href="../representation_template_models/">Tempalte Models for Bayesian Networks</a>
+<li class="active">
+    <a href="./">Tempalte Models for Bayesian Networks</a>
 </li>
                             
 <li >
@@ -99,7 +99,7 @@
                     <li >
                         <a href="../learning/">Learning</a>
                     </li>
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Miscellaneous <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
@@ -117,8 +117,8 @@
     <a href="#">Datasets</a>
     <ul class="dropdown-menu">
             
-<li class="active">
-    <a href="./">Medical Domain Data</a>
+<li >
+    <a href="../data_medical_domain/">Medical Domain Data</a>
 </li>
             
 <li >
@@ -137,12 +137,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../software_unbbayes/">
+                        <a rel="next" href="../representation_bayesian_network/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../data_owc/">
+                        <a rel="prev" href="../factor_graph/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -154,32 +154,33 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#medical-domain-data">Medical Domain Data</a></li>
+        <li class="main active"><a href="#template-models-for-bayesian-networks">Template Models for Bayesian Networks</a></li>
+            <li><a href="#temporal-models">Temporal Models</a></li>
+            <li><a href="#dynamic-bayesian-networks">Dynamic Bayesian Networks</a></li>
+            <li><a href="#directed-probabilistic-models-for-object-relational-domains">Directed Probabilistic Models for Object-Relational Domains</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="medical-domain-data">Medical Domain Data</h1>
-<p>We have provided you with a joint probability distribution of symptons, conditions and diseases based on the "flu" example in class. Certain diseases are more likely than others given certain symptons, and a model such as this can be used to help doctors make a diagnosis.  (Don't actually use this for diagnosis, though!). The ground-truth joint probability distribution consists of twelve binary random variables and contains <script type="math/tex"> 2^{12} </script> possible configurations (numbered 0 to 4095), which is small enough that you can enumerate them exhaustively. The variables are as follows:</p>
-<ul>
-<li>(0) <strong>IsSummer</strong> <em>true</em> if it is the summer season, false otherwise.</li>
-<li>(1) <strong>HasFlu</strong> <em>true</em> if the patient has the flu.</li>
-<li>(2) <strong>HasFoodPoisoning</strong> <em>true</em> if the patient has food poisoning.</li>
-<li>(3) <strong>HasHayFever</strong> <em>true</em> if patient has hay fever.</li>
-<li>(4) <strong>HasPneumonia</strong> <em>true</em> if the patient has pneumonia.</li>
-<li>(5) <strong>HasRespiratoryProblems</strong> <em>true</em> if the patient has problems in the respiratory system.</li>
-<li>(6) <strong>HasGastricProblems</strong> <em>true</em> if the patient has problems in the gastro-intestinal system.</li>
-<li>(7) <strong>HasRash</strong> <em>true</em> if the patient has a skin rash.</li>
-<li>(8) <strong>Coughs</strong> <em>true</em> if the patient has a cough.</li>
-<li>(9) <strong>IsFatigued</strong> <em>true</em> if the patient is tired and fatigued.</li>
-<li>(10) <strong>Vomits</strong> <em>true</em> if the patient has vomited.</li>
-<li>(11) <strong>HasFever</strong> <em>true</em> if the patient has a high fever.</li>
-</ul>
-<p>You can download all the data <a href="https://github.com/magizbox/probabilistic_graphical_models/blob/master/docs/labs/datasets/medical_domain_dataset.gz">here</a>. The archive contains two files:</p>
-<ul>
-<li><strong>joint.dat</strong>: The true joint probability distribution over the twelve binary variables. Since each variable is binary, we can represent a * full variable assignment as a bitstring. This file lists all 2^12 assignments (one in each line) as pairs "Integer Probability" where "Integer" is an integer encoding of the bitstring. Specifically, assuming false=0 and true=1, an assignment to all variables results in a 12-bit binary number (with the index of the variables shown in parantheses above) which is converted to a decimal number. For example, assignment 0 represents all variables are false, 1 represents only IsSummer is true, 2 represents only HasFlu is true, and so on.</li>
-<li><strong>dataset.dat</strong>: The dataset consists of samples from the above probability distribution. Each line of the file contains a complete assignment to all the variables, encoded as an integer (as described above).</li>
-</ul></div>
+<h1 id="template-models-for-bayesian-networks">Template Models for Bayesian Networks</h1>
+<p>In many cases, we need to model distributions that have a recurring structure. In this module, we describe representations for two such situations. One is temporal scenarios, where we want to model a probabilistic structure that holds constant over time; here, we use Hidden Markov Models, or, more generally, Dynamic Bayesian Networks. The other is aimed at scenarios that involve multiple similar entities, each of whose properties is governed by a similar model; here, we use Plate Models.</p>
+<h2 id="temporal-models">Temporal Models</h2>
+<p>Our focus in this section is on modeling dynamic settings, where we are interested in reasoning about the state of the world as it evolves over time. We can model such settings in terms of a system state system state, whose value at time t is a snapshot of the relevant attributes (hidden or observed) of the system at time t. We assume that the system state is represented, as usual, as an assignment of values to some set of random variables X . We use X (t) i to represent the instantiation of the variable Xi at time t. Note that Xi itself is no longer a variable that takes a value; rather, it is a template variable template variable. This template is instantiated at dierent points in time t, and each Xi (t) is a variable that takes a value in Val(Xi). For a set of variables X ⊆ X , we use X (t1:t2) (t1 &lt; t2) to denote the set of variables {X (t) : t ∈ [t1,t2]}. As usual, we use the notation x(t:t0) for an
+assignment of values to this set of variables.</p>
+<p>Each “possible world” in our probability space is now a trajectory: an assignment of values to each variable X (t) i for each relevant time t. Our goal therefore is to represent a joint distribution over such trajectories. Clearly, the space of possible trajectories is a very complex probability space, so representing such a distribution can be very dicult. We therefore make a series of simplifying assumptions that help make this representational problem more tractable.</p>
+<h2 id="dynamic-bayesian-networks">Dynamic Bayesian Networks</h2>
+<p><img alt="" src="../images/6.1.png" /></p>
+<p><img alt="" src="../images/6.2.png" /></p>
+<h2 id="directed-probabilistic-models-for-object-relational-domains">Directed Probabilistic Models for Object-Relational Domains</h2>
+<p>Based on the framework described in the previous section, we now describe template-based representation languages that can encode directed probabilistic models.</p>
+<h3 id="plate-models">Plate Models</h3>
+<p>We begin our discussion by presenting the <em>plate model</em>, the simplest and best-established of the object-relational frameworks. Although restricted in several important ways, the plate modeling framework is perhaps the approach that has been most commonly used in practice, notably for encoding the assumptions made in various learning tasks. This framework also provides an excellent starting point for describing the key ideas of template-based languages and for motivating some of the extensions that have been pursued in richer languages.</p>
+<p>In the plate formalism, object types are called <em>plates</em>. The fact that multiple objects in the class share the same set of attributes and same probabilistic model is the basis for the use of the term “plate,” which suggests a stack of identical objects. We begin with some motivating examples and then describe the formal framework.</p>
+<h4 id="examples">Examples</h4>
+<p><strong>Example 1</strong> <em>The simplest example of a plate model, shown in figure 6.6, describes multiple random variables generated from the same distribution. In this case, we have a set of random variables <script type="math/tex"> X(d)\ (d ∈ D) </script> that all have the same domain Val(X) and are sampled from the same distribution. In a plate representation, we encode the fact that these variables are all generated from the same template by drawing only a single node X(d) and enclosing it in a box denoting that d ranges over D, so that we know that the box represents an entire “stack” of these identically distributed variables. This box plate is called a plate, with the analogy that it represents a stack of identical plates.</em></p>
+<p><center>
+<img alt="" src="../images/6.6.png" />
+</center></p></div>
         </div>
 
         <footer class="col-md-12">

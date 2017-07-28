@@ -4,16 +4,21 @@ google_analytics: ["UA-68978617-1", "magizbox.com"]
 
 pages:
 - "Home": "index.md"
-- "Docs":
+- "Representation":
+  - "Introduction": "representation.md"
   - "Foundation: Probability": "foundation_probability.md"
   - "Foundation: Graph": "foundation_graph.md"
-  - "Bayesian Network": "bayes_network.md"
-  - "Tempalte Models for Bayesian Networks": "template_models.md"
-  - "An Introduction to UnBBayes": "unbbayes.md"
+  - "Bayesian Network": "representation_bayesian_network.md"
+  - "Tempalte Models for Bayesian Networks": "representation_template_models.md"
   - "Factor Graph": "factor_graph.md"
-- "Datasets":
-  - "Medical Domain Data": "data_medical_domain.md"
-  - "Optical Word Recognition Dataset": "data_owc.md"
+- "Inference": "inference.md"
+- "Learning": "learning.md"
+- "Miscellaneous":
+  - "Softwares":
+    - "An Introduction to UnBBayes": "software_unbbayes.md"
+  - "Datasets":
+    - "Medical Domain Data": "data_medical_domain.md"
+    - "Optical Word Recognition Dataset": "data_owc.md"
 
 markdown_extensions:
     - footnotes

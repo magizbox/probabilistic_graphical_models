@@ -8,7 +8,7 @@
         <meta name="author" content="Vu Anh">
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Bayesian Network - PGM</title>
+        <title>Learning - PGM</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -64,9 +64,13 @@
                     <li >
                         <a href="..">Home</a>
                     </li>
-                    <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Docs <b class="caret"></b></a>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Representation <b class="caret"></b></a>
                         <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../representation/">Introduction</a>
+</li>
                             
 <li >
     <a href="../foundation_probability/">Foundation: Probability</a>
@@ -76,16 +80,12 @@
     <a href="../foundation_graph/">Foundation: Graph</a>
 </li>
                             
-<li class="active">
-    <a href="./">Bayesian Network</a>
+<li >
+    <a href="../representation_bayesian_network/">Bayesian Network</a>
 </li>
                             
 <li >
-    <a href="../template_models/">Tempalte Models for Bayesian Networks</a>
-</li>
-                            
-<li >
-    <a href="../unbbayes/">An Introduction to UnBBayes</a>
+    <a href="../representation_template_models/">Tempalte Models for Bayesian Networks</a>
 </li>
                             
 <li >
@@ -93,17 +93,39 @@
 </li>
                         </ul>
                     </li>
+                    <li >
+                        <a href="../inference/">Inference</a>
+                    </li>
+                    <li class="active">
+                        <a href="./">Learning</a>
+                    </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Datasets <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Miscellaneous <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
+  <li class="dropdown-submenu">
+    <a href="#">Softwares</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../software_unbbayes/">An Introduction to UnBBayes</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Datasets</a>
+    <ul class="dropdown-menu">
+            
 <li >
     <a href="../data_medical_domain/">Medical Domain Data</a>
 </li>
-                            
+            
 <li >
     <a href="../data_owc/">Optical Word Recognition Dataset</a>
 </li>
+    </ul>
+  </li>
                         </ul>
                     </li>
                 </ul>
@@ -115,12 +137,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../foundation_graph/">
+                        <a rel="next" href="../inference/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../template_models/">
+                        <a rel="prev" href="../software_unbbayes/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -132,12 +154,16 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#bayesian-network">Bayesian Network</a></li>
+        <li class="main active"><a href="#learning">Learning</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="bayesian-network">Bayesian Network</h2></div>
+<h1 id="learning">Learning</h1>
+<blockquote>
+<p>This course addresses the question of learning: how a PGM can be learned from a data set of examples.</p>
+</blockquote>
+<p>The course discusses the key problems of parameter estimation in both directed and undirected models, as well as the structure learning task for directed models. The (highly recommended) honors track contains two hands-on programming assignments, in which key routines of two commonly used learning algorithms are implemented and applied to a real-world problem.</p></div>
         </div>
 
         <footer class="col-md-12">
